@@ -1,0 +1,26 @@
+{
+  "$doc": [
+    "Which materials get which parts. A family pairs material selectors with part ids, so metals get metal parts and fluids get bottles, never the cross product.",
+    "Selectors: 'iron' (one material), '@metal' (a group from materials.json), '*' (all). 'exclude' takes 'material:part' rules, e.g. '@gem:wire'.",
+    "family.defaults is merged into every item the family produces, before the part's own spec."
+  ],
+
+  "families": {
+    "metal": {
+      "materials": ["@metal", "@gem"],
+      "parts": ["plate", "rod", "foil", "wire", "ring", "bolt", "screw", "gear", "hammer"],
+      "exclude": ["@gem:foil", "@gem:wire"],
+      "defaults": { "tags": ["{meta.namespace}:parts/{family.id}"] }
+    },
+    "fluid": {
+      "materials": ["@fluid"],
+      "parts": ["bottle"],
+      "defaults": { "patterns": { "name": "Bottle of {material.name}" } }
+    },
+    "ore": {
+      "materials": ["@ore"],
+      "parts": ["ore", "deepslate_ore", "nether_ore", "end_ore"],
+      "defaults": { "tags": ["{meta.namespace}:blocks/ore"] }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$doc": [
+    "Named colour ramps, darkest tone first. A material with no inline 'palette' uses the one named after its id.",
+    "These are the refined, shiny looks used by plate/rod/gear/etc. The duller rock palettes ore blocks sit in are in ores.json.",
+    "A palette may also be written inline on a material as {ramp: name, base: '#RRGGBB'} to derive all five tones from one colour (see textures.ramps in textures.json)."
+  ],
+
+  "textures": {
+    "palettes": {
+      "iron":    ["#36393E", "#6D757F", "#9CA3AF", "#D1D5DB", "#FFFFFF"],
+      "gold":    ["#593A0E", "#A37212", "#EAAD23", "#FAE24E", "#FFFEBA"],
+      "copper":  ["#4E261E", "#853E2F", "#BD573D", "#E07E60", "#F7B499"],
+      "diamond": ["#0E4952", "#1C868C", "#2EBDAD", "#84EDDE", "#DEFFFA"],
+      "wood":    ["#281E0B", "#493615", "#684E1E", "#896727", "#A98A4A"],
+      "glass":   ["#3E4E5A", "#7F99AB", "#AFC8D6", "#DCEEF6", "#FFFFFF"],
+      "water":   ["#15296B", "#2445A6", "#3F76E4", "#76A6F2", "#C4DEFF"],
+      "lava":    ["#6E1A04", "#B23A08", "#E8661A", "#FFA23A", "#FFE58A"]
+    }
+  }
+}

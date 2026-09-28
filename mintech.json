@@ -1,0 +1,568 @@
+{
+  "$doc": [
+    "Single source of truth for mintech_textures.py, kubejs/startup_scripts/mintech_items.js and kubejs/server_scripts/mintech_recipes.js. Keys starting with '$' are comments.",
+    "ITEMS = families x materials x parts. A family pairs material selectors with part ids, so metals get metal parts and fluids get bottles, never the cross product. Selectors: 'iron', '@metal' (group), '*'. family.exclude takes 'material:part' rules, e.g. '@gem:wire'.",
+    "INHERITANCE per item: defaults -> family.defaults -> parts[id] -> material.overrides['*'] -> material.overrides[part id]. 'inheritance' sets the merge mode per field (replace | merge | deep | concat).",
+    "INTERPOLATION: strings may contain {path|filter}. Context: meta, vars, family, material, part, parts (sibling item ids), self (this item id), texture, name. A string that is exactly one token yields the raw value (number/object). Filters: lower upper title tag path ns ingredient.",
+    "ORE BLOCKS: parts.ore/deepslate_ore/nether_ore/end_ore are real blocks (part.type = 'block', not 'item'); mintech_items.js registers them via StartupEvents.registry('block') instead of 'item'. Only the 'ore' family (materials tagged '@ore') wires up ore+deepslate_ore today; nether_ore/end_ore are defined and ready (templates/palettes included) but not attached to any family yet -- add a family selecting them (or add them to the 'ore' family's parts) once a nether/end material exists.",
+    "ORE WORLDGEN: materials carry a 'veins' list; mintech_worldgen.py turns each vein into a configured_feature + placed_feature + forge:biome_modifier datapack under config/paxi/datapacks/. KubeJS 6 for 1.20.1 ships WorldgenEvents.addOre() as a dead stub that only logs 'not supported in 1.20 yet', so worldgen CANNOT be scripted here -- and on Forge the biome_modifier is the only thing that actually injects a placed feature into biomes. A vein lists parts, and each part declares the rock it replaces (parts.<id>.worldgen.replaces), so one vein = one feature with one target per part: 'ore' + 'deepslate_ore' share a single roll exactly like vanilla iron instead of spawning twice.",
+    "ORE vs METAL TEXTURES are intentionally separate: material.palette (usually a 'metal' ramp) is the shiny refined-ingot look used by plate/rod/gear/etc; material.orePalette (a duller 'ore' ramp) is what ore-block speckles use instead -- a material that wants ore blocks needs both fields set. Ore rock backgrounds (ore_stone_bg etc.) are traced from real vanilla stone/deepslate/netherrack/end_stone textures under textures_src/vanilla/ via the 'image' template source, and every ore layer uses a flat (non-directional) shader -- unlike refined-metal parts, ore textures have no rim-light/highlight shading baked in.",
+    "RECIPES (placeholder progression, replace freely): type shapeless (inputs) or shaped (pattern + key); count; damage (ingredient whose durability is used, e.g. the hammer). A recipe whose {reference} cannot be resolved is skipped.",
+    "ITEM: builder methods called on the KubeJS item builder, {method: argument}.",
+    "TEXTURES: a part is drawn from 'layers' (poly-construction) or a single 'template' (mono-construction; defaults to the part id). Layer keys: template, palette, shader, blend (over|replace), context (self|below|all), transforms (flip_x, flip_y, {rotate: 90}, {shift: [dx, dy]}).",
+    "PALETTES: a list of tones, or {ramp: name, base: '#RRGGBB'} to derive all tones from one colour (see textures.ramps). A material's palette may be inline.",
+    "Templates are ascii row arrays (see legend) or {source: 'image', path, thresholds: [[0.8, 4], ...], channel: 'luma'} greyscale PNGs. 'renderer': null on a part = register it but draw the texture by hand."
+  ],
+
+  "meta": { "namespace": "mintech", "version": "1.0.0" },
+
+  "vars": {
+    "hammer": "#forge:hammer",
+    "handle": "#forge:rods/wooden",
+    "glass_bottle": "minecraft:glass_bottle"
+  },
+
+  "inheritance": {
+    "patterns": "merge",
+    "layer_defaults": "merge",
+    "item": "merge",
+    "worldgen": "merge",
+    "tags": "concat",
+    "recipes": "concat"
+  },
+
+  "defaults": {
+    "renderer": "layered",
+    "patterns": {
+      "id": "{meta.namespace}:{material.id}_{part.id}",
+      "texture": "{meta.namespace}:item/{material.id}/{part.id}",
+      "name": "{material.name} {part.name}",
+      "recipe_id": "{meta.namespace}:crafting/{material.id}_{part.id}_{recipe.name}"
+    },
+    "layer_defaults": {
+      "palette": "{material.palette}",
+      "shader": "{material.shader}",
+      "blend": "over",
+      "context": "self"
+    },
+    "item": {},
+    "tags": [],
+    "recipes": []
+  },
+
+  "tags": {
+    "forge:hammer": ["#forge:hammers", "#forge:tools/hammers", "#c:tools/hammers", "#c:hammers", "#c:hammer"]
+  },
+
+  "material_defaults": { "shader": "standard" },
+
+  "materials": {
+    "copper":    { "groups": ["metal"], "inputs": { "base": "#forge:ingots/copper" },    "stats": { "durability": 128 } },
+    "iron":      { "groups": ["metal"], "inputs": { "base": "#forge:ingots/iron" },      "stats": { "durability": 250 } },
+    "gold":      { "groups": ["metal"], "inputs": { "base": "#forge:ingots/gold" },      "stats": { "durability": 32 } },
+    "netherite": { "groups": ["metal"], "inputs": { "base": "#forge:ingots/netherite" }, "stats": { "durability": 2031 },
+                   "palette": { "ramp": "metal", "base": "#5B5358" } },
+    "titanium":  { "groups": ["metal", "ore"], "inputs": { "base": "#forge:ingots/titanium" }, "stats": { "durability": 420 },
+                   "palette": { "ramp": "metal", "base": "#A9B4BD" }, "orePalette": { "ramp": "ore", "base": "#A9B4BD" },
+                   "veins": [
+                     { "name": "titanium_overworld", "parts": ["ore", "deepslate_ore"], "count": 8, "size": 6,
+                       "height": { "type": "trapezoid", "min": -24, "max": 56 }, "biomes": "#minecraft:is_overworld" },
+                     { "name": "titanium_nether", "parts": ["nether_ore"], "count": 6, "size": 4,
+                       "height": { "type": "uniform", "min": 16, "max": 112 }, "biomes": "#minecraft:is_nether" },
+                     { "name": "titanium_end", "parts": ["end_ore"], "count": 4, "size": 4,
+                       "height": { "type": "uniform", "min": 8, "max": 72 }, "biomes": "#minecraft:is_end" }
+                   ] },
+    "diamond":   { "groups": ["gem"],   "inputs": { "base": "#forge:gems/diamond" },     "stats": { "durability": 1561 } },
+    "emerald":   { "groups": ["gem"],   "inputs": { "base": "#forge:gems/emerald" },     "stats": { "durability": 512 },
+                   "palette": { "ramp": "gem", "base": "#17C45A" } },
+    "water":     { "groups": ["fluid"], "inputs": { "bucket": "minecraft:water_bucket" } },
+    "lava":      { "groups": ["fluid"], "inputs": { "bucket": "minecraft:lava_bucket" } }
+  },
+
+  "parts": {
+    "plate": {
+      "tags": ["forge:plates", "forge:plates/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{material.inputs.base}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "rod": {
+      "tags": ["forge:rods", "forge:rods/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["H", "P"], "key": { "H": "{vars.hammer}", "P": "{parts.plate}" }, "damage": "{vars.hammer}" }]
+    },
+    "foil": {
+      "tags": ["forge:foils", "forge:foils/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["HP"], "key": { "H": "{vars.hammer}", "P": "{parts.plate}" }, "damage": "{vars.hammer}" }]
+    },
+    "wire": {
+      "tags": ["forge:wires", "forge:wires/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shapeless", "count": 2, "inputs": ["{parts.foil}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "ring": {
+      "tags": ["forge:rings", "forge:rings/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "pattern": ["HR"], "key": { "H": "{vars.hammer}", "R": "{parts.rod}" }, "damage": "{vars.hammer}" }]
+    },
+    "bolt": {
+      "tags": ["forge:bolts", "forge:bolts/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["H", "R"], "key": { "H": "{vars.hammer}", "R": "{parts.rod}" }, "damage": "{vars.hammer}" }]
+    },
+    "screw": {
+      "tags": ["forge:screws", "forge:screws/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{parts.bolt}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "gear": {
+      "tags": ["forge:gears", "forge:gears/{material.id}"],
+      "recipes": [{
+        "name": "assembly", "type": "shaped", "pattern": ["BPB", "PRP", "BHB"],
+        "key": { "P": "{parts.plate}", "R": "{parts.ring}", "B": "{parts.bolt}", "H": "{vars.hammer}" }, "damage": "{vars.hammer}"
+      }]
+    },
+    "hammer": {
+      "layers": [
+        { "template": "hammer_handle", "palette": "wood", "shader": "standard" },
+        { "template": "hammer_head" }
+      ],
+      "tags": ["forge:hammers"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [{ "name": "crafting", "type": "shaped", "pattern": ["III", "III", " S "], "key": { "I": "{material.inputs.base}", "S": "{vars.handle}" } }]
+    },
+    "bottle": {
+      "layers": [
+        { "template": "bottle_fill", "shader": "liquid", "context": "all" },
+        { "template": "bottle_glass", "palette": "glass", "shader": "standard" },
+        { "template": "bottle_cork", "palette": "wood", "shader": "standard" }
+      ],
+      "item": { "maxStackSize": 16 },
+      "recipes": [{ "name": "filling", "type": "shapeless", "inputs": ["{vars.glass_bottle}", "{material.inputs.bucket}"] }]
+    },
+
+    "ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}" },
+      "layers": [
+        { "template": "ore_stone_bg", "palette": "stone", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 3, "resistance": 3, "requiresTool": true },
+      "worldgen": { "replaces": "#minecraft:stone_ore_replaceables" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    },
+    "deepslate_ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}", "name": "Deepslate {material.name} Ore" },
+      "layers": [
+        { "template": "ore_deepslate_bg", "palette": "deepslate", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 4.5, "resistance": 3, "requiresTool": true },
+      "worldgen": { "replaces": "#minecraft:deepslate_ore_replaceables" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    },
+    "nether_ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}", "name": "Nether {material.name} Ore" },
+      "layers": [
+        { "template": "ore_netherrack_bg", "palette": "netherrack", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 3, "resistance": 3, "requiresTool": true },
+      "worldgen": { "replaces": "#minecraft:base_stone_nether" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    },
+    "end_ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}", "name": "End {material.name} Ore" },
+      "layers": [
+        { "template": "ore_endstone_bg", "palette": "endstone", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 3, "resistance": 9, "requiresTool": true },
+      "worldgen": { "replaces": "minecraft:end_stone" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    }
+  },
+
+  "families": {
+    "metal": {
+      "materials": ["@metal", "@gem"],
+      "parts": ["plate", "rod", "foil", "wire", "ring", "bolt", "screw", "gear", "hammer"],
+      "exclude": ["@gem:foil", "@gem:wire"],
+      "defaults": { "tags": ["{meta.namespace}:parts/{family.id}"] }
+    },
+    "fluid": {
+      "materials": ["@fluid"],
+      "parts": ["bottle"],
+      "defaults": { "patterns": { "name": "Bottle of {material.name}" } }
+    },
+    "ore": {
+      "materials": ["@ore"],
+      "parts": ["ore", "deepslate_ore", "nether_ore", "end_ore"],
+      "defaults": { "tags": ["{meta.namespace}:blocks/ore"] }
+    }
+  },
+
+  "worldgen": {
+    "output": {
+      "root": "config/paxi/datapacks",
+      "pack_name": "mintech_worldgen",
+      "compress": false,
+      "zip_level": 9,
+      "prune": true,
+      "manifest": "hash.txt"
+    },
+    "mcmeta": {
+      "pack": { "pack_format": 15, "description": "MinTech ore worldgen (v{meta.version})" }
+    },
+    "vein_defaults": {
+      "family": "ore",
+      "step": "underground_ores",
+      "squared": true,
+      "discard_chance": 0.0,
+      "biomes": "#minecraft:is_overworld",
+      "height": { "type": "uniform", "min": 0, "max": 128 },
+      "patterns": { "id": "{meta.namespace}:{vein.name}" }
+    }
+  },
+
+  "textures": {
+    "size": 16,
+    "output": {
+      "root": "config/paxi/resourcepacks",
+      "pack_name": "mintech_textures",
+      "compress": false,
+      "zip_level": 9,
+      "prune": true,
+      "manifest": "hash.txt",
+      "png": { "optimize": true }
+    },
+    "mcmeta": {
+      "pack": { "pack_format": 15, "description": "MinTech generated textures (v{meta.version})" }
+    },
+    "legend": { ".": "clear", " ": "clear", "#": "auto", "0": 0, "1": 1, "2": 2, "3": 3, "4": 4 },
+
+    "ramps": {
+      "$": "Hue-shifted tone ramps. light <0 toward black, >0 toward white; sat multiplies saturation; hue = fraction toward 'cool' (shadows) / 'warm' (highlights), degrees.",
+      "metal": { "cool": 230, "warm": 55, "steps": [
+        { "light": -0.62, "sat": 0.8, "hue": 0.12 }, { "light": -0.3, "sat": 0.9, "hue": 0.06 }, {},
+        { "light": 0.35, "sat": 1.25, "hue": 0.08 }, { "light": 0.78, "sat": 1.45, "hue": 0.15 } ] },
+      "gem": { "cool": 230, "warm": 170, "steps": [
+        { "light": -0.55, "sat": 1.1, "hue": 0.1 }, { "light": -0.27, "sat": 1.05, "hue": 0.05 }, {},
+        { "light": 0.45, "sat": 1.2, "hue": 0.05 }, { "light": 0.88, "sat": 1.5, "hue": 0.1 } ] },
+      "ore": { "cool": 220, "warm": 40, "steps": [
+        { "light": -0.35, "sat": 0.55, "hue": 0.05 }, { "light": -0.12, "sat": 0.6, "hue": 0.02 }, {},
+        { "light": 0.18, "sat": 0.65, "hue": 0.02 }, { "light": 0.42, "sat": 0.7, "hue": 0.05 } ] }
+    },
+
+    "shaders": {
+      "standard": {
+        "type": "auto",
+        "light": [-1, -1],
+        "tones": {
+          "thin_lit": 3, "thin_shade": 1,
+          "outline": 0, "rim_shade": 1, "rim_lit": 2,
+          "highlight": 4, "lit": 3, "shade": 1,
+          "ambient_high": 3, "ambient_mid": 2, "ambient_low": 1
+        },
+        "thresholds": {
+          "thin_dot": 0.0, "thin_ambient": 0.55,
+          "rim_dot": -0.3, "rim_ambient": 0.6,
+          "highlight_dot": 0.4, "highlight_ambient": 0.35,
+          "ambient_high": 0.65, "ambient_mid": 0.35
+        }
+      },
+      "liquid": {
+        "extends": "standard",
+        "tones": { "outline": 1, "rim_shade": 2, "rim_lit": 3, "thin_shade": 2 }
+      }
+    },
+
+    "palettes": {
+      "iron":    ["#36393E", "#6D757F", "#9CA3AF", "#D1D5DB", "#FFFFFF"],
+      "gold":    ["#593A0E", "#A37212", "#EAAD23", "#FAE24E", "#FFFEBA"],
+      "copper":  ["#4E261E", "#853E2F", "#BD573D", "#E07E60", "#F7B499"],
+      "diamond": ["#0E4952", "#1C868C", "#2EBDAD", "#84EDDE", "#DEFFFA"],
+      "wood":    ["#281E0B", "#493615", "#684E1E", "#896727", "#A98A4A"],
+      "glass":   ["#3E4E5A", "#7F99AB", "#AFC8D6", "#DCEEF6", "#FFFFFF"],
+      "water":   ["#15296B", "#2445A6", "#3F76E4", "#76A6F2", "#C4DEFF"],
+      "lava":    ["#6E1A04", "#B23A08", "#E8661A", "#FFA23A", "#FFE58A"],
+
+      "$stone_etc": "Sampled directly from vanilla 1.20.1 stone.png/deepslate.png/netherrack.png/end_stone.png (dark -> light), so ore rock backgrounds match the real blocks they sit next to.",
+      "stone":      ["#686868", "#747474", "#7F7F7F", "#8F8F8F"],
+      "deepslate":  ["#2F2F37", "#3D3D43", "#515151", "#646464", "#797979"],
+      "netherrack": ["#411616", "#501B1B", "#652828", "#723232", "#854242"],
+      "endstone":   ["#C5BE8B", "#D5DA94", "#DEE6A4", "#EEF6B4", "#F6FABD"]
+    },
+
+    "templates": {
+      "plate": [
+        "................",
+        "...##########...",
+        "..############..",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        ".##############.",
+        "..############..",
+        "...##########...",
+        "................"
+      ],
+      "rod": [
+        ".............###",
+        "............####",
+        "...........#####",
+        "..........#####.",
+        ".........#####..",
+        "........#####...",
+        ".......#####....",
+        "......#####.....",
+        ".....#####......",
+        "....#####.......",
+        "...#####........",
+        "..#####.........",
+        ".#####..........",
+        "#####...........",
+        "####............",
+        "###............."
+      ],
+      "foil": [
+        "................",
+        "................",
+        "..#######3......",
+        "..#######24.....",
+        "..#######234....",
+        "..#######2334...",
+        "..#######22223..",
+        "..#######1111#..",
+        "..############..",
+        "..############..",
+        "..############..",
+        "..############..",
+        "..############..",
+        "..############..",
+        "................",
+        "................"
+      ],
+      "wire": [
+        "................",
+        "................",
+        "......1###......",
+        "...###1###1##...",
+        "..11#####1####..",
+        ".###1#....##11#.",
+        ".###........###.",
+        ".111........111.",
+        ".###........###.",
+        ".#11##....#1###.",
+        "..####1#####11..",
+        "...##1###1###...",
+        "...#..###1......",
+        "..#.............",
+        "..#.............",
+        ".#.............."
+      ],
+      "ring": [
+        "................",
+        ".....######.....",
+        "...##########...",
+        "..############..",
+        ".##############.",
+        ".####......####.",
+        ".###........###.",
+        ".###........###.",
+        ".###........###.",
+        ".###........###.",
+        ".####......####.",
+        ".##############.",
+        "..############..",
+        "...##########...",
+        ".....######.....",
+        "................"
+      ],
+      "bolt": [
+        "................",
+        "................",
+        "...........#....",
+        "..........###...",
+        ".........#####..",
+        "........#####...",
+        ".......#####....",
+        "......#####.....",
+        ".....#####......",
+        "....#####.......",
+        "...#####........",
+        "..#####.........",
+        "...###..........",
+        "....#...........",
+        "................",
+        "................"
+      ],
+      "screw": [
+        "................",
+        "....########....",
+        "...##########...",
+        "...###.##.###...",
+        "....########....",
+        "......####......",
+        ".....#####......",
+        "......#####.....",
+        ".....#####......",
+        "......#####.....",
+        ".....#####......",
+        "......#####.....",
+        "......####......",
+        ".......##.......",
+        "................",
+        "................"
+      ],
+      "gear": [
+        "......#.#.#.....",
+        "...#.######.#...",
+        ".#.##########.#.",
+        "..############..",
+        "###############.",
+        ".####..##..#####",
+        "####...##...###.",
+        ".###############",
+        "###############.",
+        ".###...##...####",
+        "#####..##..####.",
+        ".###############",
+        "..############..",
+        ".#.##########.#.",
+        "...#.######.#...",
+        ".....#.#.#......"
+      ],
+      "hammer_handle": [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "........#.......",
+        ".......##.......",
+        "......##........",
+        ".....##.........",
+        "....##..........",
+        "...##...........",
+        "..##............",
+        ".##.............",
+        "##..............",
+        "#..............."
+      ],
+      "hammer_head": [
+        "................",
+        "......###.......",
+        ".....#####......",
+        ".....######.....",
+        "......######....",
+        ".......######...",
+        "........######..",
+        ".........#####..",
+        "..........###...",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ],
+      "bottle_cork": [
+        "................",
+        "......####......",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ],
+      "bottle_glass": [
+        "................",
+        "................",
+        ".....#....#.....",
+        "......#..#......",
+        "......#..#......",
+        ".....#....#.....",
+        "....#......#....",
+        "...#........#...",
+        "..#..........#..",
+        "..#..........#..",
+        "..#..........#..",
+        "..#..........#..",
+        "...#........#...",
+        "....########....",
+        "................",
+        "................"
+      ],
+      "bottle_fill": [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "....########....",
+        "...4#########...",
+        "...4#########...",
+        "...##########...",
+        "...##########...",
+        "....########....",
+        "................",
+        "................",
+        "................"
+      ],
+
+      "$ore_bg": "Traced from real vanilla stone/deepslate/netherrack/end_stone textures (textures_src/vanilla/) via the 'image' source: luma is bucketed straight into the matching rock palette above, so no auto-shader rim/highlight is ever applied to the background -- it's flat quantized noise, same as the vanilla source.",
+      "ore_stone_bg": {
+        "source": "image", "path": "textures_src/vanilla/stone.png", "channel": "luma",
+        "thresholds": [[0.5294, 3], [0.4765, 2], [0.4314, 1], [0.0, 0]]
+      },
+      "ore_deepslate_bg": {
+        "source": "image", "path": "textures_src/vanilla/deepslate.png", "channel": "luma",
+        "thresholds": [[0.4333, 4], [0.3549, 3], [0.2798, 2], [0.2149, 1], [0.0, 0]]
+      },
+      "ore_netherrack_bg": {
+        "source": "image", "path": "textures_src/vanilla/netherrack.png", "channel": "luma",
+        "thresholds": [[0.3041, 4], [0.2496, 3], [0.1980, 2], [0.1524, 1], [0.0, 0]]
+      },
+      "ore_endstone_bg": {
+        "source": "image", "path": "textures_src/vanilla/end_stone.png", "channel": "luma",
+        "thresholds": [[0.9370, 4], [0.8945, 3], [0.8404, 2], [0.7741, 1], [0.0, 0]]
+      },
+      "$ore_speckles": "Ore-vein flecks as hand-placed fixed tone indices (0=dark accent .. 4=sparkle highlight), not 'auto' -- vanilla ore blobs are flat blotches with no directional lighting, unlike a refined metal part.",
+      "ore_speckles": [
+        "................",
+        "...........2....",
+        "....2.....131...",
+        "...131.....2....",
+        "....2...........",
+        "................",
+        "................",
+        ".......24.......",
+        "......131.......",
+        ".......2.....2..",
+        "............131.",
+        "...2.........2..",
+        "..131...........",
+        "...2.....2......",
+        "........131.....",
+        "........02......"
+      ]
+    }
+  }
+}

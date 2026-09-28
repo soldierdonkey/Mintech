@@ -1,0 +1,32 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:mintech:titanium_deepslate_ore",
+    "item:mintech:titanium_ore",
+    "item:minecraft:iron_ore",
+    "item:minecraft:deepslate_iron_ore",
+    [
+      "item:minecraft:stone",
+      "item:minecraft:granite",
+      "item:minecraft:diorite",
+      "item:minecraft:andesite"
+    ],
+    "item:mintech:titanium_plate",
+    "item:mintech:titanium_foil",
+    "item:custommachinery:configuration_card",
+    "item:mintech:lava_bottle",
+    "item:mintech:water_bottle",
+    "item:mintech:gold_bolt",
+    "item:mintech:gold_screw",
+    "item:mintech:netherite_gear",
+    "item:minecraft:cherry_wood"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

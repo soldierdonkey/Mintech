@@ -1,0 +1,29 @@
+{
+  "$doc": [
+    "The ore worldgen datapack written by mintech/mintech_worldgen.py: where it goes, and what a vein looks like when it leaves fields out. The veins themselves are in ores.json.",
+    "'output.root' is relative to meta.root (the instance root)."
+  ],
+
+  "worldgen": {
+    "output": {
+      "root": "config/paxi/datapacks",
+      "pack_name": "mintech_worldgen",
+      "compress": false,
+      "zip_level": 9,
+      "prune": true,
+      "manifest": "hash.txt"
+    },
+    "mcmeta": {
+      "pack": { "pack_format": 15, "description": "MinTech ore worldgen (v{meta.version})" }
+    },
+    "vein_defaults": {
+      "family": "ore",
+      "step": "underground_ores",
+      "squared": true,
+      "discard_chance": 0.0,
+      "biomes": "#minecraft:is_overworld",
+      "height": { "type": "uniform", "min": 0, "max": 128 },
+      "patterns": { "id": "{meta.namespace}:{vein.name}" }
+    }
+  }
+}

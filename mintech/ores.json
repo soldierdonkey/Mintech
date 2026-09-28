@@ -1,0 +1,118 @@
+{
+  "$doc": [
+    "Everything ore, in one place: the ore blocks, the veins they spawn as, and the rock textures they sit in. Ore parts merge into 'parts' (parts.json), veins into the materials they belong to (materials.json), rock colours and art into 'textures' (palettes.json / templates.json).",
+    "ORE BLOCKS: these parts are real blocks (part.type = 'block', not 'item'); mintech_items.js registers them via StartupEvents.registry('block') instead of 'item'. Only the 'ore' family (materials tagged '@ore') wires up ore+deepslate_ore today; nether_ore/end_ore are defined and ready (templates/palettes included) but not attached to any family yet -- add a family selecting them (or add them to the 'ore' family's parts in families.json) once a nether/end material exists.",
+    "ORE WORLDGEN: each vein below becomes a configured_feature + placed_feature + forge:biome_modifier datapack under the path set in worldgen.json, written by mintech/mintech_worldgen.py. KubeJS 6 for 1.20.1 ships WorldgenEvents.addOre() as a dead stub that only logs 'not supported in 1.20 yet', so worldgen CANNOT be scripted here -- and on Forge the biome_modifier is the only thing that actually injects a placed feature into biomes. A vein lists parts, and each part declares the rock it replaces (parts.<id>.worldgen.replaces), so one vein = one feature with one target per part: 'ore' + 'deepslate_ore' share a single roll exactly like vanilla iron instead of spawning twice.",
+    "ORE TEXTURES use material.orePalette (a duller 'ore' ramp), never material.palette -- a material that wants ore blocks needs both fields set. Rock backgrounds are traced from real vanilla stone/deepslate/netherrack/end_stone textures under textures_src/vanilla/ via the 'image' template source, and every ore layer uses a flat (non-directional) shader: unlike refined-metal parts, ore textures have no rim-light/highlight shading baked in."
+  ],
+
+  "parts": {
+    "ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}" },
+      "layers": [
+        { "template": "ore_stone_bg", "palette": "stone", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 3, "resistance": 3, "requiresTool": true },
+      "worldgen": { "replaces": "#minecraft:stone_ore_replaceables" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    },
+    "deepslate_ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}", "name": "Deepslate {material.name} Ore" },
+      "layers": [
+        { "template": "ore_deepslate_bg", "palette": "deepslate", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 4.5, "resistance": 3, "requiresTool": true },
+      "worldgen": { "replaces": "#minecraft:deepslate_ore_replaceables" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    },
+    "nether_ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}", "name": "Nether {material.name} Ore" },
+      "layers": [
+        { "template": "ore_netherrack_bg", "palette": "netherrack", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 3, "resistance": 3, "requiresTool": true },
+      "worldgen": { "replaces": "#minecraft:base_stone_nether" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    },
+    "end_ore": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}", "name": "End {material.name} Ore" },
+      "layers": [
+        { "template": "ore_endstone_bg", "palette": "endstone", "shader": { "type": "flat" } },
+        { "template": "ore_speckles", "palette": "{material.orePalette}", "shader": { "type": "flat" } }
+      ],
+      "block": { "hardness": 3, "resistance": 9, "requiresTool": true },
+      "worldgen": { "replaces": "minecraft:end_stone" },
+      "tags": ["forge:ores", "forge:ores/{material.id}", "minecraft:mineable/pickaxe"]
+    }
+  },
+
+  "$veins": "Merged onto the matching material in materials.json. Defaults for every field come from worldgen.vein_defaults.",
+  "materials": {
+    "titanium": {
+      "veins": [
+        { "name": "titanium_overworld", "parts": ["ore", "deepslate_ore"], "count": 8, "size": 6,
+          "height": { "type": "trapezoid", "min": -24, "max": 56 }, "biomes": "#minecraft:is_overworld" },
+        { "name": "titanium_nether", "parts": ["nether_ore"], "count": 6, "size": 4,
+          "height": { "type": "uniform", "min": 16, "max": 112 }, "biomes": "#minecraft:is_nether" },
+        { "name": "titanium_end", "parts": ["end_ore"], "count": 4, "size": 4,
+          "height": { "type": "uniform", "min": 8, "max": 72 }, "biomes": "#minecraft:is_end" }
+      ]
+    }
+  },
+
+  "textures": {
+    "palettes": {
+      "$stone_etc": "Sampled directly from vanilla 1.20.1 stone.png/deepslate.png/netherrack.png/end_stone.png (dark -> light), so ore rock backgrounds match the real blocks they sit next to.",
+      "stone":      ["#686868", "#747474", "#7F7F7F", "#8F8F8F"],
+      "deepslate":  ["#2F2F37", "#3D3D43", "#515151", "#646464", "#797979"],
+      "netherrack": ["#411616", "#501B1B", "#652828", "#723232", "#854242"],
+      "endstone":   ["#C5BE8B", "#D5DA94", "#DEE6A4", "#EEF6B4", "#F6FABD"]
+    },
+
+    "templates": {
+      "$ore_bg": "Traced from real vanilla stone/deepslate/netherrack/end_stone textures (textures_src/vanilla/) via the 'image' source: luma is bucketed straight into the matching rock palette above, so no auto-shader rim/highlight is ever applied to the background -- it's flat quantized noise, same as the vanilla source.",
+      "ore_stone_bg": {
+        "source": "image", "path": "textures_src/vanilla/stone.png", "channel": "luma",
+        "thresholds": [[0.5294, 3], [0.4765, 2], [0.4314, 1], [0.0, 0]]
+      },
+      "ore_deepslate_bg": {
+        "source": "image", "path": "textures_src/vanilla/deepslate.png", "channel": "luma",
+        "thresholds": [[0.4333, 4], [0.3549, 3], [0.2798, 2], [0.2149, 1], [0.0, 0]]
+      },
+      "ore_netherrack_bg": {
+        "source": "image", "path": "textures_src/vanilla/netherrack.png", "channel": "luma",
+        "thresholds": [[0.3041, 4], [0.2496, 3], [0.1980, 2], [0.1524, 1], [0.0, 0]]
+      },
+      "ore_endstone_bg": {
+        "source": "image", "path": "textures_src/vanilla/end_stone.png", "channel": "luma",
+        "thresholds": [[0.9370, 4], [0.8945, 3], [0.8404, 2], [0.7741, 1], [0.0, 0]]
+      },
+      "$ore_speckles": "Ore-vein flecks as hand-placed fixed tone indices (0=dark accent .. 4=sparkle highlight), not 'auto' -- vanilla ore blobs are flat blotches with no directional lighting, unlike a refined metal part.",
+      "ore_speckles": [
+        "................",
+        "...........2....",
+        "....2.....131...",
+        "...131.....2....",
+        "....2...........",
+        "................",
+        "................",
+        ".......24.......",
+        "......131.......",
+        ".......2.....2..",
+        "............131.",
+        "...2.........2..",
+        "..131...........",
+        "...2.....2......",
+        "........131.....",
+        "........02......"
+      ]
+    }
+  }
+}

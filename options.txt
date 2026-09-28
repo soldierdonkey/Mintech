@@ -31,10 +31,10 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
-renderDistance:12
-simulationDistance:12
+renderDistance:5
+simulationDistance:7
 entityDistanceScaling:1.0
-guiScale:0
+guiScale:5
 particles:0
 maxFps:120
 graphicsMode:1
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:[]
+resourcePacks:["vanilla","mod_resources","mintech_textures"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -127,7 +127,7 @@ key_key.jade.show_uses:key.keyboard.keypad.4
 key_key.jade.narrate:key.keyboard.keypad.5
 key_key.jade.show_details:key.keyboard.left.shift
 key_key.modernfix.config:key.keyboard.unknown
-soundCategory_master:1.0
+soundCategory_master:0.0
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

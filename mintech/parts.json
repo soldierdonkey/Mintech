@@ -1,0 +1,63 @@
+{
+  "$doc": [
+    "The craftable item parts. Each is a plain item (part.type defaults to 'item'); the ore blocks live in ores.json.",
+    "A part with no 'layers' is drawn from a single template named after the part id (see templates.json).",
+    "'recipes' here are placeholder progression -- replace freely. A recipe whose {reference} cannot be resolved is skipped."
+  ],
+
+  "parts": {
+    "plate": {
+      "tags": ["forge:plates", "forge:plates/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{material.inputs.base}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "rod": {
+      "tags": ["forge:rods", "forge:rods/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["H", "P"], "key": { "H": "{vars.hammer}", "P": "{parts.plate}" }, "damage": "{vars.hammer}" }]
+    },
+    "foil": {
+      "tags": ["forge:foils", "forge:foils/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["HP"], "key": { "H": "{vars.hammer}", "P": "{parts.plate}" }, "damage": "{vars.hammer}" }]
+    },
+    "wire": {
+      "tags": ["forge:wires", "forge:wires/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shapeless", "count": 2, "inputs": ["{parts.foil}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "ring": {
+      "tags": ["forge:rings", "forge:rings/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "pattern": ["HR"], "key": { "H": "{vars.hammer}", "R": "{parts.rod}" }, "damage": "{vars.hammer}" }]
+    },
+    "bolt": {
+      "tags": ["forge:bolts", "forge:bolts/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["H", "R"], "key": { "H": "{vars.hammer}", "R": "{parts.rod}" }, "damage": "{vars.hammer}" }]
+    },
+    "screw": {
+      "tags": ["forge:screws", "forge:screws/{material.id}"],
+      "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{parts.bolt}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "gear": {
+      "tags": ["forge:gears", "forge:gears/{material.id}"],
+      "recipes": [{
+        "name": "assembly", "type": "shaped", "pattern": ["BPB", "PRP", "BHB"],
+        "key": { "P": "{parts.plate}", "R": "{parts.ring}", "B": "{parts.bolt}", "H": "{vars.hammer}" }, "damage": "{vars.hammer}"
+      }]
+    },
+    "hammer": {
+      "layers": [
+        { "template": "hammer_handle", "palette": "wood", "shader": "standard" },
+        { "template": "hammer_head" }
+      ],
+      "tags": ["forge:hammers"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [{ "name": "crafting", "type": "shaped", "pattern": ["III", "III", " S "], "key": { "I": "{material.inputs.base}", "S": "{vars.handle}" } }]
+    },
+    "bottle": {
+      "layers": [
+        { "template": "bottle_fill", "shader": "liquid", "context": "all" },
+        { "template": "bottle_glass", "palette": "glass", "shader": "standard" },
+        { "template": "bottle_cork", "palette": "wood", "shader": "standard" }
+      ],
+      "item": { "maxStackSize": 16 },
+      "recipes": [{ "name": "filling", "type": "shapeless", "inputs": ["{vars.glass_bottle}", "{material.inputs.bucket}"] }]
+    }
+  }
+}

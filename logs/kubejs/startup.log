@@ -1,9 +1,10 @@
-[21:42:10] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[21:42:10] [INIT] Loaded plugins:
-[21:42:10] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[21:42:10] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[21:42:10] [INIT] - fr.frinn.custommachinery.common.integration.kubejs.CustomMachineryKubeJSPlugin
-[21:42:10] [INIT] - com.probejs.ProbeJSPlugin
-[21:42:10] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
-[21:42:10] [INFO] Loaded script startup_scripts:example.js in 0.014 s
-[21:42:10] [INFO] Loaded 1/1 KubeJS startup scripts in 0.18 s with 0 errors and 0 warnings
+[23:46:31] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[23:46:31] [INIT] Loaded plugins:
+[23:46:31] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[23:46:31] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[23:46:31] [INIT] - fr.frinn.custommachinery.common.integration.kubejs.CustomMachineryKubeJSPlugin
+[23:46:31] [INIT] - com.probejs.ProbeJSPlugin
+[23:46:31] [INFO] Loaded script startup_scripts:mintech_items.js in 0.029 s
+[23:46:31] [INFO] Loaded 1/1 KubeJS startup scripts in 0.169 s with 0 errors and 0 warnings
+[23:46:32] [INFO] mintech_items.js#264: [mintech] registered 61 items
+[23:46:32] [INFO] mintech_items.js#285: [mintech] registered 2 blocks

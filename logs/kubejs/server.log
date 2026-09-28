@@ -1,13 +1,13 @@
-[21:42:48] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[21:42:48] [INIT] Loaded plugins:
-[21:42:48] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[21:42:48] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[21:42:48] [INIT] - fr.frinn.custommachinery.common.integration.kubejs.CustomMachineryKubeJSPlugin
-[21:42:48] [INIT] - com.probejs.ProbeJSPlugin
-[21:42:48] [INFO] example.js#5: Hello, World! (Loaded server scripts)
-[21:42:48] [INFO] Loaded script server_scripts:example.js in 0.0 s
-[21:42:48] [INFO] Loaded 1/1 KubeJS server scripts in 0.009 s with 0 errors and 0 warnings
-[21:42:48] [INFO] Scripts loaded
-[21:42:49] [INFO] Collecting Custom Machine upgrades from JS scripts.
-[21:42:49] [INFO] Successfully added 0 Custom Machine upgrades
-[21:42:50] [INFO] Server resource reload complete!
+[00:10:38] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[00:10:38] [INIT] Loaded plugins:
+[00:10:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[00:10:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[00:10:38] [INIT] - fr.frinn.custommachinery.common.integration.kubejs.CustomMachineryKubeJSPlugin
+[00:10:38] [INIT] - com.probejs.ProbeJSPlugin
+[00:10:38] [INFO] Loaded script server_scripts:mintech_recipes.js in 0.019 s
+[00:10:38] [INFO] Loaded 1/1 KubeJS server scripts in 0.023 s with 0 errors and 0 warnings
+[00:10:38] [INFO] Scripts loaded
+[00:10:38] [INFO] Initializing recipe event...
+[00:10:38] [WARN] Due to the way Minecraft resource loading works, KubeJS' server.log may not contain everything that happened in your server scripts on initial world creation.
+[00:10:38] [WARN] You can still see the full log (including past reloads) in your latest.log file.
+[00:10:40] [INFO] Server resource reload complete!

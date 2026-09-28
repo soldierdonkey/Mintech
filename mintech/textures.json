@@ -1,0 +1,61 @@
+{
+  "$doc": [
+    "The texture generator itself (mintech/mintech_textures.py): where the resource pack goes, how ascii art is read, and how flat art is shaded into tones. The art is in templates.json (plus the ore art in ores.json) and the colours in palettes.json.",
+    "'output.root' is relative to meta.root (the instance root).",
+    "TEXTURES: a part is drawn from 'layers' (poly-construction) or a single 'template' (mono-construction; defaults to the part id). Layer keys: template, palette, shader, blend (over|replace), context (self|below|all), transforms (flip_x, flip_y, {rotate: 90}, {shift: [dx, dy]}).",
+    "Templates are ascii row arrays (see legend) or {source: 'image', path, thresholds: [[0.8, 4], ...], channel: 'luma'} greyscale PNGs. 'renderer': null on a part = register it but draw the texture by hand."
+  ],
+
+  "textures": {
+    "size": 16,
+    "output": {
+      "root": "config/paxi/resourcepacks",
+      "pack_name": "mintech_textures",
+      "compress": false,
+      "zip_level": 9,
+      "prune": true,
+      "manifest": "hash.txt",
+      "png": { "optimize": true }
+    },
+    "mcmeta": {
+      "pack": { "pack_format": 15, "description": "MinTech generated textures (v{meta.version})" }
+    },
+    "legend": { ".": "clear", " ": "clear", "#": "auto", "0": 0, "1": 1, "2": 2, "3": 3, "4": 4 },
+
+    "ramps": {
+      "$": "Hue-shifted tone ramps. light <0 toward black, >0 toward white; sat multiplies saturation; hue = fraction toward 'cool' (shadows) / 'warm' (highlights), degrees. A palette may be {ramp: name, base: '#RRGGBB'} to derive all tones from one colour.",
+      "metal": { "cool": 230, "warm": 55, "steps": [
+        { "light": -0.62, "sat": 0.8, "hue": 0.12 }, { "light": -0.3, "sat": 0.9, "hue": 0.06 }, {},
+        { "light": 0.35, "sat": 1.25, "hue": 0.08 }, { "light": 0.78, "sat": 1.45, "hue": 0.15 } ] },
+      "gem": { "cool": 230, "warm": 170, "steps": [
+        { "light": -0.55, "sat": 1.1, "hue": 0.1 }, { "light": -0.27, "sat": 1.05, "hue": 0.05 }, {},
+        { "light": 0.45, "sat": 1.2, "hue": 0.05 }, { "light": 0.88, "sat": 1.5, "hue": 0.1 } ] },
+      "ore": { "cool": 220, "warm": 40, "steps": [
+        { "light": -0.35, "sat": 0.55, "hue": 0.05 }, { "light": -0.12, "sat": 0.6, "hue": 0.02 }, {},
+        { "light": 0.18, "sat": 0.65, "hue": 0.02 }, { "light": 0.42, "sat": 0.7, "hue": 0.05 } ] }
+    },
+
+    "shaders": {
+      "standard": {
+        "type": "auto",
+        "light": [-1, -1],
+        "tones": {
+          "thin_lit": 3, "thin_shade": 1,
+          "outline": 0, "rim_shade": 1, "rim_lit": 2,
+          "highlight": 4, "lit": 3, "shade": 1,
+          "ambient_high": 3, "ambient_mid": 2, "ambient_low": 1
+        },
+        "thresholds": {
+          "thin_dot": 0.0, "thin_ambient": 0.55,
+          "rim_dot": -0.3, "rim_ambient": 0.6,
+          "highlight_dot": 0.4, "highlight_ambient": 0.35,
+          "ambient_high": 0.65, "ambient_mid": 0.35
+        }
+      },
+      "liquid": {
+        "extends": "standard",
+        "tones": { "outline": 1, "rim_shade": 2, "rim_lit": 3, "thin_shade": 2 }
+      }
+    }
+  }
+}

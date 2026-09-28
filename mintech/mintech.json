@@ -1,0 +1,72 @@
+{
+  "$doc": [
+    "Single source of truth for mintech/mintech_textures.py, kubejs/startup_scripts/mintech_items.js and kubejs/server_scripts/mintech_recipes.js. Keys starting with '$' are comments.",
+    "LAYOUT: this file is the index. It holds only the settings that every other file leans on (meta, vars, inheritance, defaults, global tags) plus 'include': the sibling files, each a config fragment keyed by the same top-level sections used here. Loading deep-merges them onto this file in listed order, so the result is one config identical in shape to the old single mintech.json -- nothing else in the pipeline knows the config was ever split.",
+    "  materials.json   materials and their shared defaults (palettes, stats, crafting inputs)",
+    "  parts.json       the craftable item parts (plate, rod, gear, hammer, bottle, ...)",
+    "  ores.json        everything ore: the ore block parts, the veins materials carry, and the rock palettes/templates ore textures draw from",
+    "  families.json    which materials get which parts",
+    "  worldgen.json    the ore worldgen datapack: output paths and vein defaults",
+    "  textures.json    the texture generator: output paths, tone ramps and shaders",
+    "  palettes.json    named colour ramps for non-ore parts",
+    "  templates.json   the ascii pixel art for non-ore parts",
+    "Files are grouped by subject, not by section: ores.json owns ore parts, ore veins AND ore textures, because those three only ever change together. Sections therefore span files -- 'parts' is split across parts.json and ores.json, 'textures.palettes' across palettes.json and ores.json -- and the deep merge stitches them back together.",
+    "meta.root is where every relative path in the config (output roots, template image sources) is anchored, resolved from this file's folder: '..' = the instance root, one level up from mintech/.",
+    "ITEMS = families x materials x parts. A family pairs material selectors with part ids, so metals get metal parts and fluids get bottles, never the cross product. Selectors: 'iron', '@metal' (group), '*'. family.exclude takes 'material:part' rules, e.g. '@gem:wire'.",
+    "INHERITANCE per item: defaults -> family.defaults -> parts[id] -> material.overrides['*'] -> material.overrides[part id]. 'inheritance' sets the merge mode per field (replace | merge | deep | concat).",
+    "INTERPOLATION: strings may contain {path|filter}. Context: meta, vars, family, material, part, parts (sibling item ids), self (this item id), texture, name. A string that is exactly one token yields the raw value (number/object). Filters: lower upper title tag path ns ingredient.",
+    "RECIPES (placeholder progression, replace freely): type shapeless (inputs) or shaped (pattern + key); count; damage (ingredient whose durability is used, e.g. the hammer). A recipe whose {reference} cannot be resolved is skipped.",
+    "ITEM: builder methods called on the KubeJS item builder, {method: argument}."
+  ],
+
+  "include": [
+    "materials.json",
+    "parts.json",
+    "ores.json",
+    "families.json",
+    "worldgen.json",
+    "textures.json",
+    "palettes.json",
+    "templates.json"
+  ],
+
+  "meta": { "namespace": "mintech", "version": "1.0.0", "root": ".." },
+
+  "vars": {
+    "hammer": "#forge:hammer",
+    "handle": "#forge:rods/wooden",
+    "glass_bottle": "minecraft:glass_bottle"
+  },
+
+  "inheritance": {
+    "patterns": "merge",
+    "layer_defaults": "merge",
+    "item": "merge",
+    "worldgen": "merge",
+    "tags": "concat",
+    "recipes": "concat"
+  },
+
+  "defaults": {
+    "renderer": "layered",
+    "patterns": {
+      "id": "{meta.namespace}:{material.id}_{part.id}",
+      "texture": "{meta.namespace}:item/{material.id}/{part.id}",
+      "name": "{material.name} {part.name}",
+      "recipe_id": "{meta.namespace}:crafting/{material.id}_{part.id}_{recipe.name}"
+    },
+    "layer_defaults": {
+      "palette": "{material.palette}",
+      "shader": "{material.shader}",
+      "blend": "over",
+      "context": "self"
+    },
+    "item": {},
+    "tags": [],
+    "recipes": []
+  },
+
+  "tags": {
+    "forge:hammer": ["#forge:hammers", "#forge:tools/hammers", "#c:tools/hammers", "#c:hammers", "#c:hammer"]
+  }
+}

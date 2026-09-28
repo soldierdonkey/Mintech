@@ -1,0 +1,25 @@
+{
+  "$doc": [
+    "The materials every family draws from. 'groups' are what family selectors match ('@metal', '@ore', ...).",
+    "ORE vs METAL TEXTURES are intentionally separate: material.palette (usually a 'metal' ramp) is the shiny refined-ingot look used by plate/rod/gear/etc; material.orePalette (a duller 'ore' ramp) is what ore-block speckles use instead -- a material that wants ore blocks needs both fields set.",
+    "A material with no 'palette' falls back to the named palette in palettes.json matching its id.",
+    "The 'veins' a material spawns as live in ores.json, merged onto the material here."
+  ],
+
+  "material_defaults": { "shader": "standard" },
+
+  "materials": {
+    "copper":    { "groups": ["metal"], "inputs": { "base": "#forge:ingots/copper" },    "stats": { "durability": 128 } },
+    "iron":      { "groups": ["metal"], "inputs": { "base": "#forge:ingots/iron" },      "stats": { "durability": 250 } },
+    "gold":      { "groups": ["metal"], "inputs": { "base": "#forge:ingots/gold" },      "stats": { "durability": 32 } },
+    "netherite": { "groups": ["metal"], "inputs": { "base": "#forge:ingots/netherite" }, "stats": { "durability": 2031 },
+                   "palette": { "ramp": "metal", "base": "#5B5358" } },
+    "titanium":  { "groups": ["metal", "ore"], "inputs": { "base": "#forge:ingots/titanium" }, "stats": { "durability": 420 },
+                   "palette": { "ramp": "metal", "base": "#A9B4BD" }, "orePalette": { "ramp": "ore", "base": "#A9B4BD" } },
+    "diamond":   { "groups": ["gem"],   "inputs": { "base": "#forge:gems/diamond" },     "stats": { "durability": 1561 } },
+    "emerald":   { "groups": ["gem"],   "inputs": { "base": "#forge:gems/emerald" },     "stats": { "durability": 512 },
+                   "palette": { "ramp": "gem", "base": "#17C45A" } },
+    "water":     { "groups": ["fluid"], "inputs": { "bucket": "minecraft:water_bucket" } },
+    "lava":      { "groups": ["fluid"], "inputs": { "bucket": "minecraft:lava_bucket" } }
+  }
+}
