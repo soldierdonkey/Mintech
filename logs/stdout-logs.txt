@@ -1,0 +1,1398 @@
+[STDOUT]   <log4j:Event logger="cpw.mods.modlauncher.Launcher" timestamp="1790570522191" level="INFO" thread="main">
+    <log4j:Message><![CDATA[ModLauncher running: args [--username, soldierdonkey, --version, forge-47.4.10, --gameDir, /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/, --assetsDir, /Users/noalev/Documents/curseforge/minecraft/Install/assets, --assetIndex, 5, --uuid, f3ab27d11800461c87762835eeaae4ab, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 470045-774dd8-d9a0bf-3d2c31-fb10e1, --xuid, 2535458814721023, --userType, msa, --versionType, release, --width, 1024, --height, 768, --quickPlayPath, /Users/noalev/Documents/curseforge/minecraft/Quickplay/ffafb608-3ffd-4da2-a9d5-b55d04b3858a.json, , , , --launchTarget, forgeclient, --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="cpw.mods.modlauncher.Launcher" timestamp="1790570522194" level="INFO" thread="main">
+    <log4j:Message><![CDATA[ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 26.6.2]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.ImmediateWindowHandler" timestamp="1790570522508" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loading ImmediateWindowProvider fmlearlywindow]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570522891" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Trying GL version 4.6]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570522980" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Trying GL version 4.5]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570522992" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Trying GL version 4.4]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570523003" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Trying GL version 4.3]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570523014" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Trying GL version 4.2]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570523021" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Trying GL version 4.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570523039" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Requested GL version 4.1 got version 4.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570523138" level="INFO" thread="main">
+    <log4j:Message><![CDATA[SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2394!/ Service=ModLauncher Env=CLIENT]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EARLYDISPLAY" timestamp="1790570523203" level="INFO" thread="pool-2-thread-1">
+    <log4j:Message><![CDATA[GL info: Apple M3 GL version 4.1 Metal - 90.5, Apple]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523293" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file architectury-9.2.14-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file canary-mc1.20.1-0.3.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file cloth-config-11.1.136-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Controlling-forge-1.20.1-12.0.2.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file CustomMachinery-forge-1.20.1-0.11.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file embeddium-0.3.31+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file emi-1.1.24+1.20.1+forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file entityculling-forge-1.11.2-mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file fancymenu_forge_3.9.12_MC_1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file ferritecore-6.0.1-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file ImmediatelyFast-Forge-1.5.5+1.20.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file InventoryProfilesNext-forge-1.20-1.10.20.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523294" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Jade-1.20.1-Forge-11.13.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file konkrete_forge_1.8.0_MC_1.20-1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file kotlinforforge-4.12.0-all.jar of type LIBRARY with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file kubejs-forge-2001.6.5-build.26.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file libIPN-forge-1.20-4.0.2.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file melody_forge_1.0.3_MC_1.20.1-1.20.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file modernfix-forge-5.27.83+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523295" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file OctoLib-FORGE-0.5.0.1+1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523301" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Paxi-1.20-Forge-4.0.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523301" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file probejs-6.0.1-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523301" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file rhino-forge-2001.2.3-build.10.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523301" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Searchables-forge-1.20.1-1.0.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523301" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file toomanyrecipeviewers-0.9.0+mc.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523301" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523302" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file YungsApi-1.20-Forge-4.0.6.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModFileParser" timestamp="1790570523411" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/fmlcore/1.20.1-47.4.10/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModFileParser" timestamp="1790570523411" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.4.10/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModFileParser" timestamp="1790570523412" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.4.10/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModFileParser" timestamp="1790570523412" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/mclanguage/1.20.1-47.4.10/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523431" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file fmlcore-1.20.1-47.4.10.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@57540fd0]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523431" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file javafmllanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@57540fd0]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523431" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file lowcodelanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@57540fd0]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523432" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file mclanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@57540fd0]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523432" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file client-1.20.1-20230612.114412-srg.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@57540fd0]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523432" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file forge-1.20.1-47.4.10-universal.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@57540fd0]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator" timestamp="1790570523589" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found 15 dependencies adding them to mods collection]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file kfflang-4.12.0.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file javaparser-symbol-solver-core-3.25.8.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Reflect-1.6.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file mixinextras-forge-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file TRansition-1.0.25-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file animated-gif-lib-for-java-animated-gif-lib-1.7.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file kfflib-4.12.0.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file MixinExtras-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file snakeyaml-2.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file saecularia-caudices-forge-1.0.23.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file kffmod-4.12.0.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523590" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file Java-WebSocket-1.5.6.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523591" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file vineflower-1.9.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer" timestamp="1790570523591" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found mod file japng-0.5.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@2b329bbd]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570524436" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Compatibility level set to JAVA_17]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="cpw.mods.modlauncher.LaunchServiceHandler" timestamp="1790570524467" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Launching target 'forgeclient' with arguments [--version, forge-47.4.10, --gameDir, /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech, --assetsDir, /Users/noalev/Documents/curseforge/minecraft/Install/assets, --uuid, f3ab27d11800461c87762835eeaae4ab, --username, soldierdonkey, --assetIndex, 5, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 470045-774dd8-d9a0bf-3d2c31-fb10e1, --xuid, 2535458814721023, --userType, msa, --versionType, release, --width, 1024, --height, 768, --quickPlayPath, /Users/noalev/Documents/curseforge/minecraft/Quickplay/ffafb608-3ffd-4da2-a9d5-b55d04b3858a.json, , , ]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570524492" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Reference map 'toomanyrecipeviewers.mixins-refmap.json' for toomanyrecipeviewers.mixins.json could not be read. If this is a development environment you can ignore this message]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570524583" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded configuration file for ModernFix 5.27.83+mc1.20.1: 110 options available, 0 override(s) found]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="ModernFix" timestamp="1790570524583" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Applying Nashorn fix]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570524592" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Applied Forge config corruption patch]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570524594" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Configuring Minecraft's max.bg.threads option with 5 threads]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Canary" timestamp="1790570524616" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded configuration file for Canary: 116 options available, 0 override(s) found]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570524648" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Reference map 'probejs-forge-refmap.json' for probejs.mixins.json could not be read. If this is a development environment you can ignore this message]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Embeddium" timestamp="1790570524652" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Loaded configuration file for Embeddium: 78 options available, 0 override(s) found]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Embeddium-GraphicsAdapterProbe" timestamp="1790570524653" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Searching for graphics cards...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Embeddium-GraphicsAdapterProbe" timestamp="1790570525173" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Found graphics card: GraphicsAdapterInfo[vendor=UNKNOWN, name=Apple M3, version=unknown]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525253" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: mezz/jei/library/load/PluginCaller (java.lang.ClassNotFoundException: mezz.jei.library.load.PluginCaller)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525408" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: mekanism/client/recipe_viewer/jei/MekanismJEI (java.lang.ClassNotFoundException: mekanism.client.recipe_viewer.jei.MekanismJEI)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525408" level="WARN" thread="main">
+    <log4j:Message><![CDATA[@Mixin target mekanism/client/recipe_viewer/jei/MekanismJEI was not found toomanyrecipeviewers.mixins.json:MekanismJEIMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="IMixinConfigPlugin" timestamp="1790570525829" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Inventory Profiles Next: Doing our own dependency resolving! Because Forge is being Forge....: https://github.com/MinecraftForge/MinecraftForge/issues/9088]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525833" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: de/maxhenkel/easyvillagers/blocks/tileentity/TraderTileentityBase (java.lang.ClassNotFoundException: de.maxhenkel.easyvillagers.blocks.tileentity.TraderTileentityBase)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525833" level="WARN" thread="main">
+    <log4j:Message><![CDATA[@Mixin target de.maxhenkel.easyvillagers.blocks.tileentity.TraderTileentityBase was not found mixins.ipnext.json:MixinTraderTileEntityBase]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525878" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570525879" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="MixinExtras|Service" timestamp="1790570525987" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570526276" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Static binding violation: PRIVATE @Overwrite method m_216202_ in modernfix-modernfix.mixins.json:perf.tag_id_caching.TagOrElementLocationMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="STDOUT" timestamp="1790570526453" level="INFO" thread="main">
+    <log4j:Message><![CDATA[[net.minecraft.client.main.Main:main:99]: Completely ignored arguments: [, , ]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="oshi.util.platform.mac.SysctlUtil" timestamp="1790570526634" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Failed sysctl call: hw.cpufrequency, Error code: 2]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.Bootstrap" timestamp="1790570527003" level="INFO" thread="pool-4-thread-1">
+    <log4j:Message><![CDATA[ModernFix reached bootstrap stage (6.633 s after launch)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570527052" level="WARN" thread="pool-4-thread-1">
+    <log4j:Message><![CDATA[@Final field delegatesByName:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570527052" level="WARN" thread="pool-4-thread-1">
+    <log4j:Message><![CDATA[@Final field delegatesByValue:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570527160" level="INFO" thread="pool-4-thread-1">
+    <log4j:Message><![CDATA[Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570527160" level="INFO" thread="pool-4-thread-1">
+    <log4j:Message><![CDATA[Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.Bootstrap" timestamp="1790570527521" level="INFO" thread="pool-4-thread-1">
+    <log4j:Message><![CDATA[Vanilla bootstrap took 506 milliseconds]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.packs.VanillaPackResourcesBuilder" timestamp="1790570528794" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Assets URL 'union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar%23207!/assets/.mcassetsroot' uses unexpected schema]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.packs.VanillaPackResourcesBuilder" timestamp="1790570528794" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Assets URL 'union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar%23207!/data/.mcassetsroot' uses unexpected schema]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService" timestamp="1790570528804" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.Minecraft" timestamp="1790570529148" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Setting user: soldierdonkey]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570529193" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Bypassed Mojang DFU]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.Minecraft" timestamp="1790570529265" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Backend library: LWJGL version 3.3.1 build 7]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529293" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded client.properties]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Embeddium-PostlaunchChecks" timestamp="1790570529304" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[OpenGL Vendor: Apple]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Embeddium-PostlaunchChecks" timestamp="1790570529304" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[OpenGL Renderer: Apple M3]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="Embeddium-PostlaunchChecks" timestamp="1790570529304" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[OpenGL Version: 4.1 Metal - 90.5]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ImmediatelyFast" timestamp="1790570529307" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Initializing ImmediatelyFast 1.5.5+1.20.4 on Apple M3 (Apple) with OpenGL 4.1 Metal - 90.5]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ImmediatelyFast" timestamp="1790570529307" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Apple GPU detected. Disabling fast buffer upload.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="oshi.util.platform.mac.SysctlUtil" timestamp="1790570529626" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Failed sysctl call: hw.cpufrequency, Error code: 2]]></log4j:Message>
+  </log4j:Event>
+
+[STDERR] UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+[STDOUT]   <log4j:Event logger="STDOUT" timestamp="1790570529730" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[dev.tr7zw.trender.gui.impl.client.LibGuiClient:onInitializeClient:37]: [TRender] Initializing Client...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.FancyMenu" timestamp="1790570529812" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[FANCYMENU] Loading v3.9.12 in client-side mode on FORGE!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529841" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loaded common.properties]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529842" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loaded dev.properties]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529846" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Looking for KubeJS plugins...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529848" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Found plugin source kubejs]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570529849" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id architectury:sync_ids]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570529850" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering C2S receiver with id architectury:sync_ids]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570529850" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id octolib:config_sync]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529853" level="WARN" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529854" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Found plugin source custommachinery]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529912" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Found plugin source probejs]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS" timestamp="1790570529916" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Done in 66.22 ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.melody.Melody" timestamp="1790570529961" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[MELODY] Loading Melody background audio library..]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.common.ForgeMod" timestamp="1790570530009" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraftforge.common.MinecraftForge" timestamp="1790570530009" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[MinecraftForge v47.4.10 Initialized]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.konkrete.Konkrete" timestamp="1790570530015" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[KONKRETE] Successfully initialized!]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="de.keksuccino.konkrete.Konkrete" timestamp="1790570530015" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[KONKRETE] Server-side libs ready to use!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="thedarkcolour.kotlinforforge.test.KotlinForForge" timestamp="1790570530020" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Kotlin For Forge Enabled!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Inventory Profiles Next" timestamp="1790570530036" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[Inventory Profiles Next] Inventory Profiles Next - init in Kotlin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="libIPN" timestamp="1790570530046" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[[libIPN] libIPN - init in Kotlin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Rhino Script Remapper" timestamp="1790570530059" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loading Rhino Minecraft remapper...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.latvian.mods.rhino.mod.util.RhinoProperties" timestamp="1790570530060" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Rhino properties loaded.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Rhino Script Remapper" timestamp="1790570530063" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loading mappings for 1.20.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Rhino Script Remapper" timestamp="1790570530102" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Done in 0.043 s]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Startup" timestamp="1790570530281" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[example.js#5: Hello, World! (Loaded startup scripts)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Startup" timestamp="1790570530282" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loaded script startup_scripts:example.js in 0.014 s]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Startup" timestamp="1790570530283" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loaded 1/1 KubeJS startup scripts in 0.18 s with 0 errors and 0 warnings]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Client" timestamp="1790570530302" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[example.js#5: Hello, World! (Loaded client scripts)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Client" timestamp="1790570530303" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loaded script client_scripts:example.js in 0.001 s]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Client" timestamp="1790570530303" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Loaded 1/1 KubeJS client scripts in 0.01 s with 0 errors and 0 warnings]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530309" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering C2S receiver with id kubejs:send_data_from_client]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530309" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:send_data_from_server]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530309" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:paint]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530309" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:add_stage]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530310" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:remove_stage]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530310" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:sync_stages]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530310" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering C2S receiver with id kubejs:first_click]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530310" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:toast]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530310" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:reload_startup_scripts]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530311" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:display_server_errors]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570530311" level="INFO" thread="modloading-worker-0">
+    <log4j:Message><![CDATA[Registering S2C receiver with id kubejs:display_client_errors]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.FancyMenuForgeClientEvents" timestamp="1790570530686" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Registered FancyMenu's resource reload listener via Forge.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.ScreenCustomization" timestamp="1790570531295" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Initializing screen customization engine! Addons should NOT REGISTER TO REGISTRIES anymore now!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570531532" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Minecraft resource reload: STARTING]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.packs.resources.ReloadableResourceManager" timestamp="1790570531533" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Reloading ResourceManager: vanilla, mod_resources, KubeJS Resource Pack [assets]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.FancyMenu" timestamp="1790570531574" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Starting late client initialization phase..]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Client" timestamp="1790570531606" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Client resource reload complete!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.gui.font.providers.UnihexProvider" timestamp="1790570531658" level="INFO" thread="Worker-ResourceReload-1">
+    <log4j:Message><![CDATA[Found unifont_all_no_pua-15.0.06.hex, loading]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570531824" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[controlling] Starting version check at https://updates.blamejared.com/get?n=controlling&gv=1.20.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder" timestamp="1790570531897" level="ERROR" thread="Worker-ResourceReload-2">
+    <log4j:Message><![CDATA[[FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.]]></log4j:Message>
+    <log4j:Throwable><![CDATA[java.io.UncheckedIOException: Failed to enumerate archived resource pack ''
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:68)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:145)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.platform.ForgePlatformHelper.lambda$tryListPackNamespaceRoot$1(ForgePlatformHelper.java:158)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listMatchingChildNamespaceRoots(PackResourcesRootEnumeration.java:79)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:157)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.collectPackLocations(ClientResourceIndexBuilder.java:94)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:46)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:29)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepareForManager(ClientResourceIndex.java:62)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepare(ClientResourceIndex.java:31)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.prepare(FancyMenuResourceReload.java:59)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.m_5944_(FancyMenuResourceReload.java:56)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SimplePreparableReloadListener.java:11)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException:  (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(Unknown Source)
+	at java.base/java.io.RandomAccessFile.<init>(Unknown Source)
+	at java.base/java.io.RandomAccessFile.<init>(Unknown Source)
+	at java.base/java.util.zip.ZipFile$Source.<init>(Unknown Source)
+	at java.base/java.util.zip.ZipFile$Source.get(Unknown Source)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(Unknown Source)
+	at java.base/java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.base/java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.base/java.util.zip.ZipFile.<init>(Unknown Source)
+	at TRANSFORMER/fancymenu@3.9.12/de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:55)
+	... 19 more
+]]></log4j:Throwable>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531917" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:update_machines]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531918" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:update_upgrades]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531919" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:update_container]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531930" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:update_machine_status]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531931" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:refresh_machine_tile]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531932" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:loot_tables]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531932" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:open_file]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531932" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:update_machine_appearance]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531933" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:update_machine_gui_elements]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531934" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:open_creation_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531935" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering S2C receiver with id custommachinery:open_edit_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531935" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:add_machine]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531935" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:remove_machine]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531935" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:edit_machine]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531936" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:element_clicked]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531936" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:change_side_mode]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531936" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:button_gui_element]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531937" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:place_structure]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="dev.architectury.networking.forge.NetworkManagerImpl" timestamp="1790570531937" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[Registering C2S receiver with id custommachinery:set_filter_slot_item]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570532073" level="INFO" thread="Worker-ResourceReload-3">
+    <log4j:Message><![CDATA[[EMI] Discovered Sodium]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.konkrete.Konkrete" timestamp="1790570532097" level="INFO" thread="Worker-ResourceReload-5">
+    <log4j:Message><![CDATA[[KONKRETE] Client-side libs ready to use!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570532669" level="INFO" thread="Thread-0">
+    <log4j:Message><![CDATA[Please use /mfrc to reload any changed mod config files]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Jade" timestamp="1790570532720" level="INFO" thread="Worker-ResourceReload-4">
+    <log4j:Message><![CDATA[Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Jade" timestamp="1790570532734" level="INFO" thread="Worker-ResourceReload-4">
+    <log4j:Message><![CDATA[Start loading plugin at snownee.jade.addon.universal.UniversalPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Jade" timestamp="1790570532736" level="INFO" thread="Worker-ResourceReload-4">
+    <log4j:Message><![CDATA[Start loading plugin at snownee.jade.addon.core.CorePlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Jade" timestamp="1790570532737" level="INFO" thread="Worker-ResourceReload-4">
+    <log4j:Message><![CDATA[Start loading plugin at fr.frinn.custommachinery.forge.integration.jade.CMWailaPlugin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.sounds.SoundEngine" timestamp="1790570532824" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Missing sound for event: minecraft:item.goat_horn.play]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraft.client.sounds.SoundEngine" timestamp="1790570532824" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Missing sound for event: minecraft:entity.goat.screaming.horn_break]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="com.mojang.blaze3d.audio.Library" timestamp="1790570533026" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[OpenAL initialized on device CoreAudio Default]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.sounds.SoundEngine" timestamp="1790570533027" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Sound engine started]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.sounds.SoundEngine" timestamp="1790570533027" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533129" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533142" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533142" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533143" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533143" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533146" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533146" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533146" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533147" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533207" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[controlling] Found status: BETA Current: 12.0.2 Target: 12.0.2]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533207" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[searchables] Starting version check at https://updates.blamejared.com/get?n=searchables&gv=1.20.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.ShaderInstance" timestamp="1790570533298" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533354" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533355" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533355" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.renderer.texture.TextureAtlas" timestamp="1790570533357" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Created: 256x256x0 jei:textures/atlas/gui.png-atlas]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.util.resource.ResourceHandlers" timestamp="1790570533360" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Reloading resources..]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.util.resource.preload.ResourcePreLoader" timestamp="1790570533360" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Pre-loading resources..]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570533365" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Minecraft resource reload: FINISHED]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533388" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[searchables] Found status: BETA Current: 1.0.3 Target: 1.0.3]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533388" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570533402" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: title_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.util.resource.resources.audio.AudioEngineReloadHandler" timestamp="1790570533467" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Sound engine reload detected. Releasing cached audio resources.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533758" level="WARN" thread="Forge Version Check">
+    <log4j:Message><![CDATA[Failed to process update information]]></log4j:Message>
+    <log4j:Throwable><![CDATA[com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.Gson.fromJson(Gson.java:1226)
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.Gson.fromJson(Gson.java:1124)
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.Gson.fromJson(Gson.java:1034)
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.Gson.fromJson(Gson.java:969)
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.10/net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:186)
+	at java.base/java.lang.Iterable.forEach(Unknown Source)
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.10/net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:117)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393)
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182)
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144)
+	at MC-BOOTSTRAP/com.google.gson@2.10/com.google.gson.Gson.fromJson(Gson.java:1214)
+	... 6 more
+]]></log4j:Throwable>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533759" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.fml.VersionChecker" timestamp="1790570533922" level="INFO" thread="Forge Version Check">
+    <log4j:Message><![CDATA[[forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570535393" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Game took 15.023 seconds to start]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.util.rendering.text.smooth.SmoothFontAtlas" timestamp="1790570535566" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=36px, style=plain, sizePx=1024x1024.]]></log4j:Message>
+  </log4j:Event>
+
+[STDERR] 2026-09-27 21:42:15.622 java[59062:21341857] [JRSAppKitAWT markAppIsDaemon]: Process manager already initialized: can't fully enable headless mode.
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.util.rendering.text.smooth.SmoothFontAtlas" timestamp="1790570566017" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570566959" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: select_world_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570568883" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: generic_dirt_message_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.registries.GameData" timestamp="1790570568918" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Injecting existing registry data into this CLIENT instance]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Server" timestamp="1790570568986" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[example.js#5: Hello, World! (Loaded server scripts)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Server" timestamp="1790570568986" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded script server_scripts:example.js in 0.0 s]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Server" timestamp="1790570568987" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded 1/1 KubeJS server scripts in 0.009 s with 0 errors and 0 warnings]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Server" timestamp="1790570568987" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Scripts loaded]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570569377" level="WARN" thread="Worker-ResourceReload-5">
+    <log4j:Message><![CDATA[Static binding violation: PRIVATE @Overwrite method m_215924_ in modernfix-modernfix.mixins.json:perf.tag_id_caching.TagEntryMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.world.item.crafting.RecipeManager" timestamp="1790570569615" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded 7 recipes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.advancements.AdvancementList" timestamp="1790570569669" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded 1271 advancements]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Server" timestamp="1790570569671" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Collecting Custom Machine upgrades from JS scripts.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="KubeJS Server" timestamp="1790570569672" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Successfully added 0 Custom Machine upgrades]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569684" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] The following EMI classes have mixins applied to them, which could fundamentally alter behavior and cause issues.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569685" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.platform.EmiAgnos is tainted by
+	 * dev.nolij.toomanyrecipeviewers.mixin.EmiAgnosMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569685" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.jemi.JemiUtil is tainted by
+	 * dev.nolij.toomanyrecipeviewers.mixin.JemiUtilMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569685" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] Recipes synchronized, waiting for tags to reload EMI...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570569685" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Initial datapack load took 725.5 ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569686" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] Disconnecting from server, EMI data cleared]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569687" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.runtime.EmiReloadManager$ReloadWorker is tainted by
+	 * dev.nolij.toomanyrecipeviewers.mixin.EmiReloadManager_ReloadWorkerMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569689" level="INFO" thread="Thread-10">
+    <log4j:Message><![CDATA[[EMI] Clearing data]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570569690" level="WARN" thread="Thread-10">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.registry.EmiRecipes is tainted by
+	 * dev.nolij.toomanyrecipeviewers.mixin.EmiRecipesMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570569701" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: progress_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.server.IntegratedServer" timestamp="1790570569754" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Starting integrated minecraft server version 1.20.1]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.MinecraftServer" timestamp="1790570569755" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Generating keypair]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570569858" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: level_loading_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.MinecraftServer" timestamp="1790570570099" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Preparing start region for dimension minecraft:overworld]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570570110" level="WARN" thread="Server thread">
+    <log4j:Message><![CDATA[Method overwrite conflict for removeIf in canary.mixins.json:world.chunk_tickets.SortedArraySetMixin, previously written by org.embeddedt.modernfix.common.mixin.bugfix.paper_chunk_patches.SortedArraySetMixin. Skipping method.]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="KubeJS Server" timestamp="1790570570113" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Server resource reload complete!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.level.progress.LoggerChunkProgressListener" timestamp="1790570570728" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Preparing spawn area: 0%]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.level.progress.LoggerChunkProgressListener" timestamp="1790570570728" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Preparing spawn area: 0%]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.server.permission.PermissionAPI" timestamp="1790570570928" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Successfully initialized permission handler forge:default_handler]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.level.progress.LoggerChunkProgressListener" timestamp="1790570570930" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Time elapsed: 820 ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.server.IntegratedServer" timestamp="1790570571015" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Changing view distance to 12, from 10]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.client.server.IntegratedServer" timestamp="1790570571017" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Changing simulation distance to 12, from 0]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="io.netty.util.internal.SystemPropertyUtil" timestamp="1790570571050" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraftforge.network.NetworkHooks" timestamp="1790570571286" level="INFO" thread="Netty Local Client IO #0">
+    <log4j:Message><![CDATA[Connected to a modded server.]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="STDOUT" timestamp="1790570571316" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[[com.abdelaziz.canary.common.block.TrackedBlockStatePredicate:<clinit>:14]: Canary Cached BlockState Flags are disabled!]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.players.PlayerList" timestamp="1790570571329" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[soldierdonkey[local:E:b5a1fc2c] logged in with entity id 161 at (81.86318455535364, 82.100289081583, -318.2610375055512)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570571340" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Using enhanced recipe sync for player soldierdonkey]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.MinecraftServer" timestamp="1790570571358" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[soldierdonkey joined the game]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Jade" timestamp="1790570571402" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Syncing config to soldierdonkey (f3ab27d1-1800-461c-8776-2835eeaae4ab)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Inventory Profiles Next" timestamp="1790570571428" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[Inventory Profiles Next] Loaded 0 external GUI hints]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Inventory Profiles Next" timestamp="1790570571428" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[Inventory Profiles Next] Loaded 798 build-in GUI hints]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Inventory Profiles Next" timestamp="1790570571428" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[Inventory Profiles Next] Effective GUI hints after merge: 798]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570571470" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Error loading class: net/fabricmc/fabric/api/blockview/v2/FabricBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.blockview.v2.FabricBlockView)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="mixin" timestamp="1790570571471" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Error loading class: net/fabricmc/fabric/api/rendering/data/v1/RenderAttachedBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.rendering.data.v1.RenderAttachedBlockView)]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ChunkBuilder" timestamp="1790570571493" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Started 2 worker threads]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570571506" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: receiving_level_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571519" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] Recipes synchronized, waiting for tags to reload EMI...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571522" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] Tags synchronized, reloading EMI]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571522" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[EMI] Starting Reload]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571522" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Starting EMI reload...]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571522" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Clearing data]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571535" level="WARN" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.api.stack.ItemEmiStack is tainted by
+	 * dev.nolij.toomanyrecipeviewers.mixin.ItemEmiStackMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571538" level="WARN" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.api.stack.FluidEmiStack is tainted by
+	 * dev.nolij.toomanyrecipeviewers.mixin.FluidEmiStackMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571547" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Initializing plugin from emi]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571567" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Initialized plugin from emi in 18ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571567" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Initializing plugin from toomanyrecipeviewers]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571568" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Initializing...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571574" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Initialized plugin from toomanyrecipeviewers in 6ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571576" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Processing tags]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571582" level="WARN" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] dev.emi.emi.EmiUtil is tainted by
+	 * dev.latvian.mods.kubejs.core.mixin.common.mod.EMITooltipMixin]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="Jade" timestamp="1790570571592" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Received config from the server: ]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.networking.packets.handshake.ClientSideHandshakePacketLogic" timestamp="1790570571594" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] Connected to a server with FancyMenu installed: local:E:0649e5ee]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571594" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Constructing index]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571601" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Reloading item groups on client thread...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.networking.packets.handshake.ServerSideHandshakePacketLogic" timestamp="1790570571602" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[[FANCYMENU] A client with FancyMenu installed joined the server: soldierdonkey]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571699" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Reloading item groups on client thread took 99ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571709" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Loading plugin from emi]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571821" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Reloaded plugin from emi in 111ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571821" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Loading plugin from toomanyrecipeviewers]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571830" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571831" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571834" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerItemSubtypes` took 3ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571835" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571835" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.advancements.AdvancementList" timestamp="1790570571844" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[Loaded 2 advancements]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler" timestamp="1790570571852" level="INFO" thread="Render thread">
+    <log4j:Message><![CDATA[[FANCYMENU] ScreenCustomizationLayer registered: pause_screen]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571867" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDERR] UNSUPPORTED (log once): gldCopyBufferSubData: NEEDS IMPLEMENTATION
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571871" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerIngredients` took 4ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571872" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571872" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571873" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571874" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571884" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571896" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerCategories` took 12ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571897" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571899" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 2ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571901" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="net.minecraft.client.server.IntegratedServer" timestamp="1790570571901" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Saving and pausing game...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571902" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 1ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571903" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571903" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerAdvanced` took 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571903" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.MinecraftServer" timestamp="1790570571907" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571907" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRecipes` took 3ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571913" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[Added 0 extended crafting recipes in 6ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571913" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[Added 0 extended smithing recipes in 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571916" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571916" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571919" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571921" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerGuiHandlers` took 2ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `registerRuntime` took 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[jei:minecraft⁰] Loaded in 13ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[jade:main] Loaded in 0ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[modernfix:capturer] Loaded in 0ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571925" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[kubejs:jei] Loaded in 0ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571926" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[custommachinery:jei_plugin] Loaded in 9ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571926" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[jei:internalⁱ] Loaded in 1ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="toomanyrecipeviewers" timestamp="1790570571926" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[JEI plugins loaded in 27ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571928" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Locking JEI Ingredient Registry...]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571928" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] [TMRV] Locking JEI Recipe Registry...]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571928" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Reloaded plugin from toomanyrecipeviewers in 107ms]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="EMI" timestamp="1790570571929" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Baking index]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571942" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Registering late recipes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570571943" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Baking recipes]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="ModernFix" timestamp="1790570571968" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Time from main menu to in-game was 2.2820542 seconds]]></log4j:Message>
+  </log4j:Event>
+  <log4j:Event logger="ModernFix" timestamp="1790570571968" level="WARN" thread="Render thread">
+    <log4j:Message><![CDATA[Total time to load game and open world was 17.305054 seconds]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570572007" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Baked 2931 recipes in 61ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570572008" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Baking search]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570572033" level="INFO" thread="Thread-22">
+    <log4j:Message><![CDATA[[EMI] Baked recipes after reload in 29ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570572174" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Finishing up]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="EMI" timestamp="1790570572200" level="INFO" thread="Thread-21">
+    <log4j:Message><![CDATA[[EMI] Reloaded EMI in 678ms]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.MinecraftServer" timestamp="1790570572329" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.minecraft.server.MinecraftServer" timestamp="1790570572330" level="INFO" thread="Server thread">
+    <log4j:Message><![CDATA[Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end]]></log4j:Message>
+  </log4j:Event>
+
