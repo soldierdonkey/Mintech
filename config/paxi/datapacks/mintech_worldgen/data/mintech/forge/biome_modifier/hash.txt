@@ -1,4 +1,4 @@
 # mintech worldgen manifest (meta.version 1.0.0) - generated, do not edit
-titanium_end.json	491d41b1d7194e2b
-titanium_nether.json	17d54e01460831f6
-titanium_overworld.json	5e123e6493df9b9e
+titanium_end.json	7fcdd701da365416
+titanium_nether.json	1ed3a930116def28
+titanium_overworld.json	1b6e1889374c918e

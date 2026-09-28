@@ -2,10 +2,23 @@
   "$doc": [
     "The craftable item parts. Each is a plain item (part.type defaults to 'item'); the ore blocks live in ores.json.",
     "A part with no 'layers' is drawn from a single template named after the part id (see templates.json).",
-    "'recipes' here are placeholder progression -- replace freely. A recipe whose {reference} cannot be resolved is skipped."
+    "'recipes' here are placeholder progression -- replace freely. A recipe whose {reference} cannot be resolved is skipped, so a part can carry a recipe that only makes sense for some materials.",
+    "Recipe types: shapeless (inputs), shaped (pattern + key), smelting / blasting (input, xp, time). 'damage' names an ingredient whose durability is spent, e.g. the hammer."
   ],
 
   "parts": {
+    "$ingot": [
+      "The base form everything else is hammered out of, for materials no mod in the pack supplies one for (see the 'ingot' family in families.json). Tagging it 'forge:ingots/<material>' is what makes material.inputs.base -- '#forge:ingots/titanium' and friends -- resolve at all.",
+      "Smelted from the ore tag rather than a specific block, so one recipe covers ore, deepslate_ore and the nether/end variants at once, exactly as it would if a mod had provided the ingot."
+    ],
+    "ingot": {
+      "patterns": { "recipe_id": "{meta.namespace}:{recipe.name}/{material.id}_{part.id}" },
+      "tags": ["forge:ingots", "forge:ingots/{material.id}"],
+      "recipes": [
+        { "name": "smelting", "type": "smelting", "input": "#forge:ores/{material.id}", "xp": 0.7, "time": 200 },
+        { "name": "blasting", "type": "blasting", "input": "#forge:ores/{material.id}", "xp": 0.7, "time": 100 }
+      ]
+    },
     "plate": {
       "tags": ["forge:plates", "forge:plates/{material.id}"],
       "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{material.inputs.base}", "{vars.hammer}"], "damage": "{vars.hammer}" }]

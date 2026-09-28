@@ -1,8 +1,8 @@
 # mintech texture manifest (meta.version 1.0.0) - generated, do not edit
-bolt.png	7b1288d0f9d50785
-gear.png	410d31f547e6691f
-hammer.png	aba99de594fffe02
-plate.png	99478980aa1029b9
-ring.png	3d95101305615e0a
-rod.png	07cde130fe5604f8
-screw.png	dba5d463ce7070c3
+bolt.png	b1d797762a454976
+gear.png	11423c470feb1038
+hammer.png	9dc00822e6953012
+plate.png	b55e9098c3992e64
+ring.png	1166a7fe32ba380e
+rod.png	82d77ddd5a67f0f4
+screw.png	3ae3fc801c836304

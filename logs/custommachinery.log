@@ -1,22 +1,11 @@
-[00:09:28.269][INFO]: Parsing all .json files in machines folder.
-[00:09:28.270][INFO]: Finished, 0 .json files successfully parsed in machines folder.
-[00:09:28.269][INFO]: Parsing all .json files in upgrades folder.
-[00:09:28.271][INFO]: Finished, 0 .json files successfully parsed in upgrades folder.
-[00:09:28.358][INFO]: Reading Custom Machinery Machines...
-[00:09:28.358][INFO]: Finished creating 0 custom machines.
-[00:09:28.358][INFO]: Reading Custom Machinery Upgrades json
-[00:09:28.358][INFO]: No machine upgrade json found.
-[00:09:28.358][INFO]: Collecting machine upgrades with kubeJS.
-[00:09:28.359][INFO]: No machine upgrades found with kubejs
-[00:09:28.359][INFO]: Finished creating custom machine upgrades.
-[00:10:35.122][INFO]: Parsing all .json files in machines folder.
-[00:10:35.122][INFO]: Finished, 0 .json files successfully parsed in machines folder.
-[00:10:35.122][INFO]: Parsing all .json files in upgrades folder.
-[00:10:35.122][INFO]: Finished, 0 .json files successfully parsed in upgrades folder.
-[00:10:35.185][INFO]: Reading Custom Machinery Machines...
-[00:10:35.185][INFO]: Finished creating 0 custom machines.
-[00:10:35.185][INFO]: Reading Custom Machinery Upgrades json
-[00:10:35.185][INFO]: No machine upgrade json found.
-[00:10:35.185][INFO]: Collecting machine upgrades with kubeJS.
-[00:10:35.185][INFO]: No machine upgrades found with kubejs
-[00:10:35.185][INFO]: Finished creating custom machine upgrades.
+[00:56:55.514][INFO]: Parsing all .json files in machines folder.
+[00:56:55.515][INFO]: Parsing all .json files in upgrades folder.
+[00:56:55.518][INFO]: Finished, 0 .json files successfully parsed in upgrades folder.
+[00:56:55.524][INFO]: Finished, 0 .json files successfully parsed in machines folder.
+[00:56:55.685][INFO]: Reading Custom Machinery Machines...
+[00:56:55.685][INFO]: Finished creating 0 custom machines.
+[00:56:55.695][INFO]: Reading Custom Machinery Upgrades json
+[00:56:55.695][INFO]: No machine upgrade json found.
+[00:56:55.695][INFO]: Collecting machine upgrades with kubeJS.
+[00:56:55.696][INFO]: No machine upgrades found with kubejs
+[00:56:55.696][INFO]: Finished creating custom machine upgrades.

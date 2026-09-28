@@ -2,12 +2,14 @@
 """
 mintech_textures.py -- data-driven, incremental 16x16 item-texture generator.
 
-    mintech.json --> catalog (families x materials x parts) --> renderer --> sink (folder | zip)
-                                                                    \\--> manifest (per-folder hash.txt)
+    mintech/*.json --> catalog (families x materials x parts) --> renderer --> sink (folder | zip)
+                                                                      \\--> manifest (per-folder hash.txt)
 
-Nothing about specific items, metals or item classes lives in this file. Templates,
-palettes, shaders, naming patterns and families all come from mintech.json; the code only
-provides *mechanisms*, each behind a small registry that you extend with a decorator:
+Nothing about specific items, metals or item classes lives in this file. Templates, palettes,
+shaders, naming patterns and families all come from the JSON next to this script -- mintech.json
+is the index and its "include" list names the rest (materials, parts, ores, families, worldgen,
+textures, palettes, templates), deep-merged into one config. The code only provides *mechanisms*,
+each behind a small registry that you extend with a decorator:
 
     TEMPLATE_SOURCES  how a silhouette is loaded          ascii, image
     TRANSFORMS        mask edits applied before shading   flip_x, flip_y, rotate, shift
@@ -24,13 +26,13 @@ The catalog expansion and "{...}" interpolation are kept semantically identical 
 KubeJS catalog code (kubejs/startup_scripts/mintech_items.js), so item ids, texture ids and
 names always agree between the textures and the registered items.
 
-Run from the instance root (next to mintech.json):
-    python mintech_textures.py                    incremental build
-    python mintech_textures.py --compress         build <pack>.zip instead of a folder
-    python mintech_textures.py --force            ignore hash.txt, re-render everything
-    python mintech_textures.py --only 'metal:iron:*' --dry-run -v
-    python mintech_textures.py --list             print the catalog and exit
-    python mintech_textures.py --preview sheet.png   upscaled contact sheet for eyeballing art
+Run from anywhere; paths resolve against the config's meta.root, not the cwd:
+    python mintech/mintech_textures.py                    incremental build
+    python mintech/mintech_textures.py --compress         build <pack>.zip instead of a folder
+    python mintech/mintech_textures.py --force            ignore hash.txt, re-render everything
+    python mintech/mintech_textures.py --only 'metal:iron:*' --dry-run -v
+    python mintech/mintech_textures.py --list             print the catalog and exit
+    python mintech/mintech_textures.py --preview sheet.png   upscaled contact sheet for eyeballing art
 """
 from __future__ import annotations
 
@@ -1086,16 +1088,39 @@ class ManifestStore:
 # =============================================================================
 # 9. Pipeline + CLI
 # =============================================================================
-def load_config(path: Path) -> dict:
+DEFAULT_CONFIG = Path(__file__).resolve().parent / "mintech.json"
+
+
+def read_json(path: Path, what: str = "config") -> dict:
     try:
-        cfg = strip_comments(json.loads(path.read_text(encoding="utf-8")))
+        return strip_comments(json.loads(path.read_text(encoding="utf-8")))
     except FileNotFoundError:
-        raise ConfigError(f"{path} not found (run from the instance root or pass --config)") from None
+        raise ConfigError(f"{path} not found (pass --config to point at another {what})") from None
     except json.JSONDecodeError as err:
         raise ConfigError(f"{path}: invalid JSON at line {err.lineno}, col {err.colno}: {err.msg}") from None
+
+
+def load_config(path: Path) -> dict:
+    """The index file plus everything its 'include' list names, deep-merged in order.
+
+    Each include is a fragment keyed by the same top-level sections as the index, so a section
+    may be spread over several files ('parts' across parts.json and ores.json, say) and still
+    arrive here as one dict. Later files win on a conflict; the JS loader merges identically."""
+    cfg = read_json(path)
+    for name in as_list(cfg.pop("include", None)):
+        fragment = read_json(path.parent / str(name), f"'{name}', included from {path}")
+        if "include" in fragment:
+            raise ConfigError(f"{name}: nested 'include' is not supported; list it in {path.name} instead")
+        cfg = _merge_deep(cfg, fragment)
     for key in ("meta.namespace", "meta.version", "textures.output"):
         require(cfg, key, str(path))
     return cfg
+
+
+def config_root(path: Path, cfg: Mapping[str, Any]) -> Path:
+    """Where the config's relative paths (output roots, template images) are anchored:
+    meta.root resolved from the config's own folder, so the cwd never matters."""
+    return (path.parent / str(cfg["meta"].get("root", "."))).resolve()
 
 
 def png_encoder(options: Mapping[str, Any]) -> Callable[[Image.Image], bytes]:
@@ -1139,7 +1164,7 @@ class Pipeline:
     def __init__(self, args: argparse.Namespace):
         self.args = args
         self.config_path = args.config.resolve()
-        self.root = self.config_path.parent
+        self.root = self.config_path.parent  # replaced by meta.root once the config is loaded
 
     def selected(self, entries: List[Entry]) -> List[Entry]:
         if not self.args.only:
@@ -1159,6 +1184,7 @@ class Pipeline:
     def run(self) -> int:
         started = time.perf_counter()
         cfg = load_config(self.config_path)
+        self.root = config_root(self.config_path, cfg)
         textures, meta = cfg["textures"], cfg["meta"]
         output = textures["output"]
         entries = build_catalog(cfg)  # 'when' conditions are game-side; textures cover everything
@@ -1235,9 +1261,10 @@ class Pipeline:
 
 
 def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate MinTech item textures from mintech.json.")
-    parser.add_argument("-c", "--config", type=Path, default=Path("mintech.json"),
-                        help="path to mintech.json (default: ./mintech.json); output paths are relative to its folder")
+    parser = argparse.ArgumentParser(description="Generate MinTech item textures from mintech/mintech.json.")
+    parser.add_argument("-c", "--config", type=Path, default=DEFAULT_CONFIG,
+                        help=f"path to the config index (default: {DEFAULT_CONFIG.name} next to this script); "
+                             "it pulls in its own 'include' files, and output paths resolve against its meta.root")
     parser.add_argument("--compress", action=argparse.BooleanOptionalAction, default=None,
                         help="write <pack_name>.zip instead of a folder (default: textures.output.compress)")
     parser.add_argument("--prune", action=argparse.BooleanOptionalAction, default=None,

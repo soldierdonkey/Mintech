@@ -1,9 +1,26 @@
 {
   "favorites": [],
   "lookup_history": [
-    "item:mintech:titanium_deepslate_ore",
-    "item:mintech:titanium_ore",
     "item:minecraft:iron_ore",
+    "item:mintech:titanium_ore",
+    "item:mintech:titanium_ring",
+    {
+      "type": "item",
+      "id": "mintech:titanium_rod",
+      "amount": 2
+    },
+    "item:mintech:titanium_plate",
+    "item:mintech:titanium_foil",
+    "item:mintech:titanium_hammer{Damage:0}",
+    "#item:minecraft:mineable/pickaxe",
+    "item:mintech:titanium_ingot",
+    "#item:forge:hammer",
+    "item:mintech:titanium_bolt",
+    "item:mintech:titanium_gear",
+    "item:mintech:titanium_nether_ore",
+    "item:mintech:titanium_end_ore",
+    "item:minecraft:splash_potion{Potion:\"minecraft:swiftness\"}",
+    "item:mintech:titanium_deepslate_ore",
     "item:minecraft:deepslate_iron_ore",
     [
       "item:minecraft:stone",
@@ -11,8 +28,6 @@
       "item:minecraft:diorite",
       "item:minecraft:andesite"
     ],
-    "item:mintech:titanium_plate",
-    "item:mintech:titanium_foil",
     "item:custommachinery:configuration_card",
     "item:mintech:lava_bottle",
     "item:mintech:water_bottle",
@@ -23,7 +38,15 @@
   ],
   "craft_history": [],
   "recipe_defaults": {
-    "added": [],
+    "added": [
+      "mintech:crafting/titanium_hammer_crafting",
+      "mintech:crafting/titanium_bolt_hammering",
+      "mintech:crafting/titanium_ring_hammering",
+      "mintech:smelting/titanium_ingot",
+      "mintech:crafting/titanium_gear_assembly",
+      "mintech:crafting/titanium_plate_hammering",
+      "mintech:crafting/titanium_rod_hammering"
+    ],
     "tags": {},
     "resolutions": {},
     "disabled": []

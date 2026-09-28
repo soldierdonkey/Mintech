@@ -6,6 +6,12 @@
   ],
 
   "families": {
+    "$ingot": "Only '@custom' materials: the ones no mod in the pack provides a base item for. Everything else already has an ingot (vanilla) or has no ingot by nature (gems, fluids), so widening this selector would register duplicates.",
+    "ingot": {
+      "materials": ["@custom"],
+      "parts": ["ingot"],
+      "defaults": { "tags": ["{meta.namespace}:parts/{family.id}"] }
+    },
     "metal": {
       "materials": ["@metal", "@gem"],
       "parts": ["plate", "rod", "foil", "wire", "ring", "bolt", "screw", "gear", "hammer"],

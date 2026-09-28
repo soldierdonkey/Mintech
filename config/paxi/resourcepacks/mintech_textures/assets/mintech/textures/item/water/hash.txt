@@ -1,2 +1,2 @@
 # mintech texture manifest (meta.version 1.0.0) - generated, do not edit
-bottle.png	044e7df12464cfb8
+bottle.png	5369d7aea739de52

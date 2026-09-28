@@ -1,5 +1,5 @@
 # mintech texture manifest (meta.version 1.0.0) - generated, do not edit
-deepslate_ore.png	d4363426dff3f866
-end_ore.png	e1c1c2bdf198b614
-nether_ore.png	b6922a90b1d9746d
-ore.png	b6139327a4a4393c
+deepslate_ore.png	82b0fd2fe949b6bf
+end_ore.png	69cf6a0a061edb0b
+nether_ore.png	f22c13b4da0c1f77
+ore.png	b1726e53c7eb59f7

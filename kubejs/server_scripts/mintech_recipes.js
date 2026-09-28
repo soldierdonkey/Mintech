@@ -1,8 +1,8 @@
 // kubejs/server_scripts/mintech_recipes.js
 //
-// Tags and placeholder crafting progression for everything in mintech.json.
+// Tags and placeholder crafting progression for everything in <instance>/mintech/.
 // Uses the catalog code published by startup_scripts/mintech_items.js (global.MinTech).
-// mintech.json is re-read on /reload, but new or renamed items need a game restart.
+// The mintech/ JSON is re-read on /reload, but new or renamed items need a game restart.
 // Plain ES5 for Rhino.
 
 (function () {
@@ -14,7 +14,7 @@
 
   var data;
   try { data = MT.load(); }
-  catch (e) { console.error('[mintech] cannot load mintech.json: ' + e.message); return; }
+  catch (e) { console.error('[mintech] cannot load the mintech/ config: ' + e.message); return; }
 
   var cfg = data.config;
   var baseCtx = { meta: cfg.meta, vars: cfg.vars || {} };
@@ -47,10 +47,21 @@
   });
 
   // ---- recipes ------------------------------------------------------------------------
+  // Cooking recipes take a single 'input' (an item or a #tag) plus optional 'xp' and 'time',
+  // where the crafting types take 'inputs' / 'pattern' + 'key'.
+  function cook(recipe, r) {
+    if (r.xp !== undefined) recipe.xp(r.xp);
+    if (r.time !== undefined) recipe.cookingTime(r.time);
+    return recipe;
+  }
+
   var BUILDERS = {
     shapeless: function (event, r) { return event.shapeless(Item.of(r.output, r.count), r.inputs); },
-    shaped: function (event, r) { return event.shaped(Item.of(r.output, r.count), r.pattern, r.key); }
+    shaped: function (event, r) { return event.shaped(Item.of(r.output, r.count), r.pattern, r.key); },
+    smelting: function (event, r) { return cook(event.smelting(Item.of(r.output, r.count), r.input), r); },
+    blasting: function (event, r) { return cook(event.blasting(Item.of(r.output, r.count), r.input), r); }
   };
+  var TYPES = Object.keys(BUILDERS).join(' | ');
 
   ServerEvents.recipes(function (event) {
     var skipped = [], added = 0, seen = {};
@@ -65,7 +76,7 @@
         var r = resolve(raw, ctx, label, skipped);
         var id = resolve(raw.id || entry.spec.patterns.recipe_id, ctx, label + ' id', skipped);
         if (r === null || id === null) return;
-        if (!BUILDERS[r.type]) { console.error('[mintech] ' + label + ': unknown type "' + r.type + '" (shapeless | shaped)'); return; }
+        if (!BUILDERS[r.type]) { console.error('[mintech] ' + label + ': unknown type "' + r.type + '" (' + TYPES + ')'); return; }
         if (seen[id]) { console.error('[mintech] ' + label + ': duplicate recipe id ' + id + ' (also ' + seen[id] + ')'); return; }
         seen[id] = label;
         if (r.output === undefined) r.output = entry.id;

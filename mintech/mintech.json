@@ -15,7 +15,7 @@
     "ITEMS = families x materials x parts. A family pairs material selectors with part ids, so metals get metal parts and fluids get bottles, never the cross product. Selectors: 'iron', '@metal' (group), '*'. family.exclude takes 'material:part' rules, e.g. '@gem:wire'.",
     "INHERITANCE per item: defaults -> family.defaults -> parts[id] -> material.overrides['*'] -> material.overrides[part id]. 'inheritance' sets the merge mode per field (replace | merge | deep | concat).",
     "INTERPOLATION: strings may contain {path|filter}. Context: meta, vars, family, material, part, parts (sibling item ids), self (this item id), texture, name. A string that is exactly one token yields the raw value (number/object). Filters: lower upper title tag path ns ingredient.",
-    "RECIPES (placeholder progression, replace freely): type shapeless (inputs) or shaped (pattern + key); count; damage (ingredient whose durability is used, e.g. the hammer). A recipe whose {reference} cannot be resolved is skipped.",
+    "RECIPES (placeholder progression, replace freely): type shapeless (inputs), shaped (pattern + key), or smelting / blasting (input, xp, time); count; damage (ingredient whose durability is used, e.g. the hammer). A recipe whose {reference} cannot be resolved is skipped.",
     "ITEM: builder methods called on the KubeJS item builder, {method: argument}."
   ],
 

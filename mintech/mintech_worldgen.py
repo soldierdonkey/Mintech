@@ -2,8 +2,8 @@
 """
 mintech_worldgen.py -- data-driven ore worldgen datapack generator.
 
-    mintech.json --> materials x veins --> configured_feature + placed_feature + biome_modifier
-                                                \\--> sink (folder | zip) + manifest
+    mintech/ores.json --> materials x veins --> configured_feature + placed_feature + biome_modifier
+                                                     \\--> sink (folder | zip) + manifest
 
 Companion to mintech_textures.py; it reuses that module's config loading, catalog expansion,
 interpolation, sinks and manifests, and adds only the mechanisms specific to worldgen:
@@ -19,10 +19,11 @@ biome modifiers are datapack-only, so every vein becomes three JSON files.
 A vein is one feature with one target per part, so 'ore' and 'deepslate_ore' share a single
 roll exactly like vanilla iron instead of rolling independently and doubling the spawn rate.
 
-Run from the instance root (next to mintech.json):
-    python mintech_worldgen.py                    incremental build
-    python mintech_worldgen.py --list             print the veins and exit
-    python mintech_worldgen.py --dry-run -v       report what would change
+Veins live in mintech/ores.json, next to the ore blocks they place; the pack's output paths and
+per-vein defaults are in mintech/worldgen.json. Run from anywhere -- the cwd does not matter:
+    python mintech/mintech_worldgen.py                    incremental build
+    python mintech/mintech_worldgen.py --list             print the veins and exit
+    python mintech/mintech_worldgen.py --dry-run -v       report what would change
 """
 from __future__ import annotations
 
@@ -39,9 +40,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
 
 from mintech_textures import (
-    ConfigError, DirectorySink, DryRunSink, ManifestStore, Registry, Sink, Unresolved, ZipSink,
-    as_list, build_catalog, did_you_mean, fingerprint, inherit, interpolate, load_config,
-    qualify, require,
+    DEFAULT_CONFIG, ConfigError, DirectorySink, DryRunSink, ManifestStore, Registry, Sink,
+    Unresolved, ZipSink, as_list, build_catalog, config_root, did_you_mean, fingerprint,
+    inherit, interpolate, load_config, qualify, require,
 )
 
 log = logging.getLogger("mintech.worldgen")
@@ -177,7 +178,7 @@ class Pipeline:
     def __init__(self, args: argparse.Namespace):
         self.args = args
         self.config_path = args.config.resolve()
-        self.root = self.config_path.parent
+        self.root = self.config_path.parent  # replaced by meta.root once the config is loaded
 
     def selected(self, veins: List[Vein]) -> List[Vein]:
         if not self.args.only:
@@ -199,6 +200,7 @@ class Pipeline:
     def run(self) -> int:
         started = time.perf_counter()
         cfg = load_config(self.config_path)
+        self.root = config_root(self.config_path, cfg)
         meta = cfg["meta"]
         output = require(cfg, "worldgen.output")
         veins = build_veins(cfg)
@@ -260,9 +262,10 @@ class Pipeline:
 
 
 def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate the MinTech ore worldgen datapack from mintech.json.")
-    parser.add_argument("-c", "--config", type=Path, default=Path("mintech.json"),
-                        help="path to mintech.json (default: ./mintech.json); output paths are relative to its folder")
+    parser = argparse.ArgumentParser(description="Generate the MinTech ore worldgen datapack from mintech/mintech.json.")
+    parser.add_argument("-c", "--config", type=Path, default=DEFAULT_CONFIG,
+                        help=f"path to the config index (default: {DEFAULT_CONFIG.name} next to this script); "
+                             "it pulls in its own 'include' files, and output paths resolve against its meta.root")
     parser.add_argument("--compress", action=argparse.BooleanOptionalAction, default=None,
                         help="write <pack_name>.zip instead of a folder (default: worldgen.output.compress)")
     parser.add_argument("--prune", action=argparse.BooleanOptionalAction, default=None,

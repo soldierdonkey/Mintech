@@ -1,13 +1,16 @@
 // priority: 1000
 // kubejs/startup_scripts/mintech_items.js
 //
-// Registers every item described by <instance>/mintech.json and publishes the catalog
-// code as global.MinTech so kubejs/server_scripts/mintech_recipes.js expands the exact
-// same ids. Expansion rules mirror mintech_textures.py (see "$doc" in mintech.json).
+// Registers every item described by <instance>/mintech/ and publishes the catalog code as
+// global.MinTech so kubejs/server_scripts/mintech_recipes.js expands the exact same ids.
+// mintech/mintech.json is the index; its "include" list names the rest (materials, parts,
+// ores, families, ...) and they are deep-merged into one config here, exactly as the Python
+// side does. Expansion rules mirror mintech/mintech_textures.py (see "$doc" in the JSON).
 // Written in plain ES5 for Rhino: no arrows, let/const, template strings or ES6 built-ins.
 
 global.MinTech = (function () {
-  var CONFIG_PATH = 'mintech.json';
+  var CONFIG_DIR = 'mintech/';
+  var CONFIG_PATH = CONFIG_DIR + 'mintech.json';
   var TOKEN = /\{([^{}]+)\}/g;
   var WHOLE = /^\{([^{}]+)\}$/;
   var MAX_DEPTH = 8;
@@ -231,10 +234,22 @@ global.MinTech = (function () {
     return entries;
   }
 
+  // The index file plus every fragment its 'include' list names, deep-merged in order, so a
+  // section spread over several files ('parts' across parts.json and ores.json, say) arrives
+  // here as one dict. Mirrors load_config() in mintech/mintech_textures.py.
+  function readJson(path) {
+    var raw = JsonIO.read(path);
+    if (raw === null || raw === undefined) throw new Error(path + ' not found in the instance folder');
+    return toNative(raw);
+  }
+
   function load() {
-    var raw = JsonIO.read(CONFIG_PATH);
-    if (raw === null || raw === undefined) throw new Error(CONFIG_PATH + ' not found in the instance folder');
-    var cfg = toNative(raw);
+    var cfg = readJson(CONFIG_PATH);
+    var includes = asList(cfg.include);
+    delete cfg.include;
+    includes.forEach(function (name) {
+      cfg = deep(cfg, readJson(CONFIG_DIR + name));
+    });
     return { config: cfg, catalog: buildCatalog(cfg) };
   }
 
@@ -248,7 +263,7 @@ global.MinTech = (function () {
 StartupEvents.registry('item', function (event) {
   var MT = global.MinTech, data;
   try { data = MT.load(); }
-  catch (e) { console.error('[mintech] cannot load mintech.json: ' + e.message); return; }
+  catch (e) { console.error('[mintech] cannot load the mintech/ config: ' + e.message); return; }
 
   var registered = 0;
   data.catalog.forEach(function (entry) {
@@ -269,7 +284,7 @@ StartupEvents.registry('item', function (event) {
 StartupEvents.registry('block', function (event) {
   var MT = global.MinTech, data;
   try { data = MT.load(); }
-  catch (e) { console.error('[mintech] cannot load mintech.json: ' + e.message); return; }
+  catch (e) { console.error('[mintech] cannot load the mintech/ config: ' + e.message); return; }
 
   var registered = 0;
   data.catalog.forEach(function (entry) {
