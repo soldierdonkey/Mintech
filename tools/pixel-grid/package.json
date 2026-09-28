@@ -1,0 +1,35 @@
+{
+  "name": "pixel-grid",
+  "displayName": "Pixel Grid Spacing",
+  "publisher": "local",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.80.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      { "command": "pixelGrid.toggleAuto", "title": "Pixel Grid: Toggle Auto Line Spacing" },
+      { "command": "pixelGrid.hardReset", "title": "Pixel Grid: Hard Reset Spacing" }
+    ],
+    "configuration": {
+      "title": "Pixel Grid",
+      "properties": {
+        "pixelGrid.cellRatio": {
+          "type": "number",
+          "default": 1.0,
+          "description": "Square cell side, as a multiple of font size. Line height is set to this and letter spacing is widened so each character is this wide."
+        },
+        "pixelGrid.charWidthRatio": {
+          "type": "number",
+          "default": 0.6,
+          "description": "Natural width of one monospace character as a multiple of font size (Menlo/Monaco/Consolas ~0.6)."
+        },
+        "pixelGrid.size": {
+          "type": "number",
+          "default": 16,
+          "description": "Rows/columns of the pixel art grid."
+        }
+      }
+    }
+  }
+}

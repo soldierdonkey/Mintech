@@ -29,7 +29,7 @@ patchouli-books/
 saves/*
 
 # 2. But do not ignore this specific file
-!saves/New World (1)/
+!saves/New World/
 
 visual_keybinder/
 xaero/
@@ -71,3 +71,9 @@ config/asyncparticles/asyncparticles-mixin.properties
 config/asyncparticles/asyncparticles-mixin.properties
 config/flywheel-client.toml
 nutritionalbalance.data
+
+# mintech/editor: the GUI's own runtime state, never the config it edits
+mintech/editor/state.json
+mintech/editor/preview_sheet.png
+mintech/**/__pycache__/
+mintech/**/*.pyc

@@ -3,7 +3,10 @@
     "The craftable item parts. Each is a plain item (part.type defaults to 'item'); the ore blocks live in ores.json.",
     "A part with no 'layers' is drawn from a single template named after the part id (see templates.json).",
     "'recipes' here are placeholder progression -- replace freely. A recipe whose {reference} cannot be resolved is skipped, so a part can carry a recipe that only makes sense for some materials.",
-    "Recipe types: shapeless (inputs), shaped (pattern + key), smelting / blasting (input, xp, time). 'damage' names an ingredient whose durability is spent, e.g. the hammer."
+    "Recipe types: shapeless (inputs), shaped (pattern + key), smelting / blasting (input, xp, time). 'damage' names an ingredient whose durability is spent, e.g. the hammer.",
+    "HANDLES: recipe patterns use three characters -- I (the material), $ (a wooden handle: vars.handle_wood) and % (stone: vars.stone). Tool handles are all wood ($); the mortar_pestle bowl is stone (%), drawn from the mortar_bowl template in the rock palette.",
+    "TOOLS: hammer/wrench/screwdriver/saw/file/pliers/mortar_pestle each carry two recipes -- 'forging' (raw ingots only, the bootstrap path) and 'assembly' (plate/rod/bolt, refined forms already reachable from an ingot + hammer alone, so no tool is required to reach any other tool).",
+    "The bolt/screw/gear/ring/wire chains are deliberately built so none of a tool's 'assembly' recipe ingredients ever need that same tool (or a tool later in its own chain) to produce."
   ],
 
   "parts": {
@@ -19,9 +22,44 @@
         { "name": "blasting", "type": "blasting", "input": "#forge:ores/{material.id}", "xp": 0.7, "time": 100 }
       ]
     },
+    "$nugget": "Only '@custom' materials (see the 'ingot' family), same as the ingot itself -- everything else already has a vanilla/modded nugget, or has no ingot to shave one off of.",
+    "nugget": {
+      "tags": ["forge:nuggets", "forge:nuggets/{material.id}"],
+      "recipes": [
+        { "name": "filing", "type": "shapeless", "count": 9, "inputs": ["{parts.ingot}", "{vars.file}"], "damage": "{vars.file}" },
+        { "name": "packing", "type": "shapeless", "output": "{parts.ingot}",
+          "inputs": ["{self}", "{self}", "{self}", "{self}", "{self}", "{self}", "{self}", "{self}", "{self}"] }
+      ]
+    },
+    "$block": "Only '@custom' materials (see the 'ingot' family), same reasoning as ingot/nugget -- everything else already has a vanilla/modded storage block, and minting a second one would just duplicate it.",
+    "block": {
+      "type": "block",
+      "patterns": { "texture": "{meta.namespace}:block/{material.id}/{part.id}" },
+      "block": { "hardness": 5, "resistance": 6, "requiresTool": true },
+      "tags": ["forge:storage_blocks", "forge:storage_blocks/{material.id}", "minecraft:mineable/pickaxe"],
+      "recipes": [
+        { "name": "packing", "type": "shaped", "pattern": ["III", "III", "III"], "key": { "I": "{parts.ingot}" } },
+        { "name": "unpacking", "type": "shapeless", "output": "{parts.ingot}", "count": 9, "inputs": ["{self}"] }
+      ]
+    },
+
     "plate": {
       "tags": ["forge:plates", "forge:plates/{material.id}"],
       "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{material.inputs.base}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+    "double_plate": {
+      "tags": ["forge:double_plates", "forge:double_plates/{material.id}"],
+      "recipes": [
+        { "name": "pressing", "type": "shapeless", "inputs": ["{parts.plate}", "{parts.plate}", "{vars.hammer}"], "damage": "{vars.hammer}" },
+        { "name": "cutting", "type": "shapeless", "output": "{parts.plate}", "count": 2, "inputs": ["{self}", "{vars.saw}"], "damage": "{vars.saw}" }
+      ]
+    },
+    "quadruple_plate": {
+      "tags": ["forge:quadruple_plates", "forge:quadruple_plates/{material.id}"],
+      "recipes": [
+        { "name": "pressing", "type": "shapeless", "inputs": ["{parts.double_plate}", "{parts.double_plate}", "{vars.hammer}"], "damage": "{vars.hammer}" },
+        { "name": "cutting", "type": "shapeless", "output": "{parts.double_plate}", "count": 2, "inputs": ["{self}", "{vars.saw}"], "damage": "{vars.saw}" }
+      ]
     },
     "rod": {
       "tags": ["forge:rods", "forge:rods/{material.id}"],
@@ -29,40 +67,175 @@
     },
     "foil": {
       "tags": ["forge:foils", "forge:foils/{material.id}"],
-      "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["HP"], "key": { "H": "{vars.hammer}", "P": "{parts.plate}" }, "damage": "{vars.hammer}" }]
+      "recipes": [{ "name": "sawing", "type": "shaped", "count": 2, "pattern": ["HP"], "key": { "H": "{vars.saw}", "P": "{parts.plate}" }, "damage": "{vars.saw}" }]
     },
-    "wire": {
-      "tags": ["forge:wires", "forge:wires/{material.id}"],
-      "recipes": [{ "name": "hammering", "type": "shapeless", "count": 2, "inputs": ["{parts.foil}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    "rolled_foil": {
+      "tags": ["forge:rolled_foils", "forge:rolled_foils/{material.id}"],
+      "recipes": [
+        { "name": "rolling", "type": "shapeless", "inputs": ["{parts.foil}", "{parts.foil}", "{vars.pliers}"], "damage": "{vars.pliers}" },
+        { "name": "unrolling", "type": "shapeless", "output": "{parts.foil}", "count": 2, "inputs": ["{self}"] }
+      ]
     },
-    "ring": {
-      "tags": ["forge:rings", "forge:rings/{material.id}"],
-      "recipes": [{ "name": "hammering", "type": "shaped", "pattern": ["HR"], "key": { "H": "{vars.hammer}", "R": "{parts.rod}" }, "damage": "{vars.hammer}" }]
+
+    "wire_large": {
+      "tags": ["forge:wires", "forge:wires/{material.id}", "forge:wires/large", "forge:wires/large/{material.id}"],
+      "recipes": [{ "name": "drawing", "type": "shapeless", "count": 2, "inputs": ["{parts.foil}", "{vars.pliers}"], "damage": "{vars.pliers}" }]
     },
+    "wire_medium": {
+      "tags": ["forge:wires", "forge:wires/{material.id}", "forge:wires/medium", "forge:wires/medium/{material.id}"],
+      "recipes": [{ "name": "drawing", "type": "shapeless", "count": 2, "inputs": ["{parts.wire_large}", "{vars.pliers}"], "damage": "{vars.pliers}" }]
+    },
+    "wire_small": {
+      "tags": ["forge:wires", "forge:wires/{material.id}", "forge:wires/small", "forge:wires/small/{material.id}"],
+      "recipes": [{ "name": "drawing", "type": "shapeless", "count": 2, "inputs": ["{parts.wire_medium}", "{vars.pliers}"], "damage": "{vars.pliers}" }]
+    },
+    "wire_spool": {
+      "$doc": "A spool of drawn-out wire, wound thin -- see the 'wire_spool' template.",
+      "layers": [
+        { "template": "wire_spool", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "wire_spool", "drop": "%" }
+      ],
+      "tags": ["forge:wires", "forge:wires/{material.id}", "forge:wires/spool", "forge:wires/spool/{material.id}"],
+      "recipes": [{ "name": "winding", "type": "shapeless", "count": 1, "inputs": ["{parts.wire_small}", "{parts.wire_small}", "{parts.wire_small}", "{parts.wire_small}", "{parts.wire_small}", "{parts.wire_small}", "{parts.wire_small}", "{parts.wire_small}", "{vars.pliers}"], "damage": "{vars.pliers}" }]
+    },
+
+    "ring_large": {
+      "tags": ["forge:rings", "forge:rings/{material.id}", "forge:rings/large", "forge:rings/large/{material.id}"],
+      "recipes": [{ "name": "bending", "type": "shaped", "pattern": ["HR"], "key": { "H": "{vars.pliers}", "R": "{parts.rod}" }, "damage": "{vars.pliers}" }]
+    },
+    "ring_medium": {
+      "tags": ["forge:rings", "forge:rings/{material.id}", "forge:rings/medium", "forge:rings/medium/{material.id}"],
+      "recipes": [{ "name": "bending", "type": "shapeless", "count": 2, "inputs": ["{parts.rod}", "{vars.pliers}"], "damage": "{vars.pliers}" }]
+    },
+    "ring_small": {
+      "tags": ["forge:rings", "forge:rings/{material.id}", "forge:rings/small", "forge:rings/small/{material.id}"],
+      "recipes": [{ "name": "bending", "type": "shapeless", "count": 4, "inputs": ["{parts.rod}", "{parts.rod}", "{vars.pliers}"], "damage": "{vars.pliers}" }]
+    },
+
     "bolt": {
       "tags": ["forge:bolts", "forge:bolts/{material.id}"],
       "recipes": [{ "name": "hammering", "type": "shaped", "count": 2, "pattern": ["H", "R"], "key": { "H": "{vars.hammer}", "R": "{parts.rod}" }, "damage": "{vars.hammer}" }]
     },
     "screw": {
       "tags": ["forge:screws", "forge:screws/{material.id}"],
-      "recipes": [{ "name": "hammering", "type": "shapeless", "inputs": ["{parts.bolt}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+      "recipes": [{ "name": "threading", "type": "shapeless", "inputs": ["{parts.bolt}", "{vars.screwdriver}"], "damage": "{vars.screwdriver}" }]
     },
-    "gear": {
-      "tags": ["forge:gears", "forge:gears/{material.id}"],
+
+    "gear_large": {
+      "tags": ["forge:gears", "forge:gears/{material.id}", "forge:gears/large", "forge:gears/large/{material.id}"],
       "recipes": [{
         "name": "assembly", "type": "shaped", "pattern": ["BPB", "PRP", "BHB"],
-        "key": { "P": "{parts.plate}", "R": "{parts.ring}", "B": "{parts.bolt}", "H": "{vars.hammer}" }, "damage": "{vars.hammer}"
+        "key": { "P": "{parts.plate}", "R": "{parts.ring_large}", "B": "{parts.bolt}", "H": "{vars.hammer}" }, "damage": "{vars.hammer}"
       }]
     },
+    "gear_medium": {
+      "tags": ["forge:gears", "forge:gears/{material.id}", "forge:gears/medium", "forge:gears/medium/{material.id}"],
+      "recipes": [{
+        "name": "assembly", "type": "shaped", "pattern": [" P ", "PRP", " H "],
+        "key": { "P": "{parts.plate}", "R": "{parts.ring_medium}", "H": "{vars.hammer}" }, "damage": "{vars.hammer}"
+      }]
+    },
+    "gear_small": {
+      "tags": ["forge:gears", "forge:gears/{material.id}", "forge:gears/small", "forge:gears/small/{material.id}"],
+      "recipes": [{ "name": "assembly", "type": "shapeless", "inputs": ["{parts.plate}", "{parts.ring_small}", "{vars.hammer}"], "damage": "{vars.hammer}" }]
+    },
+
+    "powder": {
+      "tags": ["forge:powders", "forge:powders/{material.id}", "forge:dusts", "forge:dusts/{material.id}"],
+      "recipes": [{ "name": "grinding", "type": "shapeless", "inputs": ["{material.inputs.base}", "{vars.mortar_pestle}"], "damage": "{vars.mortar_pestle}" }]
+    },
+    "small_powder": {
+      "$doc": "A ninth of a powder -- the same split as ingot/nugget, one tier down.",
+      "tags": ["forge:small_powders", "forge:small_powders/{material.id}", "forge:small_dusts", "forge:small_dusts/{material.id}"],
+      "recipes": [
+        { "name": "grinding", "type": "shapeless", "count": 9, "inputs": ["{parts.powder}", "{vars.mortar_pestle}"], "damage": "{vars.mortar_pestle}" },
+        { "name": "packing", "type": "shapeless", "output": "{parts.powder}",
+          "inputs": ["{self}", "{self}", "{self}", "{self}", "{self}", "{self}", "{self}", "{self}", "{self}"] }
+      ]
+    },
+
     "hammer": {
       "layers": [
-        { "template": "hammer_handle", "palette": "wood", "shader": "standard" },
-        { "template": "hammer_head" }
+        { "template": "hammer", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "hammer", "drop": "%" }
       ],
-      "tags": ["forge:hammers"],
+      "tags": ["forge:hammers", "forge:tools/hammers", "c:tools/hammers", "c:hammers", "c:hammer"],
       "item": { "maxDamage": "{material.stats.durability}" },
-      "recipes": [{ "name": "crafting", "type": "shaped", "pattern": ["III", "III", " S "], "key": { "I": "{material.inputs.base}", "S": "{vars.handle}" } }]
+      "recipes": [{ "name": "forging", "type": "shaped", "pattern": ["III", "III", " $ "], "key": { "I": "{material.inputs.base}", "$": "{vars.handle_wood}" } }]
     },
+    "wrench": {
+      "layers": [
+        { "template": "wrench", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "wrench", "drop": "%" }
+      ],
+      "tags": ["forge:wrenches", "forge:tools/wrenches", "c:tools/wrenches", "c:wrenches", "c:wrench"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [
+        { "name": "forging", "type": "shaped", "pattern": ["I I", "III", " $ "], "key": { "I": "{material.inputs.base}", "$": "{vars.handle_wood}" } },
+        { "name": "assembly", "type": "shapeless", "inputs": ["{parts.rod}", "{parts.rod}", "{parts.bolt}", "{vars.handle_wood}"] }
+      ]
+    },
+    "screwdriver": {
+      "layers": [
+        { "template": "screwdriver", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "screwdriver", "drop": "%" }
+      ],
+      "tags": ["forge:screwdrivers", "forge:tools/screwdrivers", "c:tools/screwdrivers", "c:screwdrivers", "c:screwdriver"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [
+        { "name": "forging", "type": "shaped", "pattern": [" I ", " I ", " $ "], "key": { "I": "{material.inputs.base}", "$": "{vars.handle_wood}" } },
+        { "name": "assembly", "type": "shapeless", "inputs": ["{parts.rod}", "{parts.bolt}", "{parts.bolt}", "{vars.handle_wood}"] }
+      ]
+    },
+    "saw": {
+      "layers": [
+        { "template": "saw", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "saw", "drop": "%" }
+      ],
+      "tags": ["forge:saws", "forge:tools/saws", "c:tools/saws", "c:saws", "c:saw"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [
+        { "name": "forging", "type": "shaped", "pattern": ["III", "   ", " $ "], "key": { "I": "{material.inputs.base}", "$": "{vars.handle_wood}" } },
+        { "name": "assembly", "type": "shapeless", "inputs": ["{parts.plate}", "{parts.plate}", "{parts.rod}", "{vars.handle_wood}"] }
+      ]
+    },
+    "file": {
+      "layers": [
+        { "template": "file", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "file", "drop": "%" }
+      ],
+      "tags": ["forge:files", "forge:tools/files", "c:tools/files", "c:files", "c:file"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [
+        { "name": "forging", "type": "shaped", "pattern": [" I ", "III", " $ "], "key": { "I": "{material.inputs.base}", "$": "{vars.handle_wood}" } },
+        { "name": "assembly", "type": "shapeless", "inputs": ["{parts.rod}", "{parts.rod}", "{parts.rod}", "{vars.handle_wood}"] }
+      ]
+    },
+    "pliers": {
+      "layers": [
+        { "template": "pliers", "keep": "%", "palette": "wood", "shader": "standard" },
+        { "template": "pliers", "drop": "%" }
+      ],
+      "tags": ["forge:pliers", "forge:tools/pliers", "c:tools/pliers"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [
+        { "name": "forging", "type": "shaped", "pattern": ["I I", " I ", " $ "], "key": { "I": "{material.inputs.base}", "$": "{vars.handle_wood}" } },
+        { "name": "assembly", "type": "shapeless", "inputs": ["{parts.rod}", "{parts.rod}", "{parts.plate}", "{vars.handle_wood}"] }
+      ]
+    },
+    "mortar_pestle": {
+      "layers": [
+        { "template": "mortar_bowl", "palette": "rock", "shader": "standard" },
+        { "template": "mortar_pestle" }
+      ],
+      "tags": ["forge:mortar_and_pestles", "forge:tools/mortar_and_pestles", "c:tools/mortar_and_pestles"],
+      "item": { "maxDamage": "{material.stats.durability}" },
+      "recipes": [
+        { "name": "forging", "type": "shaped", "pattern": [" I ", "%%%"], "key": { "I": "{material.inputs.base}", "%": "{vars.stone}" } },
+        { "name": "assembly", "type": "shapeless", "inputs": ["{parts.rod}", "{vars.stone}"] }
+      ]
+    },
+
     "bottle": {
       "layers": [
         { "template": "bottle_fill", "shader": "liquid", "context": "all" },

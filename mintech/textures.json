@@ -20,10 +20,10 @@
     "mcmeta": {
       "pack": { "pack_format": 15, "description": "MinTech generated textures (v{meta.version})" }
     },
-    "legend": { ".": "clear", " ": "clear", "#": "auto", "0": 0, "1": 1, "2": 2, "3": 3, "4": 4 },
+    "legend": { ".": "clear", " ": "clear", "#": "auto", "$": "auto", "%": "auto", "0": 0, "1": 1, "2": 2, "3": 3, "4": 4 },
 
     "ramps": {
-      "$": "Hue-shifted tone ramps. light <0 toward black, >0 toward white; sat multiplies saturation; hue = fraction toward 'cool' (shadows) / 'warm' (highlights), degrees. A palette may be {ramp: name, base: '#RRGGBB'} to derive all tones from one colour.",
+      "$doc": "Hue-shifted tone ramps. light <0 toward black, >0 toward white; sat multiplies saturation; hue = fraction toward 'cool' (shadows) / 'warm' (highlights), degrees. A palette may be {ramp: name, base: '#RRGGBB'} to derive all tones from one colour.",
       "metal": { "cool": 230, "warm": 55, "steps": [
         { "light": -0.62, "sat": 0.8, "hue": 0.12 }, { "light": -0.3, "sat": 0.9, "hue": 0.06 }, {},
         { "light": 0.35, "sat": 1.25, "hue": 0.08 }, { "light": 0.78, "sat": 1.45, "hue": 0.15 } ] },

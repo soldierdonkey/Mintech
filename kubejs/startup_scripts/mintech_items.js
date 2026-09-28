@@ -58,7 +58,7 @@ global.MinTech = (function () {
     if (Array.isArray(v)) return v.map(toNative);
     if (Object.prototype.toString.call(v) === '[object Object]') {
       out = {};
-      Object.keys(v).forEach(function (key) { if (key.charAt(0) !== '$') out[key] = toNative(v[key]); });
+      Object.keys(v).forEach(function (key) { if (key.charAt(0) !== '$' || key.length === 1) out[key] = toNative(v[key]); });
       return out;
     }
     return String(v);

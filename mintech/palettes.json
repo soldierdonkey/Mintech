@@ -11,6 +11,7 @@
       "gold":    ["#593A0E", "#A37212", "#EAAD23", "#FAE24E", "#FFFEBA"],
       "copper":  ["#4E261E", "#853E2F", "#BD573D", "#E07E60", "#F7B499"],
       "diamond": ["#0E4952", "#1C868C", "#2EBDAD", "#84EDDE", "#DEFFFA"],
+      "rock":    ["#3B3B3B", "#5A5A5A", "#747474", "#8F8F8F", "#B4B4B4"],
       "wood":    ["#281E0B", "#493615", "#684E1E", "#896727", "#A98A4A"],
       "glass":   ["#3E4E5A", "#7F99AB", "#AFC8D6", "#DCEEF6", "#FFFFFF"],
       "water":   ["#15296B", "#2445A6", "#3F76E4", "#76A6F2", "#C4DEFF"],

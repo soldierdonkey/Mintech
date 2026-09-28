@@ -6,16 +6,25 @@
   ],
 
   "families": {
-    "$ingot": "Only '@custom' materials: the ones no mod in the pack provides a base item for. Everything else already has an ingot (vanilla) or has no ingot by nature (gems, fluids), so widening this selector would register duplicates.",
+    "$ingot": "Only '@custom' materials: the ones no mod in the pack provides a base item for. Everything else already has an ingot (vanilla) or has no ingot by nature (gems, fluids), so widening this selector would register duplicates. Nuggets ride along on the same selector -- a material with no custom ingot already has a nugget from whichever mod supplies it.",
     "ingot": {
       "materials": ["@custom"],
-      "parts": ["ingot"],
+      "parts": ["ingot", "nugget", "block"],
       "defaults": { "tags": ["{meta.namespace}:parts/{family.id}"] }
     },
     "metal": {
       "materials": ["@metal", "@gem"],
-      "parts": ["plate", "rod", "foil", "wire", "ring", "bolt", "screw", "gear", "hammer"],
-      "exclude": ["@gem:foil", "@gem:wire"],
+      "parts": [
+        "plate", "double_plate", "quadruple_plate", "rod",
+        "foil", "rolled_foil", "wire_large", "wire_medium", "wire_small", "wire_spool",
+        "ring_large", "ring_medium", "ring_small", "bolt", "screw",
+        "gear_large", "gear_medium", "gear_small", "powder", "small_powder",
+        "hammer", "wrench", "screwdriver", "saw", "file", "pliers", "mortar_pestle"
+      ],
+      "exclude": [
+        "@gem:foil", "@gem:rolled_foil",
+        "@gem:wire_large", "@gem:wire_medium", "@gem:wire_small", "@gem:wire_spool"
+      ],
       "defaults": { "tags": ["{meta.namespace}:parts/{family.id}"] }
     },
     "fluid": {

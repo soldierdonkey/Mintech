@@ -1,164 +1,184 @@
-[00:32:35] [main/INFO]: ModLauncher running: args [--username, soldierdonkey, --version, forge-47.4.10, --gameDir, /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/, --assetsDir, /Users/noalev/Documents/curseforge/minecraft/Install/assets, --assetIndex, 5, --uuid, f3ab27d11800461c87762835eeaae4ab, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 470045-774dd8-d9a0bf-3d2c31-fb10e1, --xuid, 2535458814721023, --userType, msa, --versionType, release, --width, 1024, --height, 768, --quickPlayPath, /Users/noalev/Documents/curseforge/minecraft/Quickplay/ffafb608-3ffd-4da2-a9d5-b55d04b3858a.json, , , , --launchTarget, forgeclient, --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[00:32:35] [main/INFO]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 26.6.2
-[00:32:35] [main/INFO]: Loading ImmediateWindowProvider fmlearlywindow
-[00:32:35] [main/INFO]: Trying GL version 4.6
-[00:32:35] [main/INFO]: Trying GL version 4.5
-[00:32:35] [main/INFO]: Trying GL version 4.4
-[00:32:35] [main/INFO]: Trying GL version 4.3
-[00:32:35] [main/INFO]: Trying GL version 4.2
-[00:32:35] [main/INFO]: Trying GL version 4.1
-[00:32:35] [main/INFO]: Requested GL version 4.1 got version 4.1
-[00:32:35] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2394!/ Service=ModLauncher Env=CLIENT
-[00:32:35] [main/INFO]: Found mod file architectury-9.2.14-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file canary-mc1.20.1-0.3.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file cloth-config-11.1.136-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file Controlling-forge-1.20.1-12.0.2.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file CustomMachinery-forge-1.20.1-0.11.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file embeddium-0.3.31+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file emi-1.1.24+1.20.1+forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file emi_ores-1.3+1.20.1+forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file entityculling-forge-1.11.2-mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file fancymenu_forge_3.9.12_MC_1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file ferritecore-6.0.1-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file ImmediatelyFast-Forge-1.5.5+1.20.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file InventoryProfilesNext-forge-1.20-1.10.20.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file Jade-1.20.1-Forge-11.13.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file konkrete_forge_1.8.0_MC_1.20-1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file kotlinforforge-4.12.0-all.jar of type LIBRARY with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file kubejs-forge-2001.6.5-build.26.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file libIPN-forge-1.20-4.0.2.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file melody_forge_1.0.3_MC_1.20.1-1.20.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file modernfix-forge-5.27.83+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file OctoLib-FORGE-0.5.0.1+1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file Paxi-1.20-Forge-4.0.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file probejs-6.0.1-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file rhino-forge-2001.2.3-build.10.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file Searchables-forge-1.20.1-1.0.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file toomanyrecipeviewers-0.9.0+mc.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [main/INFO]: Found mod file YungsApi-1.20-Forge-4.0.6.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
-[00:32:35] [pool-2-thread-1/INFO]: GL info: Apple M3 GL version 4.1 Metal - 90.5, Apple
-[00:32:35] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/fmlcore/1.20.1-47.4.10/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
-[00:32:35] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.4.10/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[00:32:35] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.4.10/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[00:32:35] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/mclanguage/1.20.1-47.4.10/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[00:32:36] [main/INFO]: Found mod file fmlcore-1.20.1-47.4.10.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
-[00:32:36] [main/INFO]: Found mod file javafmllanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
-[00:32:36] [main/INFO]: Found mod file lowcodelanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
-[00:32:36] [main/INFO]: Found mod file mclanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
-[00:32:36] [main/INFO]: Found mod file client-1.20.1-20230612.114412-srg.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
-[00:32:36] [main/INFO]: Found mod file forge-1.20.1-47.4.10-universal.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
-[00:32:36] [main/INFO]: Found 15 dependencies adding them to mods collection
-[00:32:36] [main/INFO]: Found mod file kfflang-4.12.0.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file javaparser-symbol-solver-core-3.25.8.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file Reflect-1.6.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file mixinextras-forge-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file TRansition-1.0.25-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file animated-gif-lib-for-java-animated-gif-lib-1.7.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file kfflib-4.12.0.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file MixinExtras-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file snakeyaml-2.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file saecularia-caudices-forge-1.0.23.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file kffmod-4.12.0.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file Java-WebSocket-1.5.6.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file vineflower-1.9.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Found mod file japng-0.5.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
-[00:32:36] [main/INFO]: Compatibility level set to JAVA_17
-[00:32:36] [main/INFO]: Launching target 'forgeclient' with arguments [--version, forge-47.4.10, --gameDir, /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech, --assetsDir, /Users/noalev/Documents/curseforge/minecraft/Install/assets, --uuid, f3ab27d11800461c87762835eeaae4ab, --username, soldierdonkey, --assetIndex, 5, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 470045-774dd8-d9a0bf-3d2c31-fb10e1, --xuid, 2535458814721023, --userType, msa, --versionType, release, --width, 1024, --height, 768, --quickPlayPath, /Users/noalev/Documents/curseforge/minecraft/Quickplay/ffafb608-3ffd-4da2-a9d5-b55d04b3858a.json, , , ]
-[00:32:36] [main/WARN]: Reference map 'toomanyrecipeviewers.mixins-refmap.json' for toomanyrecipeviewers.mixins.json could not be read. If this is a development environment you can ignore this message
-[00:32:36] [main/INFO]: Loaded configuration file for ModernFix 5.27.83+mc1.20.1: 110 options available, 0 override(s) found
-[00:32:36] [main/INFO]: Applying Nashorn fix
-[00:32:36] [main/INFO]: Applied Forge config corruption patch
-[00:32:36] [main/INFO]: Configuring Minecraft's max.bg.threads option with 5 threads
-[00:32:36] [main/INFO]: Loaded configuration file for Canary: 116 options available, 0 override(s) found
-[00:32:36] [main/WARN]: Reference map 'probejs-forge-refmap.json' for probejs.mixins.json could not be read. If this is a development environment you can ignore this message
-[00:32:36] [main/INFO]: Loaded configuration file for Embeddium: 79 options available, 0 override(s) found
-[00:32:36] [main/INFO]: Searching for graphics cards...
-[00:32:37] [main/INFO]: Found graphics card: GraphicsAdapterInfo[vendor=UNKNOWN, name=Apple M3, version=unknown]
-[00:32:37] [main/WARN]: Error loading class: mezz/jei/library/load/PluginCaller (java.lang.ClassNotFoundException: mezz.jei.library.load.PluginCaller)
-[00:32:37] [main/WARN]: Error loading class: mekanism/client/recipe_viewer/jei/MekanismJEI (java.lang.ClassNotFoundException: mekanism.client.recipe_viewer.jei.MekanismJEI)
-[00:32:37] [main/WARN]: @Mixin target mekanism/client/recipe_viewer/jei/MekanismJEI was not found toomanyrecipeviewers.mixins.json:MekanismJEIMixin
-[00:32:37] [main/WARN]: Inventory Profiles Next: Doing our own dependency resolving! Because Forge is being Forge....: https://github.com/MinecraftForge/MinecraftForge/issues/9088
-[00:32:37] [main/WARN]: Error loading class: de/maxhenkel/easyvillagers/blocks/tileentity/TraderTileentityBase (java.lang.ClassNotFoundException: de.maxhenkel.easyvillagers.blocks.tileentity.TraderTileentityBase)
-[00:32:37] [main/WARN]: @Mixin target de.maxhenkel.easyvillagers.blocks.tileentity.TraderTileentityBase was not found mixins.ipnext.json:MixinTraderTileEntityBase
-[00:32:37] [main/WARN]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
-[00:32:37] [main/WARN]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
-[00:32:37] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
-[00:32:38] [main/WARN]: Static binding violation: PRIVATE @Overwrite method m_216202_ in modernfix-modernfix.mixins.json:perf.tag_id_caching.TagOrElementLocationMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
-[00:32:38] [main/INFO]: [net.minecraft.client.main.Main:main:99]: Completely ignored arguments: [, , ]
-[00:32:38] [main/WARN]: Failed sysctl call: hw.cpufrequency, Error code: 2
-[00:32:38] [pool-4-thread-1/INFO]: ModernFix reached bootstrap stage (4.799 s after launch)
-[00:32:38] [pool-4-thread-1/WARN]: @Final field delegatesByName:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
-[00:32:38] [pool-4-thread-1/WARN]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
-[00:32:38] [pool-4-thread-1/INFO]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
-[00:32:38] [pool-4-thread-1/INFO]: Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
-[00:32:39] [pool-4-thread-1/INFO]: Vanilla bootstrap took 446 milliseconds
-[00:32:40] [Render thread/WARN]: Assets URL 'union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar%23209!/assets/.mcassetsroot' uses unexpected schema
-[00:32:40] [Render thread/WARN]: Assets URL 'union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar%23209!/data/.mcassetsroot' uses unexpected schema
-[00:32:40] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[00:32:40] [Render thread/INFO]: Setting user: soldierdonkey
-[00:32:40] [Render thread/INFO]: Bypassed Mojang DFU
-[00:32:40] [Render thread/INFO]: Backend library: LWJGL version 3.3.1 build 7
-[00:32:40] [Render thread/INFO]: Loaded client.properties
-[00:32:40] [Render thread/INFO]: OpenGL Vendor: Apple
-[00:32:40] [Render thread/INFO]: OpenGL Renderer: Apple M3
-[00:32:40] [Render thread/INFO]: OpenGL Version: 4.1 Metal - 90.5
-[00:32:40] [Render thread/INFO]: Initializing ImmediatelyFast 1.5.5+1.20.4 on Apple M3 (Apple) with OpenGL 4.1 Metal - 90.5
-[00:32:40] [Render thread/WARN]: Apple GPU detected. Disabling fast buffer upload.
-[00:32:41] [Render thread/WARN]: Failed sysctl call: hw.cpufrequency, Error code: 2
-[00:32:41] [modloading-worker-0/INFO]: [dev.tr7zw.trender.gui.impl.client.LibGuiClient:onInitializeClient:37]: [TRender] Initializing Client...
-[00:32:41] [modloading-worker-0/INFO]: [FANCYMENU] Loading v3.9.12 in client-side mode on FORGE!
-[00:32:41] [modloading-worker-0/INFO]: Loaded common.properties
-[00:32:41] [modloading-worker-0/INFO]: Loaded dev.properties
-[00:32:41] [modloading-worker-0/INFO]: Looking for KubeJS plugins...
-[00:32:41] [modloading-worker-0/INFO]: Found plugin source kubejs
-[00:32:41] [modloading-worker-0/WARN]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
-[00:32:41] [modloading-worker-0/INFO]: Found plugin source custommachinery
-[00:32:41] [modloading-worker-0/INFO]: Registering S2C receiver with id architectury:sync_ids
-[00:32:41] [modloading-worker-0/INFO]: Registering C2S receiver with id architectury:sync_ids
-[00:32:41] [modloading-worker-0/INFO]: Registering S2C receiver with id octolib:config_sync
-[00:32:41] [modloading-worker-0/INFO]: Found plugin source probejs
-[00:32:41] [modloading-worker-0/INFO]: Done in 69.57 ms
-[00:32:41] [modloading-worker-0/INFO]: [MELODY] Loading Melody background audio library..
-[00:32:41] [modloading-worker-0/INFO]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
-[00:32:41] [modloading-worker-0/INFO]: MinecraftForge v47.4.10 Initialized
-[00:32:41] [modloading-worker-0/INFO]: Kotlin For Forge Enabled!
-[00:32:41] [modloading-worker-0/INFO]: [KONKRETE] Successfully initialized!
-[00:32:41] [modloading-worker-0/INFO]: [KONKRETE] Server-side libs ready to use!
-[00:32:41] [modloading-worker-0/INFO]: [Inventory Profiles Next] Inventory Profiles Next - init in Kotlin
-[00:32:41] [modloading-worker-0/INFO]: [libIPN] libIPN - init in Kotlin
-[00:32:41] [modloading-worker-0/INFO]: Loading Rhino Minecraft remapper...
-[00:32:41] [modloading-worker-0/INFO]: Rhino properties loaded.
-[00:32:41] [modloading-worker-0/INFO]: Loading mappings for 1.20.1
-[00:32:41] [modloading-worker-0/INFO]: Done in 0.034 s
-[00:32:41] [modloading-worker-0/INFO]: Loaded script startup_scripts:mintech_items.js in 0.031 s
-[00:32:41] [modloading-worker-0/INFO]: Loaded 1/1 KubeJS startup scripts in 0.213 s with 0 errors and 0 warnings
-[00:32:41] [modloading-worker-0/INFO]: example.js#5: Hello, World! (Loaded client scripts)
-[00:32:41] [modloading-worker-0/INFO]: Loaded script client_scripts:example.js in 0.001 s
-[00:32:41] [modloading-worker-0/INFO]: Loaded 1/1 KubeJS client scripts in 0.009 s with 0 errors and 0 warnings
-[00:32:42] [modloading-worker-0/INFO]: mintech_items.js#279: [mintech] registered 62 items
-[00:32:42] [modloading-worker-0/INFO]: mintech_items.js#300: [mintech] registered 4 blocks
-[00:32:42] [modloading-worker-0/INFO]: Registering C2S receiver with id kubejs:send_data_from_client
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:send_data_from_server
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:paint
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:add_stage
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:remove_stage
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:sync_stages
-[00:32:42] [modloading-worker-0/INFO]: Registering C2S receiver with id kubejs:first_click
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:toast
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:reload_startup_scripts
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:display_server_errors
-[00:32:42] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:display_client_errors
-[00:32:42] [Render thread/INFO]: [FANCYMENU] Registered FancyMenu's resource reload listener via Forge.
-[00:32:43] [Render thread/INFO]: [FANCYMENU] Initializing screen customization engine! Addons should NOT REGISTER TO REGISTRIES anymore now!
-[00:32:43] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: STARTING
-[00:32:43] [Render thread/INFO]: Reloading ResourceManager: vanilla, mod_resources, mintech_textures, KubeJS Resource Pack [assets]
-[00:32:43] [Render thread/INFO]: [FANCYMENU] Starting late client initialization phase..
-[00:32:43] [Render thread/INFO]: Client resource reload complete!
-[00:32:43] [Worker-ResourceReload-5/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
-[00:32:43] [Worker-ResourceReload-2/ERROR]: [FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.
+[14:55:15] [main/INFO]: ModLauncher running: args [--username, soldierdonkey, --version, forge-47.4.10, --gameDir, /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/, --assetsDir, /Users/noalev/Documents/curseforge/minecraft/Install/assets, --assetIndex, 5, --uuid, f3ab27d11800461c87762835eeaae4ab, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 470045-774dd8-d9a0bf-3d2c31-fb10e1, --xuid, 2535458814721023, --userType, msa, --versionType, release, --width, 1024, --height, 768, --quickPlayPath, /Users/noalev/Documents/curseforge/minecraft/Quickplay/ffafb608-3ffd-4da2-a9d5-b55d04b3858a.json, , , , --launchTarget, forgeclient, --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[14:55:15] [main/INFO]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Mac OS X arch aarch64 version 26.6.2
+[14:55:15] [main/INFO]: Loading ImmediateWindowProvider fmlearlywindow
+[14:55:16] [main/INFO]: Trying GL version 4.6
+[14:55:16] [main/INFO]: Trying GL version 4.5
+[14:55:16] [main/INFO]: Trying GL version 4.4
+[14:55:16] [main/INFO]: Trying GL version 4.3
+[14:55:16] [main/INFO]: Trying GL version 4.2
+[14:55:16] [main/INFO]: Trying GL version 4.1
+[14:55:16] [main/INFO]: Requested GL version 4.1 got version 4.1
+[14:55:16] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2394!/ Service=ModLauncher Env=CLIENT
+[14:55:16] [pool-2-thread-1/INFO]: GL info: Apple M3 GL version 4.1 Metal - 90.5, Apple
+[14:55:16] [main/INFO]: Found mod file architectury-9.2.14-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file canary-mc1.20.1-0.3.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file cloth-config-11.1.136-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file Controlling-forge-1.20.1-12.0.2.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file CustomMachinery-forge-1.20.1-0.11.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file embeddium-0.3.31+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file emi-1.1.24+1.20.1+forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file emi_ores-1.3+1.20.1+forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file entityculling-forge-1.11.2-mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file fancymenu_forge_3.9.12_MC_1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file ferritecore-6.0.1-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file ImmediatelyFast-Forge-1.5.5+1.20.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file InventoryProfilesNext-forge-1.20-1.10.20.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file Jade-1.20.1-Forge-11.13.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file konkrete_forge_1.8.0_MC_1.20-1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file kotlinforforge-4.12.0-all.jar of type LIBRARY with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file kubejs-forge-2001.6.5-build.26.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file libIPN-forge-1.20-4.0.2.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file melody_forge_1.0.3_MC_1.20.1-1.20.4.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file modernfix-forge-5.27.83+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file OctoLib-FORGE-0.5.0.1+1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file Paxi-1.20-Forge-4.0.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file probejs-6.0.1-forge.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file rhino-forge-2001.2.3-build.10.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file Searchables-forge-1.20.1-1.0.3.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file toomanyrecipeviewers-0.9.0+mc.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/INFO]: Found mod file YungsApi-1.20-Forge-4.0.6.jar of type MOD with provider {mods folder locator at /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech/mods}
+[14:55:16] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/fmlcore/1.20.1-47.4.10/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[14:55:16] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.4.10/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[14:55:16] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.4.10/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[14:55:16] [main/WARN]: Mod file /Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraftforge/mclanguage/1.20.1-47.4.10/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[14:55:16] [main/INFO]: Found mod file fmlcore-1.20.1-47.4.10.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
+[14:55:16] [main/INFO]: Found mod file javafmllanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
+[14:55:16] [main/INFO]: Found mod file lowcodelanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
+[14:55:16] [main/INFO]: Found mod file mclanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
+[14:55:16] [main/INFO]: Found mod file client-1.20.1-20230612.114412-srg.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
+[14:55:16] [main/INFO]: Found mod file forge-1.20.1-47.4.10-universal.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@ecfbe91
+[14:55:16] [main/INFO]: Found 15 dependencies adding them to mods collection
+[14:55:16] [main/INFO]: Found mod file kfflang-4.12.0.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file javaparser-symbol-solver-core-3.25.8.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file Reflect-1.6.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file mixinextras-forge-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file TRansition-1.0.25-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file animated-gif-lib-for-java-animated-gif-lib-1.7.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file kfflib-4.12.0.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file MixinExtras-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file snakeyaml-2.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file saecularia-caudices-forge-1.0.23.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file kffmod-4.12.0.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file Java-WebSocket-1.5.6.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file vineflower-1.9.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:16] [main/INFO]: Found mod file japng-0.5.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@56681eaf
+[14:55:17] [main/INFO]: Compatibility level set to JAVA_17
+[14:55:17] [main/INFO]: Launching target 'forgeclient' with arguments [--version, forge-47.4.10, --gameDir, /Users/noalev/Documents/curseforge/minecraft/Instances/Mintech, --assetsDir, /Users/noalev/Documents/curseforge/minecraft/Install/assets, --uuid, f3ab27d11800461c87762835eeaae4ab, --username, soldierdonkey, --assetIndex, 5, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 470045-774dd8-d9a0bf-3d2c31-fb10e1, --xuid, 2535458814721023, --userType, msa, --versionType, release, --width, 1024, --height, 768, --quickPlayPath, /Users/noalev/Documents/curseforge/minecraft/Quickplay/ffafb608-3ffd-4da2-a9d5-b55d04b3858a.json, , , ]
+[14:55:17] [main/WARN]: Reference map 'toomanyrecipeviewers.mixins-refmap.json' for toomanyrecipeviewers.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:55:17] [main/INFO]: Loaded configuration file for ModernFix 5.27.83+mc1.20.1: 110 options available, 0 override(s) found
+[14:55:17] [main/INFO]: Applying Nashorn fix
+[14:55:17] [main/INFO]: Applied Forge config corruption patch
+[14:55:17] [main/INFO]: Configuring Minecraft's max.bg.threads option with 5 threads
+[14:55:17] [main/INFO]: Loaded configuration file for Canary: 116 options available, 0 override(s) found
+[14:55:17] [main/WARN]: Reference map 'probejs-forge-refmap.json' for probejs.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:55:17] [main/INFO]: Loaded configuration file for Embeddium: 79 options available, 0 override(s) found
+[14:55:17] [main/INFO]: Searching for graphics cards...
+[14:55:18] [main/INFO]: Found graphics card: GraphicsAdapterInfo[vendor=UNKNOWN, name=Apple M3, version=unknown]
+[14:55:18] [main/WARN]: Error loading class: mezz/jei/library/load/PluginCaller (java.lang.ClassNotFoundException: mezz.jei.library.load.PluginCaller)
+[14:55:18] [main/WARN]: Error loading class: mekanism/client/recipe_viewer/jei/MekanismJEI (java.lang.ClassNotFoundException: mekanism.client.recipe_viewer.jei.MekanismJEI)
+[14:55:18] [main/WARN]: @Mixin target mekanism/client/recipe_viewer/jei/MekanismJEI was not found toomanyrecipeviewers.mixins.json:MekanismJEIMixin
+[14:55:18] [main/WARN]: Inventory Profiles Next: Doing our own dependency resolving! Because Forge is being Forge....: https://github.com/MinecraftForge/MinecraftForge/issues/9088
+[14:55:18] [main/WARN]: Error loading class: de/maxhenkel/easyvillagers/blocks/tileentity/TraderTileentityBase (java.lang.ClassNotFoundException: de.maxhenkel.easyvillagers.blocks.tileentity.TraderTileentityBase)
+[14:55:18] [main/WARN]: @Mixin target de.maxhenkel.easyvillagers.blocks.tileentity.TraderTileentityBase was not found mixins.ipnext.json:MixinTraderTileEntityBase
+[14:55:18] [main/WARN]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
+[14:55:18] [main/WARN]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
+[14:55:18] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[14:55:19] [main/WARN]: Static binding violation: PRIVATE @Overwrite method m_216202_ in modernfix-modernfix.mixins.json:perf.tag_id_caching.TagOrElementLocationMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[14:55:19] [main/INFO]: [net.minecraft.client.main.Main:main:99]: Completely ignored arguments: [, , ]
+[14:55:19] [main/WARN]: Failed sysctl call: hw.cpufrequency, Error code: 2
+[14:55:19] [pool-4-thread-1/INFO]: ModernFix reached bootstrap stage (5.275 s after launch)
+[14:55:19] [pool-4-thread-1/WARN]: @Final field delegatesByName:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[14:55:19] [pool-4-thread-1/WARN]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[14:55:20] [pool-4-thread-1/INFO]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[14:55:20] [pool-4-thread-1/INFO]: Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[14:55:20] [pool-4-thread-1/INFO]: Vanilla bootstrap took 725 milliseconds
+[14:55:22] [Render thread/WARN]: Assets URL 'union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar%23209!/assets/.mcassetsroot' uses unexpected schema
+[14:55:22] [Render thread/WARN]: Assets URL 'union:/Users/noalev/Documents/curseforge/minecraft/Install/libraries/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar%23209!/data/.mcassetsroot' uses unexpected schema
+[14:55:22] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:55:22] [Render thread/INFO]: Setting user: soldierdonkey
+[14:55:22] [Render thread/INFO]: Bypassed Mojang DFU
+[14:55:22] [Render thread/INFO]: Backend library: LWJGL version 3.3.1 build 7
+[14:55:23] [Render thread/INFO]: Loaded client.properties
+[14:55:23] [Render thread/INFO]: OpenGL Vendor: Apple
+[14:55:23] [Render thread/INFO]: OpenGL Renderer: Apple M3
+[14:55:23] [Render thread/INFO]: OpenGL Version: 4.1 Metal - 90.5
+[14:55:23] [Render thread/INFO]: Initializing ImmediatelyFast 1.5.5+1.20.4 on Apple M3 (Apple) with OpenGL 4.1 Metal - 90.5
+[14:55:23] [Render thread/WARN]: Apple GPU detected. Disabling fast buffer upload.
+[14:55:23] [Render thread/WARN]: Failed sysctl call: hw.cpufrequency, Error code: 2
+[14:55:23] [modloading-worker-0/INFO]: [dev.tr7zw.trender.gui.impl.client.LibGuiClient:onInitializeClient:37]: [TRender] Initializing Client...
+[14:55:23] [modloading-worker-0/INFO]: [FANCYMENU] Loading v3.9.12 in client-side mode on FORGE!
+[14:55:23] [modloading-worker-0/INFO]: Loaded common.properties
+[14:55:23] [modloading-worker-0/INFO]: Loaded dev.properties
+[14:55:23] [modloading-worker-0/INFO]: Looking for KubeJS plugins...
+[14:55:23] [modloading-worker-0/INFO]: Found plugin source kubejs
+[14:55:23] [modloading-worker-0/WARN]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
+[14:55:23] [modloading-worker-0/INFO]: Found plugin source custommachinery
+[14:55:23] [modloading-worker-0/INFO]: Registering S2C receiver with id architectury:sync_ids
+[14:55:23] [modloading-worker-0/INFO]: Registering C2S receiver with id architectury:sync_ids
+[14:55:23] [modloading-worker-0/INFO]: Registering S2C receiver with id octolib:config_sync
+[14:55:23] [modloading-worker-0/INFO]: Found plugin source probejs
+[14:55:23] [modloading-worker-0/INFO]: Done in 97.61 ms
+[14:55:23] [modloading-worker-0/INFO]: [MELODY] Loading Melody background audio library..
+[14:55:23] [modloading-worker-0/INFO]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[14:55:23] [modloading-worker-0/INFO]: MinecraftForge v47.4.10 Initialized
+[14:55:23] [modloading-worker-0/INFO]: Kotlin For Forge Enabled!
+[14:55:23] [modloading-worker-0/INFO]: [KONKRETE] Successfully initialized!
+[14:55:23] [modloading-worker-0/INFO]: [KONKRETE] Server-side libs ready to use!
+[14:55:23] [modloading-worker-0/INFO]: [Inventory Profiles Next] Inventory Profiles Next - init in Kotlin
+[14:55:23] [modloading-worker-0/INFO]: [libIPN] libIPN - init in Kotlin
+[14:55:23] [modloading-worker-0/INFO]: Loading Rhino Minecraft remapper...
+[14:55:23] [modloading-worker-0/INFO]: Rhino properties loaded.
+[14:55:23] [modloading-worker-0/INFO]: Loading mappings for 1.20.1
+[14:55:23] [modloading-worker-0/INFO]: Done in 0.054 s
+[14:55:24] [modloading-worker-0/INFO]: Loaded script startup_scripts:mintech_items.js in 0.04 s
+[14:55:24] [modloading-worker-0/INFO]: Loaded 1/1 KubeJS startup scripts in 0.263 s with 0 errors and 0 warnings
+[14:55:24] [modloading-worker-0/INFO]: example.js#5: Hello, World! (Loaded client scripts)
+[14:55:24] [modloading-worker-0/INFO]: Loaded script client_scripts:example.js in 0.001 s
+[14:55:24] [modloading-worker-0/INFO]: Loaded 1/1 KubeJS client scripts in 0.01 s with 0 errors and 0 warnings
+[14:55:24] [modloading-worker-0/INFO]: mintech_items.js#279: [mintech] registered 210 items
+[14:55:24] [modloading-worker-0/INFO]: mintech_items.js#300: [mintech] registered 10 blocks
+[14:55:24] [modloading-worker-0/INFO]: Registering C2S receiver with id kubejs:send_data_from_client
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:send_data_from_server
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:paint
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:add_stage
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:remove_stage
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:sync_stages
+[14:55:24] [modloading-worker-0/INFO]: Registering C2S receiver with id kubejs:first_click
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:toast
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:reload_startup_scripts
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:display_server_errors
+[14:55:24] [modloading-worker-0/INFO]: Registering S2C receiver with id kubejs:display_client_errors
+[14:55:24] [Render thread/INFO]: [FANCYMENU] Registered FancyMenu's resource reload listener via Forge.
+[14:55:25] [Render thread/INFO]: [FANCYMENU] Initializing screen customization engine! Addons should NOT REGISTER TO REGISTRIES anymore now!
+[14:55:25] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: STARTING
+[14:55:25] [Render thread/INFO]: Reloading ResourceManager: vanilla, mod_resources, mintech_textures, KubeJS Resource Pack [assets]
+[14:55:25] [Render thread/INFO]: [FANCYMENU] Starting late client initialization phase..
+[14:55:25] [Render thread/INFO]: Client resource reload complete!
+[14:55:25] [Worker-ResourceReload-6/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:update_machines
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:update_upgrades
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:update_container
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:update_machine_status
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:refresh_machine_tile
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:loot_tables
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:open_file
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:update_machine_appearance
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:update_machine_gui_elements
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:open_creation_screen
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering S2C receiver with id custommachinery:open_edit_screen
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:add_machine
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:remove_machine
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:edit_machine
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:element_clicked
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:change_side_mode
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:button_gui_element
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:place_structure
+[14:55:25] [Worker-ResourceReload-2/INFO]: Registering C2S receiver with id custommachinery:set_filter_slot_item
+[14:55:26] [Forge Version Check/INFO]: [controlling] Starting version check at https://updates.blamejared.com/get?n=controlling&gv=1.20.1
+[14:55:26] [Worker-ResourceReload-4/ERROR]: [FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.
 java.io.UncheckedIOException: Failed to enumerate archived resource pack ''
 	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:68) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
 	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:145) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
@@ -193,52 +213,42 @@ Caused by: java.io.FileNotFoundException:  (No such file or directory)
 	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
 	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:55) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
 	... 19 more
-[00:32:43] [Forge Version Check/INFO]: [controlling] Starting version check at https://updates.blamejared.com/get?n=controlling&gv=1.20.1
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:update_machines
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:update_upgrades
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:update_container
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:update_machine_status
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:refresh_machine_tile
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:loot_tables
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:open_file
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:update_machine_appearance
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:update_machine_gui_elements
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:open_creation_screen
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering S2C receiver with id custommachinery:open_edit_screen
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:add_machine
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:remove_machine
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:edit_machine
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:element_clicked
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:change_side_mode
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:button_gui_element
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:place_structure
-[00:32:43] [Worker-ResourceReload-3/INFO]: Registering C2S receiver with id custommachinery:set_filter_slot_item
-[00:32:43] [Worker-ResourceReload-6/INFO]: [EMI] Discovered Sodium
-[00:32:43] [Worker-ResourceReload-2/INFO]: [KONKRETE] Client-side libs ready to use!
-[00:32:44] [Forge Version Check/INFO]: [controlling] Found status: BETA Current: 12.0.2 Target: 12.0.2
-[00:32:44] [Forge Version Check/INFO]: [searchables] Starting version check at https://updates.blamejared.com/get?n=searchables&gv=1.20.1
-[00:32:44] [Forge Version Check/INFO]: [searchables] Found status: BETA Current: 1.0.3 Target: 1.0.3
-[00:32:44] [Forge Version Check/INFO]: [canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json
-[00:32:44] [Worker-ResourceReload-4/INFO]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
-[00:32:44] [Worker-ResourceReload-4/INFO]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
-[00:32:44] [Worker-ResourceReload-4/INFO]: Start loading plugin at snownee.jade.addon.core.CorePlugin
-[00:32:44] [Worker-ResourceReload-4/INFO]: Start loading plugin at fr.frinn.custommachinery.forge.integration.jade.CMWailaPlugin
-[00:32:44] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
-[00:32:44] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:32:44] [Thread-0/INFO]: Please use /mfrc to reload any changed mod config files
-[00:32:44] [Render thread/INFO]: OpenAL initialized on device CoreAudio Default
-[00:32:44] [Render thread/INFO]: Sound engine started
-[00:32:44] [Render thread/INFO]: [FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..
-[00:32:44] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:32:44] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:32:44] [Forge Version Check/WARN]: Failed to process update information
+[14:55:26] [Worker-ResourceReload-3/INFO]: [EMI] Discovered Sodium
+[14:55:26] [Worker-ResourceReload-4/INFO]: [KONKRETE] Client-side libs ready to use!
+[14:55:26] [Forge Version Check/INFO]: [controlling] Found status: BETA Current: 12.0.2 Target: 12.0.2
+[14:55:26] [Forge Version Check/INFO]: [searchables] Starting version check at https://updates.blamejared.com/get?n=searchables&gv=1.20.1
+[14:55:26] [Worker-ResourceReload-6/INFO]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
+[14:55:26] [Worker-ResourceReload-6/INFO]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
+[14:55:26] [Worker-ResourceReload-6/INFO]: Start loading plugin at snownee.jade.addon.core.CorePlugin
+[14:55:26] [Worker-ResourceReload-6/INFO]: Start loading plugin at fr.frinn.custommachinery.forge.integration.jade.CMWailaPlugin
+[14:55:27] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
+[14:55:27] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14:55:27] [Forge Version Check/INFO]: [searchables] Found status: BETA Current: 1.0.3 Target: 1.0.3
+[14:55:27] [Forge Version Check/INFO]: [canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json
+[14:55:27] [Render thread/INFO]: OpenAL initialized on device CoreAudio Default
+[14:55:27] [Render thread/INFO]: Sound engine started
+[14:55:27] [Render thread/INFO]: [FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..
+[14:55:27] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[14:55:27] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[14:55:27] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:55:27] [Render thread/INFO]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[14:55:27] [Render thread/INFO]: [FANCYMENU] Reloading resources..
+[14:55:27] [Render thread/INFO]: [FANCYMENU] Pre-loading resources..
+[14:55:27] [Render thread/INFO]: [FANCYMENU] Sound engine reload detected. Releasing cached audio resources.
+[14:55:27] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: FINISHED
+[14:55:27] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: title_screen
+[14:55:27] [Thread-0/INFO]: Please use /mfrc to reload any changed mod config files
+[14:55:27] [Forge Version Check/WARN]: Failed to process update information
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
 	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%23102!/:?]
 	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%23102!/:?]
@@ -253,857 +263,237 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%23102!/:?]
 	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%23102!/:?]
 	... 6 more
-[00:32:44] [Forge Version Check/INFO]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[00:32:45] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:32:45] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:32:45] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:32:45] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:32:45] [Render thread/INFO]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[00:32:45] [Render thread/INFO]: [FANCYMENU] Reloading resources..
-[00:32:45] [Render thread/INFO]: [FANCYMENU] Pre-loading resources..
-[00:32:45] [Render thread/INFO]: [FANCYMENU] Sound engine reload detected. Releasing cached audio resources.
-[00:32:45] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: FINISHED
-[00:32:45] [Forge Version Check/INFO]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
-[00:32:45] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: title_screen
-[00:32:47] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=36px, style=plain, sizePx=1024x1024.
-[00:32:47] [Render thread/WARN]: Game took 13.469 seconds to start
-[00:32:59] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: select_world_screen
-[00:32:59] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: generic_dirt_message_screen
-[00:32:59] [Render thread/INFO]: Injecting existing registry data into this CLIENT instance
-[00:32:59] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:titanium_ingot Expected: 1255 Got: 1324
-[00:33:00] [Render thread/INFO]: Loaded script server_scripts:mintech_recipes.js in 0.109 s
-[00:33:00] [Render thread/INFO]: Loaded 1/1 KubeJS server scripts in 0.116 s with 0 errors and 0 warnings
-[00:33:00] [Render thread/INFO]: Scripts loaded
-[00:33:00] [Render thread/INFO]: Initializing recipe event...
-[00:33:00] [Worker-ResourceReload-5/WARN]: Static binding violation: PRIVATE @Overwrite method m_215924_ in modernfix-modernfix.mixins.json:perf.tag_id_caching.TagEntryMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
-[00:33:00] [Worker-ResourceReload-2/INFO]: [minecraft:item] Found 352 tags, added 194 objects, removed 0 objects
-[00:33:00] [Render thread/INFO]: Processing recipes...
-[00:33:00] [Render thread/INFO]: Found 1175 recipes in 14.35 ms
-[00:33:00] [Render thread/INFO]: mintech_recipes.js#95: [mintech] added 63 recipes
-[00:33:00] [Render thread/INFO]: Posted recipe events in 33.17 ms
-[00:33:00] [Render thread/INFO]: Added 63 recipes, removed 0 recipes, modified 0 recipes, with 0 failed recipes in 16.50 ms
-[00:33:00] [Render thread/INFO]: Clearing KubeJS recipe lists...
-[00:33:00] [Render thread/INFO]: Loaded 1271 advancements
-[00:33:00] [Render thread/INFO]: Collecting Custom Machine upgrades from JS scripts.
-[00:33:00] [Render thread/INFO]: Successfully added 0 Custom Machine upgrades
-[00:33:00] [Render thread/WARN]: [EMI] The following EMI classes have mixins applied to them, which could fundamentally alter behavior and cause issues.
-[00:33:00] [Render thread/WARN]: [EMI] dev.emi.emi.platform.EmiAgnos is tainted by
+[14:55:27] [Forge Version Check/INFO]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[14:55:27] [Forge Version Check/INFO]: [forge] Found status: UP_TO_DATE Current: 47.4.10 Target: null
+[14:55:29] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.
+[14:55:29] [Render thread/WARN]: Game took 15.248 seconds to start
+[14:55:30] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: select_world_screen
+[14:55:31] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: generic_dirt_message_screen
+[14:55:31] [Render thread/INFO]: Injecting existing registry data into this CLIENT instance
+[14:55:31] [Render thread/WARN]: Registry minecraft:block: Object did not get ID it asked for. Name: mintech:nickel_block Expected: 1004 Got: 1009
+[14:55:31] [Render thread/WARN]: Registry minecraft:block: Object did not get ID it asked for. Name: mintech:nickel_ore Expected: 1009 Got: 1010
+[14:55:31] [Render thread/WARN]: Registry minecraft:block: Object did not get ID it asked for. Name: mintech:nickel_deepslate_ore Expected: 1010 Got: 1011
+[14:55:31] [Render thread/WARN]: Registry minecraft:block: Object did not get ID it asked for. Name: mintech:nickel_nether_ore Expected: 1011 Got: 1012
+[14:55:31] [Render thread/WARN]: Registry minecraft:block: Object did not get ID it asked for. Name: mintech:nickel_end_ore Expected: 1012 Got: 1013
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_ingot Expected: 1257 Got: 1276
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_nugget Expected: 1258 Got: 1277
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_plate Expected: 1394 Got: 1280
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_quadruple_plate Expected: 1396 Got: 1285
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_rod Expected: 1397 Got: 1286
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_foil Expected: 1398 Got: 1289
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_rolled_foil Expected: 1399 Got: 1294
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_wire_large Expected: 1400 Got: 1295
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_wire_medium Expected: 1401 Got: 1298
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_wire_small Expected: 1402 Got: 1302
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_wire_spool Expected: 1403 Got: 1305
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_ring_large Expected: 1404 Got: 1309
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_ring_medium Expected: 1405 Got: 1312
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_ring_small Expected: 1406 Got: 1332
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_bolt Expected: 1407 Got: 1353
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_screw Expected: 1408 Got: 1374
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_gear_large Expected: 1409 Got: 1416
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_gear_medium Expected: 1410 Got: 1463
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_gear_small Expected: 1411 Got: 1464
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_powder Expected: 1412 Got: 1465
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_small_powder Expected: 1413 Got: 1466
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_hammer Expected: 1414 Got: 1467
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_wrench Expected: 1415 Got: 1468
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_screwdriver Expected: 1416 Got: 1469
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_saw Expected: 1417 Got: 1470
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_file Expected: 1418 Got: 1471
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_pliers Expected: 1419 Got: 1472
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_mortar_pestle Expected: 1420 Got: 1473
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_block Expected: 1466 Got: 1474
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_ore Expected: 1471 Got: 1475
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_deepslate_ore Expected: 1472 Got: 1476
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_nether_ore Expected: 1473 Got: 1477
+[14:55:31] [Render thread/WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: mintech:nickel_end_ore Expected: 1474 Got: 1478
+[14:55:31] [Render thread/INFO]: Loaded script server_scripts:mintech_recipes.js in 0.112 s
+[14:55:31] [Render thread/INFO]: Loaded 1/1 KubeJS server scripts in 0.117 s with 0 errors and 0 warnings
+[14:55:31] [Render thread/INFO]: Scripts loaded
+[14:55:31] [Render thread/INFO]: Initializing recipe event...
+[14:55:31] [Worker-ResourceReload-5/WARN]: Static binding violation: PRIVATE @Overwrite method m_215924_ in modernfix-modernfix.mixins.json:perf.tag_id_caching.TagEntryMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[14:55:31] [Worker-ResourceReload-4/INFO]: [minecraft:item] Found 540 tags, added 1007 objects, removed 0 objects
+[14:55:31] [Render thread/INFO]: Processing recipes...
+[14:55:31] [Render thread/INFO]: Found 1175 recipes in 13.65 ms
+[14:55:31] [Render thread/INFO]: mintech_recipes.js#95: [mintech] added 296 recipes
+[14:55:31] [Render thread/INFO]: Posted recipe events in 88.27 ms
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/copper_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:copper_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:ingots/copper"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/iron_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:iron_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:ingots/iron"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/copper_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:copper_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:ingots/copper"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/copper_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:copper_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:ingots/copper"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/gold_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:gold_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:ingots/gold"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/gold_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:gold_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:ingots/gold"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/iron_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:iron_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:ingots/iron"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/iron_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:iron_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:ingots/iron"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/iron_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:iron_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:ingots/iron"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/netherite_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:netherite_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:ingots/netherite"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/gold_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:gold_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:ingots/gold"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/copper_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:copper_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:ingots/copper"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/iron_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:iron_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:ingots/iron"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/titanium_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:titanium_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:ingots/titanium"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/iron_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:iron_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:ingots/iron"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/netherite_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:netherite_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:ingots/netherite"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/titanium_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:titanium_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:ingots/titanium"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/gold_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:gold_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:ingots/gold"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/netherite_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:netherite_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:ingots/netherite"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/gold_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:gold_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:ingots/gold"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/copper_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:copper_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:ingots/copper"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/netherite_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:netherite_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:ingots/netherite"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/copper_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:copper_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:ingots/copper"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/netherite_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:netherite_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:ingots/netherite"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/gold_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:gold_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:ingots/gold"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/titanium_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:titanium_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:ingots/titanium"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/emerald_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:emerald_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:gems/emerald"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/nickel_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:nickel_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:ingots/nickel"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/diamond_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:diamond_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:gems/diamond"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/emerald_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:emerald_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:gems/emerald"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/titanium_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:titanium_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:ingots/titanium"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/nickel_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:nickel_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:ingots/nickel"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/netherite_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:netherite_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:ingots/netherite"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/emerald_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:emerald_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:gems/emerald"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/nickel_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:nickel_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:ingots/nickel"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/diamond_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:diamond_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:gems/diamond"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/titanium_screwdriver_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:titanium_screwdriver","count":1,"nbt":"{Damage:0}"},"pattern":[" I "," I "," $ "],"key":{"I":{"tag":"forge:ingots/titanium"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/diamond_hammer_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:diamond_hammer","count":1,"nbt":"{Damage:0}"},"pattern":["III","III"," $ "],"key":{"I":{"tag":"forge:gems/diamond"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/emerald_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:emerald_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:gems/emerald"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/titanium_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:titanium_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:ingots/titanium"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/diamond_wrench_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:diamond_wrench","count":1,"nbt":"{Damage:0}"},"pattern":["I I","III"," $ "],"key":{"I":{"tag":"forge:gems/diamond"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/emerald_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:emerald_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:gems/emerald"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/nickel_saw_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:nickel_saw","count":1,"nbt":"{Damage:0}"},"pattern":["III","   "," $ "],"key":{"I":{"tag":"forge:ingots/nickel"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/diamond_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:diamond_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:gems/diamond"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/emerald_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:emerald_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:gems/emerald"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/nickel_file_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:nickel_file","count":1,"nbt":"{Damage:0}"},"pattern":[" I ","III"," $ "],"key":{"I":{"tag":"forge:ingots/nickel"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/nickel_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:nickel_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:ingots/nickel"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [KubeJS Recipe Event Worker 0/WARN]: Error parsing recipe mintech:crafting/diamond_pliers_forging[kubejs:shaped]: {"type":"minecraft:crafting_shaped","result":{"item":"mintech:diamond_pliers","count":1,"nbt":"{Damage:0}"},"pattern":["I I"," I "," $ "],"key":{"I":{"tag":"forge:gems/diamond"}}}: Pattern references symbol '$' but it's not defined in the key
+[14:55:31] [Render thread/INFO]: Added 296 recipes, removed 0 recipes, modified 0 recipes, with 48 failed recipes in 17.08 ms
+[14:55:31] [Render thread/INFO]: Clearing KubeJS recipe lists...
+[14:55:31] [Render thread/INFO]: Loaded 1271 advancements
+[14:55:31] [Render thread/INFO]: Collecting Custom Machine upgrades from JS scripts.
+[14:55:31] [Render thread/INFO]: Successfully added 0 Custom Machine upgrades
+[14:55:31] [Render thread/WARN]: [EMI] The following EMI classes have mixins applied to them, which could fundamentally alter behavior and cause issues.
+[14:55:31] [Render thread/WARN]: [EMI] dev.emi.emi.platform.EmiAgnos is tainted by
 	 * dev.nolij.toomanyrecipeviewers.mixin.EmiAgnosMixin
-[00:33:00] [Render thread/WARN]: [EMI] dev.emi.emi.jemi.JemiUtil is tainted by
+[14:55:31] [Render thread/WARN]: [EMI] dev.emi.emi.jemi.JemiUtil is tainted by
 	 * dev.nolij.toomanyrecipeviewers.mixin.JemiUtilMixin
-[00:33:00] [Render thread/INFO]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
-[00:33:00] [Render thread/WARN]: Initial datapack load took 753.0 ms
-[00:33:00] [Render thread/INFO]: [EMI] Disconnecting from server, EMI data cleared
-[00:33:00] [Render thread/WARN]: [EMI] dev.emi.emi.runtime.EmiReloadManager$ReloadWorker is tainted by
+[14:55:31] [Render thread/INFO]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
+[14:55:31] [Render thread/WARN]: Initial datapack load took 806.1 ms
+[14:55:31] [Render thread/INFO]: [EMI] Disconnecting from server, EMI data cleared
+[14:55:31] [Render thread/WARN]: [EMI] dev.emi.emi.runtime.EmiReloadManager$ReloadWorker is tainted by
 	 * dev.nolij.toomanyrecipeviewers.mixin.EmiReloadManager_ReloadWorkerMixin
-[00:33:00] [Thread-10/INFO]: [EMI] Clearing data
-[00:33:00] [Thread-10/WARN]: [EMI] dev.emi.emi.registry.EmiRecipes is tainted by
+[14:55:31] [Thread-10/INFO]: [EMI] Clearing data
+[14:55:31] [Thread-10/WARN]: [EMI] dev.emi.emi.registry.EmiRecipes is tainted by
 	 * dev.nolij.toomanyrecipeviewers.mixin.EmiRecipesMixin
-[00:33:00] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: progress_screen
-[00:33:00] [Server thread/INFO]: Starting integrated minecraft server version 1.20.1
-[00:33:00] [Server thread/INFO]: Generating keypair
-[00:33:00] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: level_loading_screen
-[00:33:00] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.
-[00:33:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[00:33:01] [Server thread/WARN]: Method overwrite conflict for removeIf in canary.mixins.json:world.chunk_tickets.SortedArraySetMixin, previously written by org.embeddedt.modernfix.common.mixin.bugfix.paper_chunk_patches.SortedArraySetMixin. Skipping method.
-[00:33:01] [Server thread/INFO]: Server resource reload complete!
-[00:33:01] [Render thread/INFO]: Preparing spawn area: 0%
-[00:33:01] [Render thread/INFO]: Preparing spawn area: 0%
-[00:33:02] [Render thread/INFO]: Time elapsed: 978 ms
-[00:33:02] [Server thread/INFO]: Successfully initialized permission handler forge:default_handler
-[00:33:02] [Server thread/INFO]: Changing view distance to 5, from 10
-[00:33:02] [Server thread/INFO]: Changing simulation distance to 7, from 0
-[00:33:02] [Render thread/WARN]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[00:33:02] [Netty Local Client IO #0/INFO]: Connected to a modded server.
-[00:33:02] [Server thread/INFO]: [com.abdelaziz.canary.common.block.TrackedBlockStatePredicate:<clinit>:14]: Canary Cached BlockState Flags are disabled!
-[00:33:02] [Server thread/INFO]: soldierdonkey[local:E:78609360] logged in with entity id 236 at (19.4623333858242, 71.88148316123552, 59.995611928434315)
-[00:33:02] [Server thread/INFO]: Using enhanced recipe sync for player soldierdonkey
-[00:33:02] [Server thread/INFO]: soldierdonkey joined the game
-[00:33:02] [Server thread/INFO]: Syncing config to soldierdonkey (f3ab27d1-1800-461c-8776-2835eeaae4ab)
-[00:33:02] [Render thread/INFO]: [Inventory Profiles Next] Loaded 0 external GUI hints
-[00:33:02] [Render thread/INFO]: [Inventory Profiles Next] Loaded 798 build-in GUI hints
-[00:33:02] [Render thread/INFO]: [Inventory Profiles Next] Effective GUI hints after merge: 798
-[00:33:02] [Render thread/WARN]: Error loading class: net/fabricmc/fabric/api/blockview/v2/FabricBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.blockview.v2.FabricBlockView)
-[00:33:02] [Render thread/WARN]: Error loading class: net/fabricmc/fabric/api/rendering/data/v1/RenderAttachedBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.rendering.data.v1.RenderAttachedBlockView)
-[00:33:02] [Render thread/INFO]: Started 2 worker threads
-[00:33:02] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: receiving_level_screen
-[00:33:02] [Render thread/INFO]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
-[00:33:02] [Render thread/INFO]: [EMI] Tags synchronized, reloading EMI
-[00:33:02] [Render thread/INFO]: [EMI] Starting Reload
-[00:33:02] [Thread-21/INFO]: [EMI] Starting EMI reload...
-[00:33:02] [Thread-21/INFO]: [EMI] Clearing data
-[00:33:02] [Thread-21/WARN]: [EMI] dev.emi.emi.api.stack.ItemEmiStack is tainted by
+[14:55:31] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: progress_screen
+[14:55:32] [Server thread/INFO]: Starting integrated minecraft server version 1.20.1
+[14:55:32] [Server thread/INFO]: Generating keypair
+[14:55:32] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: level_loading_screen
+[14:55:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:55:32] [Server thread/WARN]: Method overwrite conflict for removeIf in canary.mixins.json:world.chunk_tickets.SortedArraySetMixin, previously written by org.embeddedt.modernfix.common.mixin.bugfix.paper_chunk_patches.SortedArraySetMixin. Skipping method.
+[14:55:32] [Server thread/INFO]: Server resource reload complete!
+[14:55:33] [Render thread/INFO]: Preparing spawn area: 0%
+[14:55:33] [Render thread/INFO]: Preparing spawn area: 0%
+[14:55:33] [Server thread/INFO]: Successfully initialized permission handler forge:default_handler
+[14:55:33] [Render thread/INFO]: Time elapsed: 1018 ms
+[14:55:33] [Server thread/INFO]: Changing view distance to 5, from 10
+[14:55:33] [Server thread/INFO]: Changing simulation distance to 7, from 0
+[14:55:33] [Render thread/WARN]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[14:55:33] [Netty Local Client IO #0/INFO]: Connected to a modded server.
+[14:55:33] [Server thread/INFO]: [com.abdelaziz.canary.common.block.TrackedBlockStatePredicate:<clinit>:14]: Canary Cached BlockState Flags are disabled!
+[14:55:33] [Server thread/INFO]: soldierdonkey[local:E:90eeef7d] logged in with entity id 239 at (-17.746135516546094, 71.0, 16.416351365711638)
+[14:55:33] [Server thread/INFO]: Using enhanced recipe sync for player soldierdonkey
+[14:55:33] [Server thread/INFO]: soldierdonkey joined the game
+[14:55:33] [Server thread/INFO]: Syncing config to soldierdonkey (f3ab27d1-1800-461c-8776-2835eeaae4ab)
+[14:55:33] [Render thread/INFO]: [Inventory Profiles Next] Loaded 0 external GUI hints
+[14:55:33] [Render thread/INFO]: [Inventory Profiles Next] Loaded 798 build-in GUI hints
+[14:55:33] [Render thread/INFO]: [Inventory Profiles Next] Effective GUI hints after merge: 798
+[14:55:33] [Render thread/WARN]: Error loading class: net/fabricmc/fabric/api/blockview/v2/FabricBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.blockview.v2.FabricBlockView)
+[14:55:33] [Render thread/WARN]: Error loading class: net/fabricmc/fabric/api/rendering/data/v1/RenderAttachedBlockView (java.lang.ClassNotFoundException: net.fabricmc.fabric.api.rendering.data.v1.RenderAttachedBlockView)
+[14:55:33] [Render thread/INFO]: Started 2 worker threads
+[14:55:33] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: receiving_level_screen
+[14:55:33] [Render thread/INFO]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
+[14:55:33] [Render thread/INFO]: [EMI] Tags synchronized, reloading EMI
+[14:55:33] [Render thread/INFO]: [EMI] Starting Reload
+[14:55:33] [Thread-21/INFO]: [EMI] Starting EMI reload...
+[14:55:33] [Thread-21/INFO]: [EMI] Clearing data
+[14:55:33] [Thread-21/WARN]: [EMI] dev.emi.emi.api.stack.ItemEmiStack is tainted by
 	 * dev.nolij.toomanyrecipeviewers.mixin.ItemEmiStackMixin
-[00:33:02] [Thread-21/WARN]: [EMI] dev.emi.emi.api.stack.FluidEmiStack is tainted by
+[14:55:33] [Thread-21/WARN]: [EMI] dev.emi.emi.api.stack.FluidEmiStack is tainted by
 	 * dev.nolij.toomanyrecipeviewers.mixin.FluidEmiStackMixin
-[00:33:02] [Thread-21/INFO]: [EMI] Initializing plugin from emi
-[00:33:02] [Thread-21/INFO]: [EMI] Initialized plugin from emi in 2ms
-[00:33:02] [Thread-21/INFO]: [EMI] Initializing plugin from emi_ores
-[00:33:02] [Thread-21/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
-[00:33:02] [Thread-21/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
-[00:33:02] [Thread-21/INFO]: [EMI] [TMRV] Initializing...
-[00:33:02] [Thread-21/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 2ms
-[00:33:02] [Thread-21/INFO]: [EMI] Processing tags
-[00:33:02] [Thread-21/WARN]: [EMI] dev.emi.emi.EmiUtil is tainted by
+[14:55:33] [Thread-21/INFO]: [EMI] Initializing plugin from emi
+[14:55:33] [Thread-21/INFO]: [EMI] Initialized plugin from emi in 3ms
+[14:55:33] [Thread-21/INFO]: [EMI] Initializing plugin from emi_ores
+[14:55:33] [Thread-21/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
+[14:55:33] [Thread-21/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Initializing...
+[14:55:33] [Thread-21/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 2ms
+[14:55:33] [Thread-21/INFO]: [EMI] Processing tags
+[14:55:33] [Thread-21/WARN]: [EMI] dev.emi.emi.EmiUtil is tainted by
 	 * dev.latvian.mods.kubejs.core.mixin.common.mod.EMITooltipMixin
-[00:33:02] [Render thread/INFO]: Received config from the server: 
-[00:33:02] [Render thread/INFO]: [FANCYMENU] Connected to a server with FancyMenu installed: local:E:4311f7a2
-[00:33:02] [Server thread/INFO]: [FANCYMENU] A client with FancyMenu installed joined the server: soldierdonkey
-[00:33:02] [Thread-21/INFO]: [EMI] Constructing index
-[00:33:02] [Thread-21/INFO]: [EMI] Reloading item groups on client thread...
-[00:33:02] [Thread-21/INFO]: [EMI] Reloading item groups on client thread took 68ms
-[00:33:02] [Thread-21/INFO]: [EMI] Loading plugin from emi
-[00:33:02] [Render thread/WARN]: Time from main menu to in-game was 2.0928473 seconds
-[00:33:02] [Render thread/WARN]: Total time to load game and open world was 15.561848 seconds
-[00:33:02] [Thread-21/INFO]: [EMI] Reloaded plugin from emi in 175ms
-[00:33:02] [Thread-21/INFO]: [EMI] Loading plugin from emi_ores
-[00:33:02] [Thread-21/INFO]: [EMI] Reloaded plugin from emi_ores in 5ms
-[00:33:02] [Thread-21/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
-[00:33:02] [Thread-21/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
-[00:33:02] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
-[00:33:02] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 9ms
-[00:33:02] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
-[00:33:02] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
-[00:33:02] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 4ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 1ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms
-[00:33:03] [Render thread/INFO]: Loaded 2 advancements
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 30ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 3ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 6ms
-[00:33:03] [Thread-21/INFO]: Added 0 extended crafting recipes in 5ms
-[00:33:03] [Thread-21/INFO]: Added 0 extended smithing recipes in 0ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 2ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms
-[00:33:03] [Thread-21/INFO]: [jei:minecraft⁰] Loaded in 32ms
-[00:33:03] [Thread-21/INFO]: [jade:main] Loaded in 1ms
-[00:33:03] [Thread-21/INFO]: [modernfix:capturer] Loaded in 0ms
-[00:33:03] [Thread-21/INFO]: [kubejs:jei] Loaded in 0ms
-[00:33:03] [Thread-21/INFO]: [custommachinery:jei_plugin] Loaded in 18ms
-[00:33:03] [Thread-21/INFO]: [jei:internalⁱ] Loaded in 0ms
-[00:33:03] [Thread-21/INFO]: JEI plugins loaded in 55ms
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
-[00:33:03] [Thread-21/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
-[00:33:03] [Thread-21/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 209ms
-[00:33:03] [Thread-21/INFO]: [EMI] Baking index
-[00:33:03] [Thread-21/INFO]: [EMI] Registering late recipes
-[00:33:03] [Thread-21/INFO]: [EMI] Baking recipes
-[00:33:03] [Thread-21/INFO]: [EMI] Baked 3132 recipes in 62ms
-[00:33:03] [Thread-21/INFO]: [EMI] Baking search
-[00:33:03] [Thread-22/INFO]: [EMI] Baked recipes after reload in 55ms
-[00:33:03] [Thread-21/INFO]: [EMI] Finishing up
-[00:33:03] [Thread-21/INFO]: [EMI] Reloaded EMI in 783ms
-[00:33:03] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: inventory_screen
-[00:33:03] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: creative_mode_inventory_screen
-[00:33:10] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: dev.emi.emi.screen.RecipeScreen
-[00:48:44] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: pause_screen
-[00:48:44] [Server thread/INFO]: Saving and pausing game...
-[00:48:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:48:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:48:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:48:57] [Render thread/INFO]: [System] [CHAT] [Debug]: Reloaded resource packs
-[00:48:57] [Render thread/INFO]: example.js#5: Hello, World! (Loaded client scripts)
-[00:48:57] [Render thread/INFO]: Loaded script client_scripts:example.js in 0.001 s
-[00:48:57] [Render thread/INFO]: Loaded 1/1 KubeJS client scripts in 0.009 s with 0 errors and 0 warnings
-[00:48:57] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: STARTING
-[00:48:57] [Render thread/INFO]: Reloading ResourceManager: vanilla, mod_resources, mintech_textures, KubeJS Resource Pack [assets]
-[00:48:57] [Render thread/INFO]: Client resource reload complete!
-[00:48:57] [Server thread/INFO]: Saving and pausing game...
-[00:48:57] [Worker-ResourceReload-11/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
-[00:48:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:48:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:48:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:48:57] [Worker-ResourceReload-9/ERROR]: [FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.
-java.io.UncheckedIOException: Failed to enumerate archived resource pack ''
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:68) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:145) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.lambda$tryListPackNamespaceRoot$1(ForgePlatformHelper.java:158) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listMatchingChildNamespaceRoots(PackResourcesRootEnumeration.java:79) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:157) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.collectPackLocations(ClientResourceIndexBuilder.java:94) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:46) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:29) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepareForManager(ClientResourceIndex.java:62) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepare(ClientResourceIndex.java:31) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.prepare(FancyMenuResourceReload.java:59) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.m_5944_(FancyMenuResourceReload.java:56) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SimplePreparableReloadListener.java:11) ~[client-1.20.1-20230612.114412-srg.jar%23209!/:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
-Caused by: java.io.FileNotFoundException:  (No such file or directory)
-	at java.io.RandomAccessFile.open0(Native Method) ~[?:?]
-	at java.io.RandomAccessFile.open(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:55) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	... 19 more
-[00:48:57] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
-[00:48:57] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:48:57] [Render thread/INFO]: OpenAL initialized on device CoreAudio Default
-[00:48:57] [Render thread/INFO]: Sound engine started
-[00:48:57] [Render thread/INFO]: [FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..
-[00:48:58] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:48:58] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:48:58] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:48:58] [Render thread/INFO]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[00:48:58] [Render thread/INFO]: [FANCYMENU] Reloading resources..
-[00:48:58] [Render thread/INFO]: [FANCYMENU] Pre-loading resources..
-[00:48:58] [Render thread/INFO]: [FANCYMENU] Sound engine reload detected. Releasing cached audio resources.
-[00:48:58] [Render thread/INFO]: Stopping worker threads
-[00:48:58] [Render thread/INFO]: Started 2 worker threads
-[00:48:58] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: FINISHED
-[00:48:58] [pool-12-thread-1/INFO]: [EMI] Starting Reload
-[00:48:58] [Thread-42/INFO]: [EMI] Starting EMI reload...
-[00:48:58] [Thread-42/INFO]: [EMI] Clearing data
-[00:48:58] [Thread-42/INFO]: [EMI] Initializing plugin from emi
-[00:48:58] [Thread-42/INFO]: [EMI] Initialized plugin from emi in 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] Initializing plugin from emi_ores
-[00:48:58] [Thread-42/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Initializing...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] Processing tags
-[00:48:58] [Thread-42/INFO]: [EMI] Constructing index
-[00:48:58] [Thread-42/INFO]: [EMI] Reloading item groups on client thread...
-[00:48:58] [Thread-42/INFO]: [EMI] Reloading item groups on client thread took 15ms
-[00:48:58] [Thread-42/INFO]: [EMI] Loading plugin from emi
-[00:48:58] [Thread-42/INFO]: [EMI] Reloaded plugin from emi in 31ms
-[00:48:58] [Thread-42/INFO]: [EMI] Loading plugin from emi_ores
-[00:48:58] [Thread-42/INFO]: [EMI] Reloaded plugin from emi_ores in 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
-[00:48:58] [Thread-42/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 1ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 1ms
-[00:48:58] [Thread-42/INFO]: Added 0 extended crafting recipes in 2ms
-[00:48:58] [Thread-42/INFO]: Added 0 extended smithing recipes in 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms
-[00:48:58] [Thread-42/INFO]: [jei:minecraft⁰] Loaded in 0ms
-[00:48:58] [Thread-42/INFO]: [jade:main] Loaded in 0ms
-[00:48:58] [Thread-42/INFO]: [modernfix:capturer] Loaded in 0ms
-[00:48:58] [Thread-42/INFO]: [kubejs:jei] Loaded in 0ms
-[00:48:58] [Thread-42/INFO]: [custommachinery:jei_plugin] Loaded in 1ms
-[00:48:58] [Thread-42/INFO]: [jei:internalⁱ] Loaded in 0ms
-[00:48:58] [Thread-42/INFO]: JEI plugins loaded in 2ms
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
-[00:48:58] [Thread-42/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
-[00:48:58] [Thread-42/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 25ms
-[00:48:58] [Thread-42/INFO]: [EMI] Baking index
-[00:48:58] [Thread-42/INFO]: [EMI] Registering late recipes
-[00:48:58] [Thread-42/INFO]: [EMI] Baking recipes
-[00:48:58] [Thread-42/INFO]: [EMI] Baked 3132 recipes in 34ms
-[00:48:58] [Thread-42/INFO]: [EMI] Baking search
-[00:48:58] [Thread-43/INFO]: [EMI] Baked recipes after reload in 19ms
-[00:48:58] [Thread-42/INFO]: [EMI] Finishing up
-[00:48:58] [Thread-42/INFO]: [EMI] Reloaded EMI in 181ms
-[00:49:00] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.
-[00:49:16] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: dev.emi.emi.screen.BoMScreen
-[00:54:36] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: chat_screen
-[00:54:38] [Render thread/INFO]: [System] [CHAT] [Debug]: Reloaded resource packs
-[00:54:38] [Render thread/INFO]: example.js#5: Hello, World! (Loaded client scripts)
-[00:54:38] [Render thread/INFO]: Loaded script client_scripts:example.js in 0.001 s
-[00:54:38] [Render thread/INFO]: Loaded 1/1 KubeJS client scripts in 0.011 s with 0 errors and 0 warnings
-[00:54:38] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: STARTING
-[00:54:38] [Render thread/INFO]: Reloading ResourceManager: vanilla, mod_resources, mintech_textures, KubeJS Resource Pack [assets]
-[00:54:38] [Render thread/INFO]: Client resource reload complete!
-[00:54:38] [Server thread/INFO]: Saving and pausing game...
-[00:54:38] [Worker-ResourceReload-7/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
-[00:54:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:54:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:54:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:54:38] [Worker-ResourceReload-14/ERROR]: [FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.
-java.io.UncheckedIOException: Failed to enumerate archived resource pack ''
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:68) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:145) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.lambda$tryListPackNamespaceRoot$1(ForgePlatformHelper.java:158) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listMatchingChildNamespaceRoots(PackResourcesRootEnumeration.java:79) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:157) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.collectPackLocations(ClientResourceIndexBuilder.java:94) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:46) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:29) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepareForManager(ClientResourceIndex.java:62) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepare(ClientResourceIndex.java:31) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.prepare(FancyMenuResourceReload.java:59) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.m_5944_(FancyMenuResourceReload.java:56) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SimplePreparableReloadListener.java:11) ~[client-1.20.1-20230612.114412-srg.jar%23209!/:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
-Caused by: java.io.FileNotFoundException:  (No such file or directory)
-	at java.io.RandomAccessFile.open0(Native Method) ~[?:?]
-	at java.io.RandomAccessFile.open(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:55) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	... 19 more
-[00:54:38] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
-[00:54:38] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:54:38] [Render thread/INFO]: OpenAL initialized on device CoreAudio Default
-[00:54:38] [Render thread/INFO]: Sound engine started
-[00:54:38] [Render thread/INFO]: [FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..
-[00:54:38] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:54:38] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:54:38] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:54:38] [Render thread/INFO]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[00:54:38] [Render thread/INFO]: [FANCYMENU] Reloading resources..
-[00:54:38] [Render thread/INFO]: [FANCYMENU] Pre-loading resources..
-[00:54:38] [Render thread/INFO]: [FANCYMENU] Sound engine reload detected. Releasing cached audio resources.
-[00:54:39] [Render thread/INFO]: Stopping worker threads
-[00:54:39] [Render thread/INFO]: Started 2 worker threads
-[00:54:39] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: FINISHED
-[00:54:39] [pool-13-thread-1/INFO]: [EMI] Starting Reload
-[00:54:39] [Thread-57/INFO]: [EMI] Starting EMI reload...
-[00:54:39] [Thread-57/INFO]: [EMI] Clearing data
-[00:54:39] [Thread-57/INFO]: [EMI] Initializing plugin from emi
-[00:54:39] [Thread-57/INFO]: [EMI] Initialized plugin from emi in 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] Initializing plugin from emi_ores
-[00:54:39] [Thread-57/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Initializing...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] Processing tags
-[00:54:39] [Thread-57/INFO]: [EMI] Constructing index
-[00:54:39] [Thread-57/INFO]: [EMI] Reloading item groups on client thread...
-[00:54:39] [Thread-57/INFO]: [EMI] Reloading item groups on client thread took 14ms
-[00:54:39] [Thread-57/INFO]: [EMI] Loading plugin from emi
-[00:54:39] [Thread-57/INFO]: [EMI] Reloaded plugin from emi in 26ms
-[00:54:39] [Thread-57/INFO]: [EMI] Loading plugin from emi_ores
-[00:54:39] [Thread-57/INFO]: [EMI] Reloaded plugin from emi_ores in 1ms
-[00:54:39] [Thread-57/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
-[00:54:39] [Thread-57/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 1ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 1ms
-[00:54:39] [Thread-57/INFO]: Added 0 extended crafting recipes in 2ms
-[00:54:39] [Thread-57/INFO]: Added 0 extended smithing recipes in 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms
-[00:54:39] [Thread-57/INFO]: [jei:minecraft⁰] Loaded in 0ms
-[00:54:39] [Thread-57/INFO]: [jade:main] Loaded in 0ms
-[00:54:39] [Thread-57/INFO]: [modernfix:capturer] Loaded in 0ms
-[00:54:39] [Thread-57/INFO]: [kubejs:jei] Loaded in 0ms
-[00:54:39] [Thread-57/INFO]: [custommachinery:jei_plugin] Loaded in 0ms
-[00:54:39] [Thread-57/INFO]: [jei:internalⁱ] Loaded in 0ms
-[00:54:39] [Thread-57/INFO]: JEI plugins loaded in 2ms
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
-[00:54:39] [Thread-57/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
-[00:54:39] [Thread-57/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 23ms
-[00:54:39] [Thread-57/INFO]: [EMI] Baking index
-[00:54:39] [Thread-57/INFO]: [EMI] Registering late recipes
-[00:54:39] [Thread-57/INFO]: [EMI] Baking recipes
-[00:54:39] [Thread-57/INFO]: [EMI] Baked 3132 recipes in 18ms
-[00:54:39] [Thread-57/INFO]: [EMI] Baking search
-[00:54:39] [Thread-58/INFO]: [EMI] Baked recipes after reload in 14ms
-[00:54:39] [Thread-57/INFO]: [EMI] Finishing up
-[00:54:39] [Thread-57/INFO]: [EMI] Reloaded EMI in 135ms
-[00:54:41] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.
-[00:54:46] [Render thread/INFO]: Building search tree for 1626 items (this may take a while)...
-[00:54:46] [Render thread/INFO]: Building search tree for 1626 items took 54.27 ms
-[00:54:52] [Render thread/INFO]: Loaded 7 advancements
-[00:55:22] [Server thread/INFO]: Saving and pausing game...
-[00:55:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:55:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:55:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:55:44] [Server thread/INFO]: Saving and pausing game...
-[00:55:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:55:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:55:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:56:55] [Server thread/INFO]: [soldierdonkey: Reloading!]
-[00:56:55] [Render thread/INFO]: [System] [CHAT] Reloading!
-[00:56:55] [Server thread/INFO]: Loaded script server_scripts:mintech_recipes.js in 0.098 s
-[00:56:55] [Server thread/INFO]: Loaded 1/1 KubeJS server scripts in 0.104 s with 0 errors and 0 warnings
-[00:56:55] [Server thread/INFO]: Scripts loaded
-[00:56:55] [Server thread/INFO]: Initializing recipe event...
-[00:56:55] [Worker-ResourceReload-16/INFO]: [minecraft:item] Found 352 tags, added 194 objects, removed 0 objects
-[00:56:55] [Server thread/INFO]: Processing recipes...
-[00:56:55] [Server thread/INFO]: Found 1175 recipes in 7.938 ms
-[00:56:55] [Server thread/INFO]: mintech_recipes.js#95: [mintech] added 63 recipes
-[00:56:55] [Server thread/INFO]: Posted recipe events in 14.39 ms
-[00:56:55] [Server thread/INFO]: Added 63 recipes, removed 0 recipes, modified 0 recipes, with 0 failed recipes in 6.581 ms
-[00:56:55] [Server thread/INFO]: Clearing KubeJS recipe lists...
-[00:56:55] [Server thread/INFO]: Loaded 1271 advancements
-[00:56:55] [Server thread/INFO]: Collecting Custom Machine upgrades from JS scripts.
-[00:56:55] [Server thread/INFO]: Successfully added 0 Custom Machine upgrades
-[00:56:55] [Server thread/INFO]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
-[00:56:55] [Render thread/INFO]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
-[00:56:55] [Render thread/INFO]: [EMI] Tags synchronized, reloading EMI
-[00:56:55] [Render thread/INFO]: [EMI] Starting Reload
-[00:56:55] [Thread-61/INFO]: [EMI] Starting EMI reload...
-[00:56:55] [Thread-61/INFO]: [EMI] Clearing data
-[00:56:55] [Thread-61/INFO]: [EMI] Initializing plugin from emi
-[00:56:55] [Thread-61/INFO]: [EMI] Initialized plugin from emi in 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] Initializing plugin from emi_ores
-[00:56:55] [Thread-61/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Initializing...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] Processing tags
-[00:56:55] [Render thread/INFO]: Loaded 7 advancements
-[00:56:55] [Server thread/INFO]: Reloaded with no KubeJS errors!
-[00:56:55] [Server thread/INFO]: Server resource reload complete!
-[00:56:55] [Thread-61/INFO]: [EMI] Constructing index
-[00:56:55] [Render thread/INFO]: [System] [CHAT] Reloaded with no KubeJS errors!
-[00:56:55] [Thread-61/INFO]: [EMI] Reloading item groups on client thread...
-[00:56:55] [Thread-61/INFO]: [EMI] Reloading item groups on client thread took 8ms
-[00:56:55] [Thread-61/INFO]: [EMI] Loading plugin from emi
-[00:56:55] [Thread-61/INFO]: [EMI] Reloaded plugin from emi in 21ms
-[00:56:55] [Thread-61/INFO]: [EMI] Loading plugin from emi_ores
-[00:56:55] [Thread-61/INFO]: [EMI] Reloaded plugin from emi_ores in 1ms
-[00:56:55] [Thread-61/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
-[00:56:55] [Thread-61/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 1ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 0ms
-[00:56:55] [Thread-61/INFO]: Added 0 extended crafting recipes in 2ms
-[00:56:55] [Thread-61/INFO]: Added 0 extended smithing recipes in 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms
-[00:56:55] [Thread-61/INFO]: [jei:minecraft⁰] Loaded in 1ms
-[00:56:55] [Thread-61/INFO]: [jade:main] Loaded in 0ms
-[00:56:55] [Thread-61/INFO]: [modernfix:capturer] Loaded in 0ms
-[00:56:55] [Thread-61/INFO]: [kubejs:jei] Loaded in 0ms
-[00:56:55] [Thread-61/INFO]: [custommachinery:jei_plugin] Loaded in 0ms
-[00:56:55] [Thread-61/INFO]: [jei:internalⁱ] Loaded in 0ms
-[00:56:55] [Thread-61/INFO]: JEI plugins loaded in 1ms
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
-[00:56:55] [Thread-61/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
-[00:56:55] [Thread-61/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 6ms
-[00:56:55] [Thread-61/INFO]: [EMI] Baking index
-[00:56:55] [Thread-61/INFO]: [EMI] Registering late recipes
-[00:56:55] [Thread-61/INFO]: [EMI] Baking recipes
-[00:56:55] [Thread-61/INFO]: [EMI] Baked 3132 recipes in 15ms
-[00:56:55] [Thread-61/INFO]: [EMI] Baking search
-[00:56:55] [Thread-63/INFO]: [EMI] Baked recipes after reload in 13ms
-[00:56:55] [Thread-61/INFO]: [EMI] Finishing up
-[00:56:55] [Thread-61/INFO]: [EMI] Reloaded EMI in 107ms
-[00:56:59] [Render thread/INFO]: [System] [CHAT] [Debug]: Reloaded resource packs
-[00:56:59] [Render thread/INFO]: example.js#5: Hello, World! (Loaded client scripts)
-[00:56:59] [Render thread/INFO]: Loaded script client_scripts:example.js in 0.001 s
-[00:56:59] [Render thread/INFO]: Loaded 1/1 KubeJS client scripts in 0.005 s with 0 errors and 0 warnings
-[00:56:59] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: STARTING
-[00:56:59] [Render thread/INFO]: Reloading ResourceManager: vanilla, mod_resources, mintech_textures, KubeJS Resource Pack [assets]
-[00:56:59] [Render thread/INFO]: Client resource reload complete!
-[00:56:59] [Worker-ResourceReload-17/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
-[00:56:59] [Server thread/INFO]: Saving and pausing game...
-[00:56:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:56:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:56:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:56:59] [Worker-ResourceReload-20/ERROR]: [FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.
-java.io.UncheckedIOException: Failed to enumerate archived resource pack ''
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:68) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:145) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.lambda$tryListPackNamespaceRoot$1(ForgePlatformHelper.java:158) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listMatchingChildNamespaceRoots(PackResourcesRootEnumeration.java:79) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:157) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.collectPackLocations(ClientResourceIndexBuilder.java:94) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:46) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:29) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepareForManager(ClientResourceIndex.java:62) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepare(ClientResourceIndex.java:31) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.prepare(FancyMenuResourceReload.java:59) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.m_5944_(FancyMenuResourceReload.java:56) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SimplePreparableReloadListener.java:11) ~[client-1.20.1-20230612.114412-srg.jar%23209!/:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
-Caused by: java.io.FileNotFoundException:  (No such file or directory)
-	at java.io.RandomAccessFile.open0(Native Method) ~[?:?]
-	at java.io.RandomAccessFile.open(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:55) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	... 19 more
-[00:57:00] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
-[00:57:00] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:57:00] [Render thread/INFO]: OpenAL initialized on device CoreAudio Default
-[00:57:00] [Render thread/INFO]: Sound engine started
-[00:57:00] [Render thread/INFO]: [FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..
-[00:57:00] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:57:00] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:57:00] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:57:00] [Render thread/INFO]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[00:57:00] [Render thread/INFO]: [FANCYMENU] Reloading resources..
-[00:57:00] [Render thread/INFO]: [FANCYMENU] Pre-loading resources..
-[00:57:00] [Render thread/INFO]: [FANCYMENU] Sound engine reload detected. Releasing cached audio resources.
-[00:57:00] [Render thread/INFO]: Stopping worker threads
-[00:57:00] [Render thread/INFO]: Started 2 worker threads
-[00:57:00] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: FINISHED
-[00:57:00] [pool-14-thread-1/INFO]: [EMI] Starting Reload
-[00:57:00] [Thread-68/INFO]: [EMI] Starting EMI reload...
-[00:57:00] [Thread-68/INFO]: [EMI] Clearing data
-[00:57:00] [Thread-68/INFO]: [EMI] Initializing plugin from emi
-[00:57:00] [Thread-68/INFO]: [EMI] Initialized plugin from emi in 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] Initializing plugin from emi_ores
-[00:57:00] [Thread-68/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Initializing...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] Processing tags
-[00:57:00] [Thread-68/INFO]: [EMI] Constructing index
-[00:57:00] [Thread-68/INFO]: [EMI] Reloading item groups on client thread...
-[00:57:00] [Thread-68/INFO]: [EMI] Reloading item groups on client thread took 15ms
-[00:57:00] [Thread-68/INFO]: [EMI] Loading plugin from emi
-[00:57:00] [Thread-68/INFO]: [EMI] Reloaded plugin from emi in 18ms
-[00:57:00] [Thread-68/INFO]: [EMI] Loading plugin from emi_ores
-[00:57:00] [Thread-68/INFO]: [EMI] Reloaded plugin from emi_ores in 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
-[00:57:00] [Thread-68/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 1ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 0ms
-[00:57:00] [Thread-68/INFO]: Added 0 extended crafting recipes in 1ms
-[00:57:00] [Thread-68/INFO]: Added 0 extended smithing recipes in 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms
-[00:57:00] [Thread-68/INFO]: [jei:minecraft⁰] Loaded in 0ms
-[00:57:00] [Thread-68/INFO]: [jade:main] Loaded in 0ms
-[00:57:00] [Thread-68/INFO]: [modernfix:capturer] Loaded in 0ms
-[00:57:00] [Thread-68/INFO]: [kubejs:jei] Loaded in 0ms
-[00:57:00] [Thread-68/INFO]: [custommachinery:jei_plugin] Loaded in 0ms
-[00:57:00] [Thread-68/INFO]: [jei:internalⁱ] Loaded in 0ms
-[00:57:00] [Thread-68/INFO]: JEI plugins loaded in 1ms
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
-[00:57:00] [Thread-68/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
-[00:57:00] [Thread-68/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 5ms
-[00:57:00] [Thread-68/INFO]: [EMI] Baking index
-[00:57:00] [Thread-68/INFO]: [EMI] Registering late recipes
-[00:57:00] [Thread-68/INFO]: [EMI] Baking recipes
-[00:57:00] [Thread-68/INFO]: [EMI] Baked 3132 recipes in 21ms
-[00:57:00] [Thread-68/INFO]: [EMI] Baking search
-[00:57:00] [Thread-69/INFO]: [EMI] Baked recipes after reload in 13ms
-[00:57:00] [Thread-68/INFO]: [EMI] Finishing up
-[00:57:00] [Thread-68/INFO]: [EMI] Reloaded EMI in 110ms
-[00:57:11] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.
-[00:57:15] [Render thread/INFO]: Building search tree for 1626 items (this may take a while)...
-[00:57:15] [Render thread/INFO]: Building search tree for 1626 items took 37.22 ms
-[00:57:19] [Render thread/INFO]: Loaded 9 advancements
-[00:57:42] [Server thread/INFO]: Saving and pausing game...
-[00:57:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:57:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:57:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:58:56] [Render thread/INFO]: [System] [CHAT] [Debug]: Reloaded resource packs
-[00:58:56] [Render thread/INFO]: example.js#5: Hello, World! (Loaded client scripts)
-[00:58:56] [Render thread/INFO]: Loaded script client_scripts:example.js in 0.001 s
-[00:58:56] [Render thread/INFO]: Loaded 1/1 KubeJS client scripts in 0.009 s with 0 errors and 0 warnings
-[00:58:56] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: STARTING
-[00:58:56] [Render thread/INFO]: Reloading ResourceManager: vanilla, mod_resources, mintech_textures, KubeJS Resource Pack [assets]
-[00:58:56] [Render thread/INFO]: Client resource reload complete!
-[00:58:56] [Worker-ResourceReload-17/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
-[00:58:56] [Server thread/INFO]: Saving and pausing game...
-[00:58:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:58:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:58:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[00:58:56] [Worker-ResourceReload-18/ERROR]: [FANCYMENU] Failed to enumerate client resources in namespace 'trender' from pack 'mod_resources'; keeping the valid entries reported before the failure.
-java.io.UncheckedIOException: Failed to enumerate archived resource pack ''
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:68) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:145) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.lambda$tryListPackNamespaceRoot$1(ForgePlatformHelper.java:158) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listMatchingChildNamespaceRoots(PackResourcesRootEnumeration.java:79) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.platform.ForgePlatformHelper.tryListPackNamespaceRoot(ForgePlatformHelper.java:157) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.collectPackLocations(ClientResourceIndexBuilder.java:94) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:46) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndexBuilder.build(ClientResourceIndexBuilder.java:29) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepareForManager(ClientResourceIndex.java:62) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.resource.ClientResourceIndex.prepare(ClientResourceIndex.java:31) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.prepare(FancyMenuResourceReload.java:59) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at de.keksuccino.fancymenu.util.reload.FancyMenuResourceReload$1.m_5944_(FancyMenuResourceReload.java:56) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SimplePreparableReloadListener.java:11) ~[client-1.20.1-20230612.114412-srg.jar%23209!/:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
-Caused by: java.io.FileNotFoundException:  (No such file or directory)
-	at java.io.RandomAccessFile.open0(Native Method) ~[?:?]
-	at java.io.RandomAccessFile.open(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.io.RandomAccessFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$Source.get(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile$CleanableResource.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at java.util.zip.ZipFile.<init>(Unknown Source) ~[?:?]
-	at de.keksuccino.fancymenu.util.resource.PackResourcesRootEnumeration.listArchiveNamespaceRoot(PackResourcesRootEnumeration.java:55) ~[fancymenu_forge_3.9.12_MC_1.20.1.jar%23189!/:3.9.12]
-	... 19 more
-[00:58:57] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
-[00:58:57] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[00:58:57] [Render thread/INFO]: OpenAL initialized on device CoreAudio Default
-[00:58:57] [Render thread/INFO]: Sound engine started
-[00:58:57] [Render thread/INFO]: [FANCYMENU] Reloading AudioResourceHandler after Minecraft SoundEngine reload..
-[00:58:57] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[00:58:57] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[00:58:57] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[00:58:57] [Render thread/INFO]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[00:58:57] [Render thread/INFO]: [FANCYMENU] Reloading resources..
-[00:58:57] [Render thread/INFO]: [FANCYMENU] Pre-loading resources..
-[00:58:57] [Render thread/INFO]: [FANCYMENU] Sound engine reload detected. Releasing cached audio resources.
-[00:58:57] [Render thread/INFO]: Stopping worker threads
-[00:58:57] [Render thread/INFO]: Started 2 worker threads
-[00:58:57] [Render thread/INFO]: [FANCYMENU] Minecraft resource reload: FINISHED
-[00:58:57] [pool-15-thread-1/INFO]: [EMI] Starting Reload
-[00:58:57] [Thread-80/INFO]: [EMI] Starting EMI reload...
-[00:58:57] [Thread-80/INFO]: [EMI] Clearing data
-[00:58:57] [Thread-80/INFO]: [EMI] Initializing plugin from emi
-[00:58:57] [Thread-80/INFO]: [EMI] Initialized plugin from emi in 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] Initializing plugin from emi_ores
-[00:58:57] [Thread-80/INFO]: [EMI] Initialized plugin from emi_ores in 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] Initializing plugin from toomanyrecipeviewers
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Initializing...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `onRuntimeUnavailable` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] Initialized plugin from toomanyrecipeviewers in 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] Processing tags
-[00:58:57] [Thread-80/INFO]: [EMI] Constructing index
-[00:58:57] [Thread-80/INFO]: [EMI] Reloading item groups on client thread...
-[00:58:57] [Thread-80/INFO]: [EMI] Reloading item groups on client thread took 15ms
-[00:58:57] [Thread-80/INFO]: [EMI] Loading plugin from emi
-[00:58:57] [Thread-80/INFO]: [EMI] Reloaded plugin from emi in 17ms
-[00:58:57] [Thread-80/INFO]: [EMI] Loading plugin from emi_ores
-[00:58:57] [Thread-80/INFO]: [EMI] Reloaded plugin from emi_ores in 2ms
-[00:58:57] [Thread-80/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
-[00:58:57] [Thread-80/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 1ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 1ms
-[00:58:57] [Thread-80/INFO]: Added 0 extended crafting recipes in 1ms
-[00:58:57] [Thread-80/INFO]: Added 0 extended smithing recipes in 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 0ms
-[00:58:57] [Thread-80/INFO]: [jei:minecraft⁰] Loaded in 0ms
-[00:58:57] [Thread-80/INFO]: [jade:main] Loaded in 0ms
-[00:58:57] [Thread-80/INFO]: [modernfix:capturer] Loaded in 0ms
-[00:58:57] [Thread-80/INFO]: [kubejs:jei] Loaded in 0ms
-[00:58:57] [Thread-80/INFO]: [custommachinery:jei_plugin] Loaded in 1ms
-[00:58:57] [Thread-80/INFO]: [jei:internalⁱ] Loaded in 0ms
-[00:58:57] [Thread-80/INFO]: JEI plugins loaded in 2ms
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
-[00:58:57] [Thread-80/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
-[00:58:57] [Thread-80/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 5ms
-[00:58:57] [Thread-80/INFO]: [EMI] Baking index
-[00:58:57] [Thread-80/INFO]: [EMI] Registering late recipes
-[00:58:57] [Thread-80/INFO]: [EMI] Baking recipes
-[00:58:57] [Thread-80/INFO]: [EMI] Baked 3132 recipes in 16ms
-[00:58:57] [Thread-80/INFO]: [EMI] Baking search
-[00:58:57] [Thread-81/INFO]: [EMI] Baked recipes after reload in 13ms
-[00:58:57] [Thread-80/INFO]: [EMI] Finishing up
-[00:58:57] [Thread-80/INFO]: [EMI] Reloaded EMI in 101ms
-[00:59:01] [Render thread/INFO]: [FANCYMENU] Smooth font atlas initialized: file='noto_sans.ttf', source=0, size=56px, style=plain, sizePx=1024x1024.
-[00:59:08] [Render thread/INFO]: Loaded 23 advancements
-[00:59:34] [Server thread/INFO]: Saving and pausing game...
-[00:59:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[00:59:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[00:59:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14:55:33] [Thread-21/INFO]: [EMI] Constructing index
+[14:55:33] [Thread-21/INFO]: [EMI] Reloading item groups on client thread...
+[14:55:33] [Render thread/INFO]: Received config from the server: 
+[14:55:33] [Render thread/INFO]: [FANCYMENU] Connected to a server with FancyMenu installed: local:E:4a2a1024
+[14:55:33] [Server thread/INFO]: [FANCYMENU] A client with FancyMenu installed joined the server: soldierdonkey
+[14:55:33] [Thread-21/INFO]: [EMI] Reloading item groups on client thread took 18ms
+[14:55:33] [Thread-21/INFO]: [EMI] Loading plugin from emi
+[14:55:33] [Thread-21/INFO]: [EMI] Reloaded plugin from emi in 83ms
+[14:55:33] [Thread-21/INFO]: [EMI] Loading plugin from emi_ores
+[14:55:33] [Thread-21/INFO]: [EMI] Reloaded plugin from emi_ores in 1ms
+[14:55:33] [Thread-21/INFO]: [EMI] Loading plugin from toomanyrecipeviewers
+[14:55:33] [Thread-21/INFO]: Loading JEI Plugins: [jei:minecraft⁰, jade:main, modernfix:capturer, kubejs:jei, custommachinery:jei_plugin, jei:internalⁱ]
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` with default strategy `SYNC_EMI`...
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerItemSubtypes` took 1ms
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` with default strategy `SYNC_EMI`...
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerFluidSubtypes` took 0ms
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` with default strategy `ASYNC`...
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredients` took 1ms
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` with default strategy `ASYNC`...
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerExtraIngredients` took 0ms
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` with default strategy `ASYNC`...
+[14:55:33] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerIngredientAliases` took 0ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerCategories` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerCategories` took 13ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerVanillaCategoryExtensions` took 3ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeCatalysts` took 0ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerAdvanced` took 0ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` with default strategy `ASYNC`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipes` took 4ms
+[14:55:34] [Thread-21/INFO]: Added 0 extended crafting recipes in 4ms
+[14:55:34] [Thread-21/INFO]: Added 0 extended smithing recipes in 0ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRecipeTransferHandlers` took 0ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerGuiHandlers` took 1ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `registerRuntime` took 0ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` with default strategy `SYNC_EMI`...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Dispatching `onRuntimeAvailable` took 1ms
+[14:55:34] [Thread-21/INFO]: [jei:minecraft⁰] Loaded in 16ms
+[14:55:34] [Thread-21/INFO]: [jade:main] Loaded in 1ms
+[14:55:34] [Thread-21/INFO]: [modernfix:capturer] Loaded in 0ms
+[14:55:34] [Thread-21/INFO]: [kubejs:jei] Loaded in 1ms
+[14:55:34] [Thread-21/INFO]: [custommachinery:jei_plugin] Loaded in 6ms
+[14:55:34] [Thread-21/INFO]: [jei:internalⁱ] Loaded in 0ms
+[14:55:34] [Thread-21/INFO]: JEI plugins loaded in 24ms
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Locking JEI Ingredient Registry...
+[14:55:34] [Thread-21/INFO]: [EMI] [TMRV] Locking JEI Recipe Registry...
+[14:55:34] [Thread-21/INFO]: [EMI] Reloaded plugin from toomanyrecipeviewers in 98ms
+[14:55:34] [Thread-21/INFO]: [EMI] Baking index
+[14:55:34] [Thread-21/INFO]: [EMI] Registering late recipes
+[14:55:34] [Render thread/WARN]: Time from main menu to in-game was 2.0960467 seconds
+[14:55:34] [Render thread/WARN]: Total time to load game and open world was 17.344048 seconds
+[14:55:34] [Thread-21/INFO]: [EMI] Baking recipes
+[14:55:34] [Thread-21/INFO]: [EMI] Baked 3707 recipes in 45ms
+[14:55:34] [Thread-21/INFO]: [EMI] Baking search
+[14:55:34] [Render thread/INFO]: Loaded 23 advancements
+[14:55:34] [Thread-22/INFO]: [EMI] Baked recipes after reload in 37ms
+[14:55:34] [Thread-21/INFO]: [EMI] Finishing up
+[14:55:34] [Thread-21/INFO]: [EMI] Reloaded EMI in 535ms
+[14:55:35] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: inventory_screen
+[14:55:35] [Render thread/INFO]: [FANCYMENU] ScreenCustomizationLayer registered: creative_mode_inventory_screen
+[14:55:42] [Render thread/INFO]: Building search tree for 1780 items (this may take a while)...
+[14:55:43] [Render thread/INFO]: Building search tree for 1780 items took 103.3 ms

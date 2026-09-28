@@ -115,9 +115,9 @@ def as_list(value: Any) -> list:
 
 
 def strip_comments(value: Any) -> Any:
-    """Keys starting with '$' are documentation and are dropped everywhere (JS does the same)."""
+    """Keys starting with '$' (bar a lone '$', a pattern character) are documentation and are dropped everywhere (JS does the same)."""
     if isinstance(value, dict):
-        return {k: strip_comments(v) for k, v in value.items() if not str(k).startswith("$")}
+        return {k: strip_comments(v) for k, v in value.items() if not (str(k).startswith("$") and len(str(k)) > 1)}
     if isinstance(value, list):
         return [strip_comments(v) for v in value]
     return value
@@ -463,10 +463,14 @@ CHANNELS: Dict[str, Callable[[int, int, int], float]] = {
 @TEMPLATE_SOURCES.register("ascii")
 def _ascii_template(spec: dict, env: "RenderEnv", where: str) -> Mask:
     legend = {**env.legend, **spec.get("legend", {})}
+    keep, drop = spec.get("keep"), spec.get("drop", "")
     rows = []
     for y, line in enumerate(require(spec, "rows", where)):
         row = []
         for x, char in enumerate(line):
+            if (keep is not None and char not in keep) or char in drop:  # filtered out: transparent
+                row.append(CLEAR)
+                continue
             if char not in legend:
                 raise ConfigError(f"{where}: {char!r} at row {y}, col {x} is not in the legend")
             row.append(decode_symbol(legend[char], where))
@@ -723,13 +727,14 @@ class RenderEnv:
         self.palettes = textures.get("palettes", {})
         self.shaders = textures.get("shaders", {})
         self.ramps = textures.get("ramps", {})
-        self._masks: Dict[str, Mask] = {}
+        self._masks: Dict[Any, Mask] = {}
         self._palettes: Dict[str, Palette] = {}
         self._shaders: Dict[str, Tuple[Shader, dict]] = {}
 
-    def mask(self, ref: Any) -> Mask:
-        """ref: template id, inline row list, or inline template object."""
-        key = ref if isinstance(ref, str) else canonical(ref)
+    def mask(self, ref: Any, keep: Optional[str] = None, drop: str = "") -> Mask:
+        """ref: template id, inline row list, or inline template object.
+        keep / drop: template characters to draw only / to leave out (one template, several layers)."""
+        key = (ref if isinstance(ref, str) else canonical(ref), keep, drop)
         if key not in self._masks:
             if isinstance(ref, str):
                 if ref not in self.templates:
@@ -739,6 +744,8 @@ class RenderEnv:
                 spec, where = ref, "inline template"
             if isinstance(spec, list):
                 spec = {"source": "ascii", "rows": spec}
+            if keep is not None or drop:
+                spec = {**spec, "keep": keep, "drop": drop}
             mask = TEMPLATE_SOURCES.resolve(spec.get("source", "ascii"))(spec, self, where)
             if (mask.height, mask.width) != (self.size, self.size) or any(len(r) != self.size for r in mask.rows):
                 raise ConfigError(f"{where}: must be {self.size}x{self.size}, got {mask.width}x{mask.height}")
@@ -820,7 +827,7 @@ class Renderer(ABC):
 class LayeredRenderer(Renderer):
     """Composites N layers (template + palette + shader + blend). One layer = mono-construction."""
 
-    LAYER_KEYS = ("template", "palette", "shader", "blend", "context", "transforms")
+    LAYER_KEYS = ("template", "palette", "shader", "blend", "context", "transforms", "keep", "drop")
 
     def prepare(self, entry: Entry) -> Job:
         spec, env = entry.spec, self.env
@@ -840,7 +847,7 @@ class LayeredRenderer(Renderer):
                 if key not in self.LAYER_KEYS:
                     warn_once(f"parts.{entry.part} layer {i}: unknown key {key!r} ignored"
                               f"{did_you_mean(key, self.LAYER_KEYS)}")
-        masks = [apply_transforms(env.mask(require(l, "template", where(i))), l.get("transforms"), where(i))
+        masks = [apply_transforms(env.mask(require(l, "template", where(i)), l.get("keep"), l.get("drop", "")), l.get("transforms"), where(i))
                  for i, l in enumerate(layers)]
         planned, payload = [], []
         for i, layer in enumerate(layers):

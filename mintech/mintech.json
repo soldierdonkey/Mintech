@@ -34,7 +34,14 @@
 
   "vars": {
     "hammer": "#forge:hammer",
-    "handle": "#forge:rods/wooden",
+    "wrench": "#forge:wrench",
+    "screwdriver": "#forge:screwdriver",
+    "saw": "#forge:saw",
+    "file": "#forge:file",
+    "pliers": "#forge:pliers_tool",
+    "mortar_pestle": "#forge:mortar_pestle",
+    "handle_wood": "#forge:rods/wooden",
+    "stone": "#forge:stone",
     "glass_bottle": "minecraft:glass_bottle"
   },
 
@@ -67,6 +74,12 @@
   },
 
   "tags": {
-    "forge:hammer": ["#forge:hammers", "#forge:tools/hammers", "#c:tools/hammers", "#c:hammers", "#c:hammer"]
+    "forge:hammer": ["#forge:hammers", "#forge:tools/hammers", "#c:tools/hammers", "#c:hammers", "#c:hammer"],
+    "forge:wrench": ["#forge:wrenches", "#forge:tools/wrenches", "#c:tools/wrenches", "#c:wrenches", "#c:wrench"],
+    "forge:screwdriver": ["#forge:screwdrivers", "#forge:tools/screwdrivers", "#c:tools/screwdrivers", "#c:screwdrivers", "#c:screwdriver"],
+    "forge:saw": ["#forge:saws", "#forge:tools/saws", "#c:tools/saws", "#c:saws", "#c:saw"],
+    "forge:file": ["#forge:files", "#forge:tools/files", "#c:tools/files", "#c:files", "#c:file"],
+    "forge:pliers_tool": ["#forge:pliers", "#forge:tools/pliers", "#c:tools/pliers"],
+    "forge:mortar_pestle": ["#forge:mortar_and_pestles", "#forge:tools/mortar_and_pestles", "#c:tools/mortar_and_pestles"]
   }
 }

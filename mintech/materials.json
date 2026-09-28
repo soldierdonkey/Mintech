@@ -17,6 +17,8 @@
                    "palette": { "ramp": "metal", "base": "#5B5358" } },
     "titanium":  { "groups": ["metal", "ore", "custom"], "inputs": { "base": "#forge:ingots/titanium" }, "stats": { "durability": 420 },
                    "palette": { "ramp": "metal", "base": "#A9B4BD" }, "orePalette": { "ramp": "ore", "base": "#A9B4BD" } },
+    "nickel":  { "groups": ["metal", "ore", "custom"], "inputs": { "base": "#forge:ingots/nickel" }, "stats": { "durability": 210 },
+                   "palette": { "ramp": "metal", "base": "#8F918F" }, "orePalette": { "ramp": "ore", "base": "#8F918F" } },
     "diamond":   { "groups": ["gem"],   "inputs": { "base": "#forge:gems/diamond" },     "stats": { "durability": 1561 } },
     "emerald":   { "groups": ["gem"],   "inputs": { "base": "#forge:gems/emerald" },     "stats": { "durability": 512 },
                    "palette": { "ramp": "gem", "base": "#17C45A" } },
